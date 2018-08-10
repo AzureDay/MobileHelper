@@ -27,13 +27,19 @@ namespace Conference.Clients.UI
                     await Navigation.PopModalAsync();
                 });
         }
-
+// Command="{Binding SubmitRatingCommand}"
+ // CommandParameter="{Binding Source={x:Reference starFive},Path=Rating}"
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
             var items = StarGrid.Behaviors.Count;
             for(int i = 0; i < items; i++)
                 StarGrid.Behaviors.RemoveAt(i);
+        }
+
+        private void SubmitRating_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

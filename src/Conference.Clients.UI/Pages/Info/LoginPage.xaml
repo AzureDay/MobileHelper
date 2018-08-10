@@ -84,7 +84,6 @@
                        Text="{Binding Password}" 
                        HorizontalOptions="FillAndExpand"
                        IsPassword="true"
-                       HorizontalTextAlignment="Center"
                        Placeholder="password"
                        StyleId="PasswordTextField"
                        IsEnabled="{Binding IsNotBusy}"
