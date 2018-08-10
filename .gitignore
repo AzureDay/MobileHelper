@@ -227,3 +227,9 @@ Conference.userprefs
 Conference/Conference.Backend/App_Data/aspnet-Conference.Backend-20151029080950.mdf
 *.ldf
 project.lock.json
+src/.idea/.idea.Conference/.idea/workspace.xml
+src/.idea/.idea.Conference/.idea/vcs.xml
+src/.idea/.idea.Conference/.idea/modules.xml
+src/.idea/.idea.Conference/.idea/indexLayout.xml
+src/.idea/.idea.Conference/.idea/contentModel.xml
+src/.idea/.idea.Conference/.idea/.name
