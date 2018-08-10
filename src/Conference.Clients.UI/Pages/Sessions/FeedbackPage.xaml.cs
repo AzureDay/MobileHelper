@@ -28,7 +28,7 @@ namespace Conference.Clients.UI
                 });
         }
 // Command="{Binding SubmitRatingCommand}"
- // CommandParameter="{Binding Source={x:Reference starFive},Path=Rating}"
+// CommandParameter="{Binding Source={x:Reference starFive},Path=Rating}"
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
@@ -39,7 +39,7 @@ namespace Conference.Clients.UI
 
         private void SubmitRating_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
