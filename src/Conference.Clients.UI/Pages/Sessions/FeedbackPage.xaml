@@ -41,17 +41,20 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <StackLayout Orientation="Horizontal" Spacing="{StaticResource StandardSpacing}" HorizontalOptions="Center" Grid.Column="1">
-              <Grid HeightRequest="24" WidthRequest="24" x:Name="StarGrid">
+            <StackLayout Orientation="Horizontal" 
+                         Spacing="{StaticResource StandardSpacing}" 
+                         HorizontalOptions="Center" 
+                         Grid.Column="1">
+              <Grid HeightRequest="24" 
+                    WidthRequest="24" 
+                    x:Name="StarGrid">
                 <Grid.Behaviors>
                    <!--Do not remove name as it is used in binding-->
                   <local:StarBehavior x:Name="starOne" GroupName="myStar"/>
                 </Grid.Behaviors>
-                <Image 
-                        Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
+                <Image Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
 
-                <Image 
-                        Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
+                <Image Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
                         IsVisible="{Binding Source={x:Reference starOne},
                                             Path=IsStarred}"/>
               </Grid>
@@ -120,8 +123,7 @@
             <Button
                 Text="Submit"  
                 StyleId="ButtonSubmit"
-                Command="{Binding SubmitRatingCommand}"
-                CommandParameter="{Binding Source={x:Reference starFive},Path=Rating}"
+                Clicked="SubmitRating_OnClicked"
                 IsEnabled="{Binding IsNotBusy}">
 
                 <Button.FontAttributes>
