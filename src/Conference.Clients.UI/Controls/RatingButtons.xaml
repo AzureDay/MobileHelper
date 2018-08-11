@@ -35,7 +35,7 @@
                       x:Name="StarGrid">
                     <Grid.Behaviors>
                         <!--Do not remove name as it is used in binding-->
-                        <local:StarBehavior x:Name="StarOne" GroupName="MyStar" />
+                        <local:StarBehavior x:Name="StarOne" GroupName="{Binding GroupName}" />
                     </Grid.Behaviors>
                     <Image Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
 
@@ -50,7 +50,7 @@
                     HorizontalOptions="Center">
                     <Grid.Behaviors>
                         <!--Do not remove name as it is used in binding-->
-                        <local:StarBehavior x:Name="StarTwo" GroupName="MyStar" />
+                        <local:StarBehavior x:Name="StarTwo" GroupName="{Binding GroupName}" />
                     </Grid.Behaviors>
                     <Image
                         Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
@@ -65,7 +65,7 @@
                     HorizontalOptions="Center">
                     <Grid.Behaviors>
                         <!--Do not remove name as it is used in binding-->
-                        <local:StarBehavior x:Name="StarThree" GroupName="MyStar" />
+                        <local:StarBehavior x:Name="StarThree" GroupName="{Binding GroupName}" />
                     </Grid.Behaviors>
                     <Image
                         Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
@@ -80,7 +80,7 @@
                     HorizontalOptions="Center">
                     <Grid.Behaviors>
                         <!--Do not remove name as it is used in binding-->
-                        <local:StarBehavior x:Name="StarFour" GroupName="MyStar" />
+                        <local:StarBehavior x:Name="StarFour" GroupName="{Binding GroupName}" />
                     </Grid.Behaviors>
                     <Image
                         Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
@@ -95,7 +95,7 @@
                     HorizontalOptions="Center">
                     <Grid.Behaviors>
                         <!--D not remove name as it is used in binding-->
-                        <local:StarBehavior x:Name="StarFive" GroupName="MyStar" />
+                        <local:StarBehavior x:Name="StarFive" GroupName="{Binding GroupName}" />
                     </Grid.Behaviors>
                     <Image
                         Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />

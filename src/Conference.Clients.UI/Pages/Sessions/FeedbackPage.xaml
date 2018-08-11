@@ -49,28 +49,33 @@
                 <controls:RatingButtons 
                     Text="Session: " 
                     x:Name="Session"
+                    GroupName="Session"
                     Grid.Column="1"/>
                 
                 <controls:RatingButtons 
                     Text="Prepared: " 
                     x:Name="Prepared"
+                    GroupName="Prepared"
                     Grid.Column="1"
                     Grid.Row="1"/>
                 
                 <controls:RatingButtons 
                     Text="Learnnew: " 
                     x:Name="LearnNew"
+                    GroupName="LearnNew"
                     Grid.Column="1"
                     Grid.Row="2"/>
                 
                 <controls:RatingButtons 
                     Text="Stayed In Focus: " 
                     x:Name="StayedInFocus"
+                    GroupName="StayedInFocus"
                     Grid.Column="1"
                     Grid.Row="3"/>
                 
                 <controls:RatingButtons 
-                    Text="Expertise: " 
+                    Text="Expertise: "
+                    GroupName="Expertise"
                     x:Name="Expertise"
                     Grid.Column="1"
                     Grid.Row="4"/>
