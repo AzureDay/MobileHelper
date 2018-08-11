@@ -18,7 +18,6 @@ namespace Conference.Clients.UI
             if (Device.RuntimePlatform != Device.iOS)
                 ToolbarDone.Icon = "toolbar_close.png";
 
-
             ToolbarDone.Command = new Command(async () => 
                 {
                     if(vm.IsBusy)
@@ -29,17 +28,18 @@ namespace Conference.Clients.UI
         }
 // Command="{Binding SubmitRatingCommand}"
 // CommandParameter="{Binding Source={x:Reference starFive},Path=Rating}"
-        protected override void OnDisappearing()
-        {
-            base.OnDisappearing();
-            var items = StarGrid.Behaviors.Count;
-            for(int i = 0; i < items; i++)
-                StarGrid.Behaviors.RemoveAt(i);
-        }
+//        protected override void OnDisappearing()
+//        {
+//            base.OnDisappearing();
+//            var items = StarGrid.Behaviors.Count;
+//            for(int i = 0; i < items; i++)
+//                StarGrid.Behaviors.RemoveAt(i);
+//        }
 
         private void SubmitRating_OnClicked(object sender, EventArgs e)
         {
-            
+            var result = Prepared.Rating;
+            result.ToString();
         }
     }
 }
