@@ -35,9 +35,17 @@ namespace Conference.Clients.UI.Controls
 
         public string GroupName
         {
-            get { return (string)GetValue(GroupNameProperty); }
-            set { SetValue(GroupNameProperty, value); }
+            get
+            {
+                return (string)GetValue(GroupNameProperty);
+            }
+            set
+            {
+                SetValue(GroupNameProperty, value);
+            }
         }
+        
+        protected string NameForGroup { get; set; }
         
         protected override void OnPropertyChanged(string propertyName = null)
         {
@@ -45,10 +53,19 @@ namespace Conference.Clients.UI.Controls
             if (propertyName == TextProperty.PropertyName)
             {
                 NameRating.Text = Device.RuntimePlatform == Device.iOS ? Text.ToUpperInvariant() : Text;
+            }            
+            if (propertyName == GroupNameProperty.PropertyName)
+            {
+                StarOne.GroupName = GroupName;
+                StarTwo.GroupName = GroupName;
+                StarThree.GroupName = GroupName;
+                StarFour.GroupName = GroupName;
+                StarFive.GroupName = GroupName;
             }
-             
         }
 
+        protected string One => Guid.NewGuid().ToString("N");
+        
         private void RetingChanged_OnBindingContextChanged(object sender, EventArgs e)
         {
             if (StarFive.Rating > 0)
@@ -65,10 +82,10 @@ namespace Conference.Clients.UI.Controls
 
         void BehaviorsRemove()
         {
-            var items = StarGrid.Behaviors.Count;
+            var items = this.Behaviors.Count;
             for (int i = 0; i < items; i++)
             {
-                StarGrid.Behaviors.RemoveAt(i);
+                this.Behaviors.RemoveAt(i);
             }
         }
     }
