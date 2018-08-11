@@ -30,6 +30,15 @@ namespace Conference.Clients.UI.Controls
             set { SetValue(TextProperty, value); }
         }
         
+        public static readonly BindableProperty GroupNameProperty = 
+            BindableProperty.Create(nameof(GroupName), typeof(string), typeof(RatingButtons), string.Empty);
+
+        public string GroupName
+        {
+            get { return (string)GetValue(GroupNameProperty); }
+            set { SetValue(GroupNameProperty, value); }
+        }
+        
         protected override void OnPropertyChanged(string propertyName = null)
         {
             base.OnPropertyChanged(propertyName);            
@@ -37,6 +46,7 @@ namespace Conference.Clients.UI.Controls
             {
                 NameRating.Text = Device.RuntimePlatform == Device.iOS ? Text.ToUpperInvariant() : Text;
             }
+             
         }
 
         private void RetingChanged_OnBindingContextChanged(object sender, EventArgs e)

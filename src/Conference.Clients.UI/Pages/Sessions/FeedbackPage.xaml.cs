@@ -39,7 +39,6 @@ namespace Conference.Clients.UI
         private void SubmitRating_OnClicked(object sender, EventArgs e)
         {
             var result = Prepared.Rating;
-            result.ToString();
         }
     }
 }
