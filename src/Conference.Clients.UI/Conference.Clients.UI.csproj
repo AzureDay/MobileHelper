@@ -38,4 +38,11 @@
     <ProjectReference Include="..\Conference.Utils\Conference.Utils.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Include="Controls\RatingButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator></Generator>
+    </Page>
+  </ItemGroup>
+
 </Project>

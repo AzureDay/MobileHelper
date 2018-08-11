@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Conference.Clients.UI;assembly=Conference.Clients.UI"
     xmlns:toolkit="clr-namespace:FormsToolkit;assembly=FormsToolkit"
+    xmlns:controls="clr-namespace:Conference.Clients.UI.Controls;assembly=Conference.Clients.UI"
     x:Class="Conference.Clients.UI.FeedbackPage"
     BackgroundColor="{DynamicResource WindowBackground}"
     Title="Rate Session">
@@ -24,8 +25,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-
-        <StackLayout VerticalOptions="Center" Spacing="{StaticResource StandardSpacing}">
+        <StackLayout VerticalOptions="Start" Spacing="{StaticResource StandardSpacing}">
             <Image Source="icon_sessions_big_purple.png" HorizontalOptions="Center" />
             <Label Text="{Binding Session.Title}"
                    HorizontalTextAlignment="Center" HorizontalOptions="Center"
@@ -41,210 +41,39 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <StackLayout Spacing="{StaticResource StandardSpacing}"
-                             Grid.Column="1">
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Session: " HorizontalOptions="Start"/>
-                        <Label
-                            Text="{Binding Source={x:Reference starFive},
-                            Path=Rating, Converter={StaticResource RatingConverter}}"
-                            StyleId="Status"
-                            HorizontalOptions="Center" />
-                    </StackLayout>
-                    <StackLayout 
-                        Spacing="{StaticResource StandardSpacing}"
-                        HorizontalOptions="Center"
-                        Orientation="Horizontal">
-
-                        <Grid HeightRequest="24"
-                              WidthRequest="24"
-                              BackgroundColor="Red"
-                              x:Name="StarGrid">
-                            <Grid.Behaviors>
-                                <!--Do not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="starOne" GroupName="myStar" />
-                            </Grid.Behaviors>
-                            <Image Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                   IsVisible="{Binding Source={x:Reference starOne},
-                                                Path=IsStarred}" />
-                        </Grid>
-                        <Grid 
-                            HeightRequest="24" 
-                            WidthRequest="24" 
-                            BackgroundColor="Orange"
-                            HorizontalOptions="Center">
-                            <Grid.Behaviors>
-                                <!--Do not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="starTwo" GroupName="myStar" />
-                            </Grid.Behaviors>
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                IsVisible="{Binding Source={x:Reference starTwo},
-                                                Path=IsStarred}" />
-                        </Grid>
-                        <Grid 
-                            HeightRequest="24" 
-                            WidthRequest="24" 
-                            BackgroundColor="Yellow"
-                            HorizontalOptions="Center">
-                            <Grid.Behaviors>
-                                <!--Do not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="starThree" GroupName="myStar" />
-                            </Grid.Behaviors>
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                IsVisible="{Binding Source={x:Reference starThree},
-                                                Path=IsStarred}" />
-                        </Grid>
-                        <Grid 
-                            HeightRequest="24" 
-                            WidthRequest="24" 
-                            BackgroundColor="ForestGreen"
-                            HorizontalOptions="Center">
-                            <Grid.Behaviors>
-                                <!--Do not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="starFour" GroupName="myStar" />
-                            </Grid.Behaviors>
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                IsVisible="{Binding Source={x:Reference starFour},
-                                                Path=IsStarred}" />
-                        </Grid>
-                        <Grid 
-                            HeightRequest="24" 
-                            WidthRequest="24" 
-                            BackgroundColor="Green"
-                            HorizontalOptions="Center">
-                            <Grid.Behaviors>
-                                <!--D not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="starFive" GroupName="myStar" />
-                            </Grid.Behaviors>
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                IsVisible="{Binding Source={x:Reference starFive},
-                                                Path=IsStarred}" />
-                        </Grid>
-                                                
-                    </StackLayout>
-                </StackLayout>
+                <controls:RatingButtons 
+                    Text="Session: " 
+                    x:Name="Session"
+                    Grid.Column="1"/>
                 
-
+                <controls:RatingButtons 
+                    Text="Prepared: " 
+                    x:Name="Prepared"
+                    Grid.Column="1"
+                    Grid.Row="1"/>
                 
-                <StackLayout Spacing="{StaticResource StandardSpacing}"
-                             Grid.Row="1"
-                             Grid.Column="1">
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Prepared: " HorizontalOptions="Start"/>
-                        <Label
-                            Text="{Binding Source={x:Reference StarFivePrepared},
-                            Path=Rating, Converter={StaticResource RatingConverter}}"
-                            StyleId="Status"
-                            HorizontalOptions="Center" />
-                    </StackLayout>
-                    <StackLayout 
-                        Orientation="Horizontal"
-                        Spacing="{StaticResource StandardSpacing}"
-                        HorizontalOptions="Center">
-                        <Grid HeightRequest="24"
-                              WidthRequest="24"
-                              BackgroundColor="Red"
-                              x:Name="StarGridPrepared">
-                            <Grid.Behaviors>
-                                <!--Do not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="StarOnePrepared" GroupName="PreparedStar" />
-                            </Grid.Behaviors>
-                            <Image Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                   IsVisible="{Binding Source={x:Reference StarOnePrepared},
-                                                Path=IsStarred}" />
-                        </Grid>
-                        <Grid 
-                            HeightRequest="24" 
-                            WidthRequest="24" 
-                            BackgroundColor="Orange"
-                            HorizontalOptions="Center">
-                            <Grid.Behaviors>
-                                <!--Do not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="StarTwoPrepared" GroupName="PreparedStar" />
-                            </Grid.Behaviors>
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                IsVisible="{Binding Source={x:Reference StarTwoPrepared},
-                                                Path=IsStarred}" />
-                        </Grid>
-                        <Grid 
-                            HeightRequest="24" 
-                            WidthRequest="24" 
-                            BackgroundColor="Yellow"
-                            HorizontalOptions="Center">
-                            <Grid.Behaviors>
-                                <!--Do not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="StarThreePrepared" GroupName="PreparedStar" />
-                            </Grid.Behaviors>
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                IsVisible="{Binding Source={x:Reference StarThreePrepared},
-                                                Path=IsStarred}" />
-                        </Grid>
-                        <Grid 
-                            HeightRequest="24" 
-                            WidthRequest="24"
-                            BackgroundColor="ForestGreen"
-                            HorizontalOptions="Center">
-                            <Grid.Behaviors>
-                                <!--Do not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="StarFourPrepared" GroupName="PreparedStar" />
-                            </Grid.Behaviors>
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                IsVisible="{Binding Source={x:Reference StarFourPrepared},
-                                                Path=IsStarred}" />
-                        </Grid>
-                        <Grid 
-                            HeightRequest="24" 
-                            WidthRequest="24" 
-                            BackgroundColor="Green"
-                            HorizontalOptions="Center">
-                            <Grid.Behaviors>
-                                <!--D not remove name as it is used in binding-->
-                                <local:StarBehavior x:Name="StarFivePrepared" GroupName="PreparedStar" />
-                            </Grid.Behaviors>
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_outline.png}" />
-    
-                            <Image
-                                Source="{local:ImageResource Conference.Clients.UI.Images.star_selected.png}"
-                                IsVisible="{Binding Source={x:Reference StarFivePrepared},
-                                                Path=IsStarred}" />
-                        </Grid>
-                    </StackLayout>
-                </StackLayout>
+                <controls:RatingButtons 
+                    Text="Learnnew: " 
+                    x:Name="LearnNew"
+                    Grid.Column="1"
+                    Grid.Row="2"/>
+                
+                <controls:RatingButtons 
+                    Text="Stayed In Focus: " 
+                    x:Name="StayedInFocus"
+                    Grid.Column="1"
+                    Grid.Row="3"/>
+                
+                <controls:RatingButtons 
+                    Text="Expertise: " 
+                    x:Name="Expertise"
+                    Grid.Column="1"
+                    Grid.Row="4"/>
             </Grid>
 
         </StackLayout>
