@@ -383,4 +383,8 @@
       <Version>2.4.1</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\star_outline.png" />
+    <Content Include="Resources\star_selected.png" />
+  </ItemGroup>
 </Project>
