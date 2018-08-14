@@ -73,6 +73,27 @@ namespace Conference.DataObjects
         /// <value>The linked in URL.</value>
         public string LinkedInUrl { get; set; }
 
+        /// <summary>
+        /// Gets or sets the facebook profile name.
+        /// https://www.facebook.com/boyko.ant we just need: boyko.ant
+        /// </summary>
+        /// <value>The facebook URL.</value>
+        public string FacebookUrl { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Mvp Url.
+        /// https://mvp.microsoft.com/en-us/PublicProfile/5000824
+        /// </summary>
+        /// <value>The Mvp URL.</value>
+        public string MvpUrl { get; set; }
+
+        /// <summary>
+        /// Gets or sets the MyCert Url.
+        /// http://www.mycertprofile.com/Profile/8861740279
+        /// </summary>
+        /// <value>The MyCert URL.</value>
+        public string MyCertUrl { get; set; }
+
         public virtual ICollection<Session> Sessions { get; set; }
 
         #if MOBILE
