@@ -29,9 +29,18 @@ namespace Conference.Clients.UI
 // Command="{Binding SubmitRatingCommand}"
 // CommandParameter="{Binding Source={x:Reference starFive},Path=Rating}"
 
-        private void SubmitRating_OnClicked(object sender, EventArgs e)
+        private async void SubmitRating_OnClicked(object sender, EventArgs e)
         {
-            var result = Prepared.Rating;
+            var rating = new RatingSession()
+            {
+               SessionRating = Session.Rating,
+                Expertise = Expertise.Rating,
+                Learnnew = LearnNew.Rating,
+                Prepeared = Prepared.Rating,
+                StayedInFocus = StayedInFocus.Rating
+            };
+            
+            await vm.ExecuteSubmitRatingCommandAsync(rating);
         }
     }
 }

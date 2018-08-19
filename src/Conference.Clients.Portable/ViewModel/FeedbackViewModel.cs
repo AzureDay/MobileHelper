@@ -29,7 +29,7 @@ namespace Conference.Clients.Portable
             submitRatingCommand ?? (submitRatingCommand = new Command<int>(async (rating) =>
                                                                            await ExecuteSubmitRatingCommandAsync(rating)));
 
-        async Task ExecuteSubmitRatingCommandAsync(int rating)
+        public async Task ExecuteSubmitRatingCommandAsync(RatingSession rating)
         {
             if (IsBusy)
                 return;
@@ -37,7 +37,7 @@ namespace Conference.Clients.Portable
             IsBusy = true;
             try
             {
-                if (rating == 0)
+                if (rating == null)
                 {
 
                     MessagingService.Current.SendMessage<MessagingServiceAlert>(MessageKeys.Message, new MessagingServiceAlert
@@ -69,11 +69,11 @@ namespace Conference.Clients.Portable
                 await StoreManager.FeedbackStore.InsertAsync(new Feedback
                 {
                     SessionId = session.Id,
-                    SessionRating = rating,
-                    Prepeared = 0,
-                    Learnnew = 0,
-                    StayedinFocus = 0,
-                    Expertise = 0
+                    SessionRating = rating.SessionRating,
+                    Prepeared = rating.Prepeared,
+                    Learnnew = rating.Learnnew,
+                    StayedinFocus = rating.StayedInFocus,
+                    Expertise = rating.Expertise
                 });
             }
             catch (Exception ex)
