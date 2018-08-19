@@ -47,6 +47,8 @@ namespace Conference.Clients.UI
                         MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
                         return;
                     }
+
+                    ViewModel.Session.Id = Guid.NewGuid().ToString("N");
                     await NavigationService.PushModalAsync(Navigation, new ConferenceNavigationPage(new FeedbackPage(ViewModel.Session)));
             };
             BindingContext = new SessionDetailsViewModel(Navigation, session); 

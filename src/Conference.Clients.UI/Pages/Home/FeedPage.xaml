@@ -54,7 +54,8 @@
                                HorizontalOptions="Center" 
                                Style="{DynamicResource ConferenceListItemTextStyle}"/>
                    </StackLayout>
-                    <StackLayout IsVisible="{Binding LoadingNotifications, Converter={StaticResource InvertedBooleanConverter}}}" 
+                    <StackLayout 
+                        IsVisible="{Binding LoadingNotifications, Converter={StaticResource InvertedBooleanConverter}}" 
                                  HorizontalOptions="FillAndExpand" 
                                  VerticalOptions="Center" 
                                   BackgroundColor="White"

@@ -18,7 +18,6 @@ namespace Conference.Clients.UI
             if (Device.RuntimePlatform != Device.iOS)
                 ToolbarDone.Icon = "toolbar_close.png";
 
-
             ToolbarDone.Command = new Command(async () => 
                 {
                     if(vm.IsBusy)
@@ -28,12 +27,18 @@ namespace Conference.Clients.UI
                 });
         }
 
-        protected override void OnDisappearing()
+        private async void SubmitRating_OnClicked(object sender, EventArgs e)
         {
-            base.OnDisappearing();
-            var items = StarGrid.Behaviors.Count;
-            for(int i = 0; i < items; i++)
-                StarGrid.Behaviors.RemoveAt(i);
+            var rating = new RatingSession()
+            {
+               SessionRating = Session.Rating,
+               Expertise = Expertise.Rating,
+               Learnnew = LearnNew.Rating,
+               Prepeared = Prepared.Rating,
+               StayedInFocus = StayedInFocus.Rating
+            };
+            
+            await vm.ExecuteSubmitRatingCommandAsync(rating);
         }
     }
 }

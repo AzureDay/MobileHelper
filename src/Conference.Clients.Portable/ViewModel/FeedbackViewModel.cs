@@ -24,54 +24,59 @@ namespace Conference.Clients.Portable
             Session = session;
         }
 
-        ICommand  submitRatingCommand;
+        ICommand submitRatingCommand;
         public ICommand SubmitRatingCommand =>
-            submitRatingCommand ?? (submitRatingCommand = new Command<int>(async (rating) => await ExecuteSubmitRatingCommandAsync(rating))); 
+            submitRatingCommand ?? (submitRatingCommand = new Command<RatingSession>(async (rating) =>
+                                                                           await ExecuteSubmitRatingCommandAsync(rating)));
 
-        async Task ExecuteSubmitRatingCommandAsync(int rating)
+        public async Task ExecuteSubmitRatingCommandAsync(RatingSession rating)
         {
-            if(IsBusy)
+            if (IsBusy)
                 return;
 
             IsBusy = true;
             try
             {
-                if(rating == 0)
+                if (rating == null)
                 {
-                    
+
                     MessagingService.Current.SendMessage<MessagingServiceAlert>(MessageKeys.Message, new MessagingServiceAlert
-                        {
-                            Title = "No Rating Selected",
-                            Message = "Please select a rating to leave feedback for this session.",
-                            Cancel = "OK"
-                        });
-                        return;
+                    {
+                        Title = "No Rating Selected",
+                        Message = "Please select a rating to leave feedback for this session.",
+                        Cancel = "OK"
+                    });
+                    return;
                 }
 
                 EvaluationsViewModel.ForceRefresh = true;
                 Logger.Track(ConferenceLoggerKeys.LeaveFeedback, "Title", rating.ToString());
-                
+
                 MessagingService.Current.SendMessage<MessagingServiceAlert>(MessageKeys.Message, new MessagingServiceAlert
+                {
+                    Title = "Feedback Received",
+                    Message = "Thanks for the feedback, have a great Conference.",
+                    Cancel = "OK",
+                    OnCompleted = async () =>
                     {
-                        Title = "Feedback Received",
-                        Message = "Thanks for the feedback, have a great Conference.",
-                        Cancel = "OK",
-                        OnCompleted = async () => 
-                        {
-                            await Navigation.PopModalAsync ();
-                            if (Device.RuntimePlatform == Device.Android)
-                                MessagingService.Current.SendMessage ("eval_finished");
-                        }
-                    });
+                        await Navigation.PopModalAsync();
+                        if (Device.RuntimePlatform == Device.Android)
+                            MessagingService.Current.SendMessage("eval_finished");
+                    }
+                });
 
                 Session.FeedbackLeft = true;
                 await StoreManager.FeedbackStore.InsertAsync(new Feedback
-                    {
-                        SessionId = session.Id,
-                        SessionRating = rating
-                    });
+                {
+                    SessionId = session.Id,
+                    SessionRating = rating.SessionRating,
+                    Prepeared = rating.Prepeared,
+                    Learnnew = rating.Learnnew,
+                    StayedinFocus = rating.StayedInFocus,
+                    Expertise = rating.Expertise
+                });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Logger.Report(ex);
             }

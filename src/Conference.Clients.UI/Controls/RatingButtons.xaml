@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView
+    x:Class="Conference.Clients.UI.Controls.RatingButtons"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Conference.Clients.UI;assembly=Conference.Clients.UI">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <local:RatingVisibleConverter x:Key="RatingVisibleConverter" />
+            <local:RatingConverter x:Key="RatingConverter" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <StackLayout Spacing="{StaticResource StandardSpacing}">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Session: " 
+                       HorizontalOptions="Start" 
+                       x:Name="NameRating" />
+                <Label
+                    Text="{Binding Source={x:Reference StarFive},
+                            Path=Rating, Converter={StaticResource RatingConverter}}"
+                    StyleId="Status"
+                    PropertyChanged="RetingChanged_OnBindingContextChanged"
+                    HorizontalOptions="StartAndExpand" />
+            </StackLayout>
+            <StackLayout
+                Spacing="{StaticResource StandardSpacing}"
+                HorizontalOptions="Center"
+                Orientation="Horizontal">
+
+                <Grid HeightRequest="24"
+                      WidthRequest="24">
+                    <Grid.Behaviors>
+                        <!--Do not remove name as it is used in binding-->
+                        <local:StarBehavior x:Name="StarOne" GroupName="{Binding NameForGroup}" />
+                    </Grid.Behaviors>
+                    <Image 
+                        x:Name="OutOne" />
+
+                    <Image 
+                        x:Name="SelectOne"
+                           IsVisible="{Binding Source={x:Reference StarOne},
+                                                Path=IsStarred}" />
+                </Grid>
+                <Grid
+                    HeightRequest="24"
+                    WidthRequest="24"
+                    HorizontalOptions="Center">
+                    <Grid.Behaviors>
+                        <!--Do not remove name as it is used in binding-->
+                        <local:StarBehavior x:Name="StarTwo" GroupName="{Binding NameForGroup}" />
+                    </Grid.Behaviors>
+                    <Image
+                        x:Name="OutTwo"/>
+                    <Image
+                        x:Name="SelectTwo"
+                        IsVisible="{Binding Source={x:Reference StarTwo}, Path=IsStarred}" />
+                </Grid>
+                <Grid
+                    HeightRequest="24"
+                    WidthRequest="24"
+                    HorizontalOptions="Center">
+                    <Grid.Behaviors>
+                        <!--Do not remove name as it is used in binding-->
+                        <local:StarBehavior x:Name="StarThree" GroupName="{Binding NameForGroup}" />
+                    </Grid.Behaviors>
+                    <Image
+                        x:Name="OutThree" />
+                    <Image
+                        x:Name="SelectThree"
+                        IsVisible="{Binding Source={x:Reference StarThree}, Path=IsStarred}" />
+                </Grid>
+                <Grid
+                    HeightRequest="24"
+                    WidthRequest="24"
+                    HorizontalOptions="Center">
+                    <Grid.Behaviors>
+                        <!--Do not remove name as it is used in binding-->
+                        <local:StarBehavior x:Name="StarFour" GroupName="{Binding NameForGroup}" />
+                    </Grid.Behaviors>
+                    <Image
+                        x:Name="OutFour" />
+                    <Image
+                        x:Name="SelectFour"
+                        IsVisible="{Binding Source={x:Reference StarFour}, Path=IsStarred}" />
+                </Grid>
+                <Grid
+                    HeightRequest="24"
+                    WidthRequest="24"
+                    HorizontalOptions="Center">
+                    <Grid.Behaviors>
+                        <!--D not remove name as it is used in binding-->
+                        <local:StarBehavior x:Name="StarFive" GroupName="{Binding NameForGroup}" />
+                    </Grid.Behaviors>
+                    <Image
+                        x:Name="OutFive" />
+                    <Image
+                        x:Name="SelectFive"
+                        IsVisible="{Binding Source={x:Reference StarFive}, Path=IsStarred}" />
+                </Grid>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
