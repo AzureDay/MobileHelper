@@ -9,6 +9,28 @@ namespace Conference.Clients.UI.Controls
         public RatingButtons()
         {
             InitializeComponent();
+            InsertIcon();
+        }
+
+        void InsertIcon()
+        {          
+            var starOutline = ImageSource.FromFile("star_outline.png");
+            var starSelected = ImageSource.FromFile("star_selected.png");
+
+            this.OutOne.Source = starOutline;
+            this.SelectOne.Source = starSelected;
+            
+            this.OutTwo.Source = starOutline;
+            this.SelectTwo.Source = starSelected;
+            
+            this.OutThree.Source = starOutline;
+            this.SelectThree.Source = starSelected;
+                        
+            this.OutFour.Source = starOutline;
+            this.SelectFour.Source = starSelected;
+            
+            this.OutFive.Source = starOutline;
+            this.SelectFive.Source = starSelected;
         }
         
         public static readonly BindableProperty RatingValueProperty = 

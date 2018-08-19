@@ -26,18 +26,16 @@ namespace Conference.Clients.UI
                     await Navigation.PopModalAsync();
                 });
         }
-// Command="{Binding SubmitRatingCommand}"
-// CommandParameter="{Binding Source={x:Reference starFive},Path=Rating}"
 
         private async void SubmitRating_OnClicked(object sender, EventArgs e)
         {
             var rating = new RatingSession()
             {
                SessionRating = Session.Rating,
-                Expertise = Expertise.Rating,
-                Learnnew = LearnNew.Rating,
-                Prepeared = Prepared.Rating,
-                StayedInFocus = StayedInFocus.Rating
+               Expertise = Expertise.Rating,
+               Learnnew = LearnNew.Rating,
+               Prepeared = Prepared.Rating,
+               StayedInFocus = StayedInFocus.Rating
             };
             
             await vm.ExecuteSubmitRatingCommandAsync(rating);
