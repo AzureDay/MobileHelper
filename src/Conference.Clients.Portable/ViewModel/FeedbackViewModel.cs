@@ -26,7 +26,7 @@ namespace Conference.Clients.Portable
 
         ICommand submitRatingCommand;
         public ICommand SubmitRatingCommand =>
-            submitRatingCommand ?? (submitRatingCommand = new Command<int>(async (rating) =>
+            submitRatingCommand ?? (submitRatingCommand = new Command<RatingSession>(async (rating) =>
                                                                            await ExecuteSubmitRatingCommandAsync(rating)));
 
         public async Task ExecuteSubmitRatingCommandAsync(RatingSession rating)

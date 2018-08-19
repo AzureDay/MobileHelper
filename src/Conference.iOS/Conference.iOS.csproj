@@ -384,7 +384,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\error.png" />
     <Content Include="Resources\star_outline.png" />
     <Content Include="Resources\star_selected.png" />
+    <Content Include="Resources\success.png" />
   </ItemGroup>
 </Project>
