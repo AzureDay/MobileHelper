@@ -150,7 +150,7 @@
                                </Grid.IsVisible>
                                 <Button StyleId="ReminderButton"
                                         IsVisible="{Binding ShowReminder}"
-                                        Text="{Binding IsReminderSet, Converter={StaticResource HasReminderTextConverter}"
+                                        Text="{Binding IsReminderSet, Converter={StaticResource HasReminderTextConverter}}"
                                         BackgroundColor="{StaticResource PrimaryDark}"
                                         Command="{Binding ReminderCommand}"
                                         TextColor="White"/>

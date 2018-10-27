@@ -17,7 +17,7 @@ namespace Conference.Backend
         {
             HttpConfiguration config = new HttpConfiguration();
 
-            config.Routes.MapHttpRoute("XamarinAuthProvider", ".auth/login/xamarin", new { controller = "XamarinAuth" });
+            //config.Routes.MapHttpRoute("XamarinAuthProvider", ".auth/login/xamarin", new { controller = "XamarinAuth" });
 
             //For more information on Web API tracing, see http://go.microsoft.com/fwlink/?LinkId=620686 
             config.EnableSystemDiagnosticsTracing();
@@ -37,16 +37,14 @@ namespace Conference.Backend
 
             // This middleware is intended to be used locally for debugging. By default, HostName will
             // only have a value when running in an App Service application.
-            if (string.IsNullOrEmpty(settings.HostName))
-            {
-                app.UseAppServiceAuthentication(new Microsoft.Azure.Mobile.Server.Authentication.AppServiceAuthenticationOptions
-                {
+            //if (string.IsNullOrEmpty(settings.HostName))
+            //{
+            //    app.UseAppServiceAuthentication(new Microsoft.Azure.Mobile.Server.Authentication.AppServiceAuthenticationOptions
+            //    {
 
-                });
-            }
-
-           
-
+            //    });
+            //}
+          
             app.UseWebApi(config);
       
         }

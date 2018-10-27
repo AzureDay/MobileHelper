@@ -185,16 +185,16 @@ namespace Conference.Clients.UI
             {
 
                 if(!(value is DateTime))
-                    return Color.FromHex("753BE4");
+                    return Color.FromHex("1b80e4");
 
-                return DateTime.UtcNow > ((DateTime)value).ToUniversalTime() ? Color.FromHex("D3D2D2") : Color.FromHex("753BE4");
+                return DateTime.UtcNow > ((DateTime)value).ToUniversalTime() ? Color.FromHex("D3D2D2") : Color.FromHex("1b80e4");
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("Unable to convert: " + ex);
             }
 
-            return Color.FromHex("753BE4");
+            return Color.FromHex("1b80e4");
         }
 
 

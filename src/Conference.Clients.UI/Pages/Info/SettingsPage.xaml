@@ -42,7 +42,7 @@
                         <local:HeaderDivider/>   
                         <StackLayout BackgroundColor="White" 
                                      Padding="{StaticResource StandardPadding}">
-                            <Label Text="Sign in with your Xamarin account to save and sync favorites and session feedback across devices." 
+                            <Label Text="Please push the button to see the updated schedule" 
                                    HorizontalOptions="Center" 
                                    Style="{DynamicResource ConferenceListItemDetailTextStyle}"/>
                             
@@ -53,13 +53,13 @@
                                BackgroundColor="White">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
+                                <!--<ColumnDefinition Width="*"/>-->
                             </Grid.ColumnDefinitions>
-                            <Button Text="{Binding LoginText}" Command="{Binding LoginCommand}"
+                            <!--<Button Text="{Binding LoginText}" Command="{Binding LoginCommand}"
                                     BackgroundColor="{StaticResource PrimaryDark}"
                                     IsEnabled="{Binding IsNotBusy}"
-                                    TextColor="White"/>
-                            <Button Grid.Column="1"
+                                    TextColor="White"/>-->
+                            <Button Grid.Column="0"
                                     Text="Sync Now" Command="{Binding SyncCommand}"
                                     BackgroundColor="{StaticResource PrimaryDark}"
                                     IsEnabled="{Binding IsNotBusy}"
@@ -88,7 +88,7 @@
                     </StackLayout>
                 </local:CardView>
 
-                <local:CardView>
+                <!--<local:CardView>
                      <StackLayout Spacing="0">
                         <local:LabelSection>
                             <local:LabelSection.Text>
@@ -130,9 +130,9 @@
                                    Style="{DynamicResource ConferenceListItemDetailTextStyle}"/>
                         </StackLayout>
                     </StackLayout>
-                </local:CardView>
+                </local:CardView>-->
 
-                <local:CardView>
+                <!--<local:CardView>
                      <StackLayout Spacing="0">
                         <local:LabelSection Text="Technology Used"/>
                         <local:HeaderDivider/>
@@ -172,7 +172,7 @@
 							</Label>
                         </StackLayout>
                     </StackLayout>
-                </local:CardView>
+                </local:CardView>-->
             </StackLayout>
         </StackLayout>
     </local:AlwaysScrollView>

@@ -5,10 +5,10 @@
     x:Class="Conference.Clients.UI.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#7635EB</Color>
-            <Color x:Key="PrimaryDark">#5D2ABB</Color>
+            <Color x:Key="Primary">#1976d2</Color>
+            <Color x:Key="PrimaryDark">#1565c0</Color>
             <Color x:Key="PrimaryDarkTranslucent">#9926213C</Color>
-            <Color x:Key="Accent">#753BE4</Color>
+            <Color x:Key="Accent">#1b80e4</Color>
             <Color x:Key="NavigationText">White</Color>
             <Color x:Key="LabelSectionText">#6D6D72</Color>
             <Color x:Key="DetailTextColor">#979797</Color>

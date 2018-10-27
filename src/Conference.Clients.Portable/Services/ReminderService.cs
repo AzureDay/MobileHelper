@@ -240,7 +240,7 @@ namespace Conference.Clients.Portable
             }
 
             var conferenceCalendar = new Calendar();
-            conferenceCalendar.Color = "#7635EB";
+            conferenceCalendar.Color = "#1976d2";
             conferenceCalendar.Name = "Conference";
 
             try

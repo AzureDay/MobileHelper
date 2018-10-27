@@ -19,14 +19,14 @@ namespace Conference.Clients.UI
 
             var items = new ObservableCollection<MenuItem>
             {
-                new MenuItem { Name = "Conference Feed", Icon = "menu_feed.png", Page = AppPage.Feed },
+                //new MenuItem { Name = "Conference Feed", Icon = "menu_feed.png", Page = AppPage.Feed },
                 new MenuItem { Name = "Sessions", Icon = "menu_sessions.png", Page = AppPage.Sessions },
-                new MenuItem { Name = "Events", Icon = "menu_events.png", Page = AppPage.Events },
-                new MenuItem { Name = "Mini-Hacks", Icon = "menu_hacks.png", Page = AppPage.MiniHacks },
+                //new MenuItem { Name = "Events", Icon = "menu_events.png", Page = AppPage.Events },
+                //new MenuItem { Name = "Mini-Hacks", Icon = "menu_hacks.png", Page = AppPage.MiniHacks },
                 new MenuItem { Name = "Sponsors", Icon = "menu_sponsors.png", Page = AppPage.Sponsors },
                 new MenuItem { Name = "Evaluations", Icon = "menu_evals.png", Page = AppPage.Evals },
-                new MenuItem { Name = "Venue", Icon = "menu_venue.png", Page = AppPage.Venue },
-                new MenuItem { Name = "Floor Maps", Icon = "menu_plan.png", Page = AppPage.FloorMap },
+                //new MenuItem { Name = "Venue", Icon = "menu_venue.png", Page = AppPage.Venue },
+                //new MenuItem { Name = "Floor Maps", Icon = "menu_plan.png", Page = AppPage.FloorMap },
                 new MenuItem { Name = "Conference Info", Icon = "menu_info.png", Page = AppPage.ConferenceInfo },
                 new MenuItem { Name = "Settings", Icon = "menu_settings.png", Page = AppPage.Settings }
             };
@@ -35,7 +35,7 @@ namespace Conference.Clients.UI
             menu.MenuList.ItemsSource = items;
 
 
-            menu.MenuList.ItemSelected +=  (sender, args) =>
+            menu.MenuList.ItemSelected += (sender, args) =>
             {
                 if (menu.MenuList.SelectedItem == null)
                     return;
@@ -49,7 +49,7 @@ namespace Conference.Clients.UI
             };
 
             Master = menu;
-            NavigateAsync((int)AppPage.Feed);
+            NavigateAsync(AppPage.Sessions);
             Title ="Conference";
         }
 
@@ -63,33 +63,33 @@ namespace Conference.Clients.UI
                 //only cache specific pages
                 switch (menuId)
                 {
-                    case AppPage.Feed: //Feed
+                    /*case AppPage.Feed: //Feed
                         pages.Add(menuId, new ConferenceNavigationPage(new FeedPage()));
-                        break;
+                        break;*/
                     case AppPage.Sessions://sessions
                         pages.Add(menuId, new ConferenceNavigationPage(new SessionsPage()));
                         break;
-                    case AppPage.Events://events
+                    /*case AppPage.Events://events
                         pages.Add(menuId, new ConferenceNavigationPage(new EventsPage()));
                         break;
                     case AppPage.MiniHacks://Mini-Hacks
                         newPage = new ConferenceNavigationPage(new MiniHacksPage());
-                        break;
+                        break;*/
                     case AppPage.Sponsors://sponsors
                         newPage = new ConferenceNavigationPage(new SponsorsPage());
                         break;
-                    case AppPage.Evals: //venue
+                    /*case AppPage.Evals: //venue
                         newPage = new ConferenceNavigationPage(new EvaluationsPage());
                         break;
                     case AppPage.Venue: //venue
                         newPage = new ConferenceNavigationPage(new VenuePage());
-                        break;
+                        break;*/
                     case AppPage.ConferenceInfo://Conference info
                         newPage = new ConferenceNavigationPage(new ConferenceInformationPage());
                         break;
-                    case AppPage.FloorMap://Floor Maps
+                    /*case AppPage.FloorMap://Floor Maps
                         newPage = new ConferenceNavigationPage(new FloorMapsPage());
-                        break;
+                        break;*/
                     case AppPage.Settings://Settings
                         newPage = new ConferenceNavigationPage(new SettingsPage());
                         break;

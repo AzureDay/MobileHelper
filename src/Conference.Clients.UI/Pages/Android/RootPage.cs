@@ -19,7 +19,7 @@ namespace Conference.Clients.UI
             pages = new Dictionary<int, ConferenceNavigationPage>();
             Master = new MenuPage(this);
 
-            pages.Add(0, new ConferenceNavigationPage(new FeedPage()));
+            pages.Add(0, new ConferenceNavigationPage(new SessionsPage()));
 
             Detail = pages[0];
             MessagingService.Current.Subscribe<DeepLinkPage>("DeepLinkPage", async (m, p) =>
@@ -31,8 +31,6 @@ namespace Conference.Clients.UI
                 });
         }
 
-
-
         public async Task NavigateAsync(int menuId)
         {
             ConferenceNavigationPage newPage = null;
@@ -41,36 +39,36 @@ namespace Conference.Clients.UI
                 //only cache specific pages
                 switch (menuId)
                 {
-                    case (int)AppPage.Feed: //Feed
-                        pages.Add(menuId, new ConferenceNavigationPage(new FeedPage()));
-                        break;
+                    //case (int)AppPage.Feed: //Feed
+                    //    pages.Add(menuId, new ConferenceNavigationPage(new FeedPage()));
+                    //    break;
                     case (int)AppPage.Sessions://sessions
                         pages.Add(menuId, new ConferenceNavigationPage(new SessionsPage()));
                         break;
-                    case (int)AppPage.Events://events
-                        pages.Add(menuId, new ConferenceNavigationPage(new EventsPage()));
-                        break;
-                    case (int)AppPage.MiniHacks://Mini-Hacks
-                        newPage = new ConferenceNavigationPage(new MiniHacksPage());
-                        break;
+                    //case (int)AppPage.Events://events
+                    //    pages.Add(menuId, new ConferenceNavigationPage(new EventsPage()));
+                    //    break;
+                    //case (int)AppPage.MiniHacks://Mini-Hacks
+                    //    newPage = new ConferenceNavigationPage(new MiniHacksPage());
+                    //    break;
                     case (int)AppPage.Sponsors://sponsors
                         newPage = new ConferenceNavigationPage(new SponsorsPage());
                         break;
-                    case (int)AppPage.Venue: //venue
-                        newPage = new ConferenceNavigationPage(new VenuePage());
-                        break;
+                    //case (int)AppPage.Venue: //venue
+                    //    newPage = new ConferenceNavigationPage(new VenuePage());
+                    //    break;
                     case (int)AppPage.ConferenceInfo://Conference info
                         newPage = new ConferenceNavigationPage(new ConferenceInformationPage());
                         break;
-                    case (int)AppPage.FloorMap://Floor Maps
-                        newPage = new ConferenceNavigationPage(new FloorMapsPage());
-                        break;
+                    //case (int)AppPage.FloorMap://Floor Maps
+                    //    newPage = new ConferenceNavigationPage(new FloorMapsPage());
+                    //    break;
                     case (int)AppPage.Settings://Settings
                         newPage = new ConferenceNavigationPage(new SettingsPage());
                         break;
-                    case (int)AppPage.Evals:
-                        newPage = new ConferenceNavigationPage (new EvaluationsPage ());
-                        break;
+                    //case (int)AppPage.Evals:
+                    //    newPage = new ConferenceNavigationPage (new EvaluationsPage ());
+                    //    break;
                 }
             }
 
@@ -94,10 +92,10 @@ namespace Conference.Clients.UI
             base.OnAppearing();
 
 
-            if (Settings.Current.FirstRun)
-            {
-                MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
-            }
+            //if (Settings.Current.FirstRun)
+            //{
+            //    MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
+            //}
 
             isRunning = true;
 
@@ -126,12 +124,12 @@ namespace Conference.Clients.UI
                         break;
                     await Detail.Navigation.PushAsync(new SessionDetailsPage(session));
                     break;
-                case AppPage.Events:
-                    await NavigateAsync((int)AppPage.Events);
-                    break;
-                case AppPage.MiniHacks:
-                    await NavigateAsync((int)AppPage.MiniHacks);
-                    break;
+                //case AppPage.Events:
+                //    await NavigateAsync((int)AppPage.Events);
+                //    break;
+                //case AppPage.MiniHacks:
+                //    await NavigateAsync((int)AppPage.MiniHacks);
+                //    break;
             }
 
         }

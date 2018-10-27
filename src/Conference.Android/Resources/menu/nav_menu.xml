@@ -3,23 +3,23 @@
 
     <group android:id="@+id/nav_section_main"
         android:checkableBehavior="single">
-        <item
+        <!--<item
             android:id="@+id/nav_feed"
             android:icon="@drawable/menu_feed"
-            android:title="Conference Feed"/>
+            android:title="Conference Feed"/>-->
         <item
             android:id="@+id/nav_sessions"
             android:icon="@drawable/menu_sessions"
             android:title="Sessions"/>
-        <item
+        <!--<item
             android:id="@+id/nav_events"
             android:icon="@drawable/menu_events"
-            android:title="Events" />
+            android:title="Events" />-->
 
-        <item
+        <!--<item
             android:title="Mini-hacks"
             android:icon="@drawable/menu_hacks"
-            android:id="@+id/nav_mini_hacks" />
+            android:id="@+id/nav_mini_hacks" />-->
     </group>
 
      <item android:title="Information" >
@@ -30,12 +30,12 @@
                 android:icon="@drawable/menu_sponsors"
                 android:title="Sponsors"
                 android:checkable="true" />
-            <item
+            <!--<item
                 android:id="@+id/nav_evals"
                 android:icon="@drawable/menu_evals"
                 android:title="Evaluations"
-                android:checkable="true" />
-            <item
+                android:checkable="true" />-->
+            <!--<item
                 android:id="@+id/nav_venue"
                 android:icon="@drawable/menu_venue"
                 android:title="Venue"
@@ -44,12 +44,12 @@
                 android:id="@+id/nav_floor_map"
                 android:icon="@drawable/menu_plan"
                 android:title="Floor Maps"
-                android:checkable="true" />
-            <item
+                android:checkable="true" />-->
+            <!--<item
                 android:id="@+id/nav_conference_info"
                 android:icon="@drawable/menu_info"
                 android:title="Conference Info"
-                android:checkable="true" />
+                android:checkable="true" />-->
             <item
                 android:title="Settings"
                 android:icon="@drawable/menu_settings"

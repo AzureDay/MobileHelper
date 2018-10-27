@@ -17,11 +17,11 @@ namespace Conference.Clients.UI
 
             BindingContext = vm = new SettingsViewModel ();
             var adjust = Device.RuntimePlatform != Device.Android ? 1 : -vm.AboutItems.Count + 1;
-            ListViewAbout.HeightRequest = (vm.AboutItems.Count * ListViewAbout.RowHeight) - adjust;
-            ListViewAbout.ItemTapped += (sender, e) => ListViewAbout.SelectedItem = null;
+            //ListViewAbout.HeightRequest = (vm.AboutItems.Count * ListViewAbout.RowHeight) - adjust;
+            //ListViewAbout.ItemTapped += (sender, e) => ListViewAbout.SelectedItem = null;
             adjust = Device.RuntimePlatform != Device.Android ? 1 : -vm.TechnologyItems.Count + 1;
-            ListViewTechnology.HeightRequest = (vm.TechnologyItems.Count * ListViewTechnology.RowHeight) - adjust;
-            ListViewTechnology.ItemTapped += (sender, e) => ListViewTechnology.SelectedItem = null;
+            //ListViewTechnology.HeightRequest = (vm.TechnologyItems.Count * ListViewTechnology.RowHeight) - adjust;
+            //ListViewTechnology.ItemTapped += (sender, e) => ListViewTechnology.SelectedItem = null;
         }
 
         bool dialogShown;

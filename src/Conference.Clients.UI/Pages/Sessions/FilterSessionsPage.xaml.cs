@@ -60,7 +60,7 @@ namespace Conference.Clients.UI
                                     });
                             }
 
-                            var color = Device.RuntimePlatform == Device.UWP ? "#7635EB" : string.Empty;
+                            var color = Device.RuntimePlatform == Device.UWP ? "#1976d2" : string.Empty;
                              
                             showPast = new Category
                             {
