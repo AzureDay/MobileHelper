@@ -128,7 +128,7 @@ namespace Conference.Clients.Portable
                             MessagingService.Current.SendMessage<MessagingServiceQuestion>(MessageKeys.Question, new MessagingServiceQuestion
                                 {
                                     Title = "Calendar Permission",
-                                    Question = "Unable to set reminders as the Calendar permission was not granted. Please go into Settings and turn on Calendars for Conference16.",
+                                    Question = "Unable to set reminders as the Calendar permission was not granted. Please go into Settings and turn on Calendars for AzureDay.",
                                     Positive = "Settings",
                                     Negative = "Maybe Later",
                                     OnCompleted = (result) =>

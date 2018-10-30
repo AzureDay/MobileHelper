@@ -74,7 +74,7 @@ namespace Conference.Clients.UI
                     MessagingService.Current.SendMessage<MessagingServiceQuestion>(MessageKeys.Question, new MessagingServiceQuestion
                         {
                             Title = "Camera Permission",
-                            Question = "To finish mini-hacks you will need to scan a code and the camera permission is required. Please go into Settings and turn on Camera for Conference16.",
+                            Question = "To finish mini-hacks you will need to scan a code and the camera permission is required. Please go into Settings and turn on Camera for AzureDay.",
                             Positive = "Settings",
                             Negative = "Maybe Later",
                             OnCompleted = (result) =>

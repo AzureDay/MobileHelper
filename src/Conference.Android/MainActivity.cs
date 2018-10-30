@@ -31,7 +31,7 @@ namespace Conference.Droid
 {
     
 
-    [Activity(Label = "Conference16", 
+    [Activity(Label = "AzureDay", 
         Name="com.sample.conference.MainActivity",
         Exported = true,
         Icon = "@drawable/newicon", 

@@ -29,8 +29,8 @@ namespace Conference.Clients.Portable
                 entry.Thumbnail = ImageSource.FromFile("Icon.png");
 
             entry.KeyValues.Add("contentType", "Session");
-            entry.KeyValues.Add("appName", "Conference16");
-            entry.KeyValues.Add("companyName", "Xamarin");
+            entry.KeyValues.Add("appName", "AzureDay");
+            entry.KeyValues.Add("companyName", "AzureDay");
 
             return entry;
         }

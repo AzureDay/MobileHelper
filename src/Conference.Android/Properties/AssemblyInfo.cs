@@ -8,10 +8,10 @@ using Android.App;
 [assembly: AssemblyTitle("Conference.Droid")]
 [assembly: AssemblyDescription("Conference Android")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Xamarin")]
+[assembly: AssemblyCompany("AzureDay")]
 [assembly: AssemblyProduct("Conference")]
-[assembly: AssemblyCopyright("Copyright © 2016 Xamarin Inc All Rights Reserved")]
-[assembly: AssemblyTrademark("Xamarin Inc")]
+[assembly: AssemblyCopyright("Copyright © 2018 AzureDay All Rights Reserved")]
+[assembly: AssemblyTrademark("AzureDay")]
 [assembly: AssemblyCulture("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".

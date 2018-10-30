@@ -18,7 +18,7 @@ namespace Conference.Droid.Notifications
     [IntentFilter(new[] { GoogleCloudMessaging.IntentFilterActionReceive})]
     public class ConferenceGcmListenerService : GcmListenerService
     {
-        const string TAG = "Conference16";
+        const string TAG = "AzureDay";
         public override void OnDeletedMessages()
         {
             base.OnDeletedMessages();
