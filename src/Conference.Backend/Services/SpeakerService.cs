@@ -1,12 +1,12 @@
 ﻿using Conference.DataObjects;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Conference.Backend.Services
 {
     public class SpeakerService : BaseService<Speaker>
     {
         private readonly List<Speaker> _speakers = new List<Speaker>();
+        private static string BaseUrl = "http://azuredaymobile.azurewebsites.net";
 
         protected override List<Speaker> PopulateStorage()
         {
@@ -21,8 +21,11 @@ namespace Conference.Backend.Services
             _speakers.Add(EPolonychko());
             _speakers.Add(EWasilewski());
             _speakers.Add(AVidishchev());
-            _speakers.Add(VBezmaly());
             _speakers.Add(OKrakovetskyi());
+            _speakers.Add(ILubenets());
+            _speakers.Add(KBaczyk());
+            _speakers.Add(NDranchuk());
+            _speakers.Add(SPoplavskiy());
 
             return _speakers;
         }
@@ -34,12 +37,12 @@ namespace Conference.Backend.Services
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.ABoyko.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.ABoyko.LastName,
                 Biography = AzureDay.WebApp.Localization.App.Service.Speaker.ABoyko.Bio,
-                PhotoUrl = "{0}/content/images/avatars/ABoyko.jpg",
+                PhotoUrl = string.Format("{0}/content/images/avatars/ABoyko.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/boykoant/",
                 TwitterUrl = "https://twitter.com/BoykoAnt",
                 CompanyName = "Ciklum",
                 PositionName = "Solution Architect",
-                AvatarUrl = "{0}/content/images/avatars/ABoyko.jpg",
+                AvatarUrl = string.Format("{0}/content/images/avatars/ABoyko.jpg", BaseUrl),
                 CompanyWebsiteUrl = "https://www.ciklum.com/",
             };
         }
@@ -48,383 +51,254 @@ namespace Conference.Backend.Services
         {
             return new Speaker
             {
-                Id = "ILeontiev",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.ILeontiev.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.ILeontiev.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.ILeontiev.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/ILeontyev.jpg",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.ILeontiev.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/ILeontyev.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/leontievihor/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Viseo group",
-                JobTitle = "Lead Architect"
+                PositionName = "Lead Architect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/ILeontyev.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.viseo.com/en",
             };
         }
 
-        public SpeakerEntity VTsykunov()
+        public Speaker VTsykunov()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "VTsykunov",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.VTsykunov.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.VTsykunov.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.VTsykunov.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/VTsykunov.jpg",
-                FacebookUrl = "https://www.facebook.com/vtsykunov",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.VTsykunov.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/VTsykunov.jpg", BaseUrl),
                 LinkedInUrl = "",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Microsoft",
-                JobTitle = "Partner Business Evangelist"
+                PositionName = "Partner Business Evangelist",
+                AvatarUrl = string.Format("{0}/content/images/avatars/VTsykunov.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.microsoft.com/uk-ua/",
             };
         }
 
-        public SpeakerEntity SBielskyi()
+        public Speaker SBielskyi()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "SBielskyi",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.SBielskyi.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.SBielskyi.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.SBielskyi.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/SergiiBielskyi.jpg",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.SBielskyi.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/SergiiBielskyi.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/sergii-bielskyi-884a7a2b/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "qiio",
-                JobTitle = "Cloud Solution Architect"
+                PositionName = "Cloud Solution Architect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/SergiiBielskyi.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://qiio.com/",
             };
         }
 
-        public SpeakerEntity EAuberix()
+        public Speaker EAuberix()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "EAuberix",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.EAuberix.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.EAuberix.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.EAuberix.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.France,
-                PhotoUrl = "/images/avatars/EAuberix.jpg",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.EAuberix.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/EAuberix.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/estelleauberix/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "https://twitter.com/FollowEstelle",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "ITERFACIO",
-                JobTitle = "CEO, Founder"
+                PositionName = "CEO, Founder",
+                AvatarUrl = string.Format("{0}/content/images/avatars/EAuberix.jpg", BaseUrl),
+                CompanyWebsiteUrl = "http://www.iterfacio.fr/",
             };
         }
 
-        public SpeakerEntity SLebedenko()
+        public Speaker SLebedenko()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "SLebedenko",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.SLebedenko.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.SLebedenko.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.SLebedenko.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/LebedenkoStas.jpg",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.SLebedenko.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/LebedenkoStas.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/lebedenkostanislav/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Sigma Software Group",
-                JobTitle = ".NET Developer"
+                PositionName = ".NET Developer",
+                AvatarUrl = string.Format("{0}/content/images/avatars/LebedenkoStas.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://sigma.software/",
             };
         }
 
-        public SpeakerEntity ASurkov()
+        public Speaker ASurkov()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "ASurkov",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.ASurkov.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.ASurkov.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.ASurkov.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Russia,
-                PhotoUrl = "/images/avatars/AOSurkov.png",
-                FacebookUrl = "https://www.facebook.com/AOSurkov",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.ASurkov.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/AOSurkov.png", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/aosurkov/",
-                MsdnUrl = "",
-                MvpUrl = "https://mvp.microsoft.com/ru-ru/PublicProfile/5002197",
                 TwitterUrl = "https://twitter.com/AOSurkov",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Yandex",
-                JobTitle = "Architect"
+                PositionName = "Architect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/AOSurkov.png", BaseUrl),
+                CompanyWebsiteUrl = "http://company.yandex.com/",
             };
         }
 
-        public SpeakerEntity SSultanov()
+        public Speaker SSultanov()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "SSultanov",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.SSultanov.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.SSultanov.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.SSultanov.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/StasSultanov.jpg",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.SSultanov.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/StasSultanov.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/stas-sultanov/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Ciklum",
-                JobTitle = "Cloud Solutions Archictect"
+                PositionName = "Cloud Solutions Archictect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/StasSultanov.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.ciklum.com/",
             };
         }
 
-        public SpeakerEntity EPolonychko()
+        public Speaker EPolonychko()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "EPolonychko",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.EPolonychko.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.EPolonychko.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.EPolonychko.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/EPolonychko.jpg",
-                FacebookUrl = "https://www.facebook.com/mydjeki",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.EPolonychko.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/EPolonychko.jpg", BaseUrl),
                 LinkedInUrl = "",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "ELEKS",
-                JobTitle = "Senior Software Developer"
+                PositionName = "Senior Software Developer",
+                AvatarUrl = string.Format("{0}/content/images/avatars/EPolonychko.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://eleks.com/",
             };
         }
 
-        public SpeakerEntity EWasilewski()
+        public Speaker EWasilewski()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "EWasilewski",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.EWasilewski.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.EWasilewski.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.EWasilewski.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Poland,
-                PhotoUrl = "/images/avatars/EmilWasilewski2.png",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.EWasilewski.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/EmilWasilewski2.png", BaseUrl),
                 LinkedInUrl = "http://www.linkedin.com/in/emilwasilewski",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "https://twitter.com/WasilewskiEmil",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Bystronic Group",
-                JobTitle = "Senior Azure Infrastructure Architect"
+                PositionName = "Senior Azure Infrastructure Architect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/EmilWasilewski2.png", BaseUrl),
+                CompanyWebsiteUrl = "https://www.bystronic.com/en/",
             };
         }
 
-        public SpeakerEntity AVidishchev()
+        public Speaker AVidishchev()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "AVidishchev",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.AVidishchev.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.AVidishchev.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.AVidishchev.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/AVidishchev.jpg",
-                FacebookUrl = "https://www.facebook.com/anton.vidishchev",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.AVidishchev.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/AVidishchev.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/antonvidishchev",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "SoftServe",
-                JobTitle = "Azure Architect"
+                PositionName = "Azure Architect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/AVidishchev.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.softserveinc.com/en-us/",
             };
         }
 
-        public SpeakerEntity VBezmaly()
+        public Speaker OKrakovetskyi()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "VBezmaly",
-                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.VBezmaly.FirstName,
-                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.VBezmaly.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.VBezmaly.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/VBezmaly.jpg",
-                FacebookUrl = "https://www.facebook.com/vlad.bezmaly",
-                GitHubUrl = "",
-                GoogleUrl = "",
-                LinkedInUrl = "",
-                MsdnUrl = "",
-                MvpUrl = "",
-                TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
-                CompanyName = "Kaspersky Lab",
-                JobTitle = "Kaspersky Certified Trainer"
-            };
-        }
-
-        public SpeakerEntity OKrakovetskyi()
-        {
-            return new SpeakerEntity
-            {
-                Id = "OKrakovetskyi",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.OKrakovetskyi.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.OKrakovetskyi.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.OKrakovetskyi.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/OKrakovetskyi.jpg",
-                FacebookUrl = "https://www.facebook.com/alex.krakovetskiy",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.OKrakovetskyi.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/OKrakovetskyi.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/krakovetskiy/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "https://twitter.com/msugvnua",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "DevRain Solutions",
-                JobTitle = "CEO"
+                PositionName = "CEO",
+                AvatarUrl = string.Format("{0}/content/images/avatars/OKrakovetskyi.jpg", BaseUrl),
+                CompanyWebsiteUrl = "http://devrain.com/",
             };
         }
 
-        public SpeakerEntity SPoplavskiy()
+        public Speaker SPoplavskiy()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "SPoplavskiy",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.SPoplavskiy.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.SPoplavskiy.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.SPoplavskiy.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/SPoplavskiy.png",
-                FacebookUrl = "https://www.facebook.com/sergey.poplavskiy.35",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.SPoplavskiy.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/SPoplavskiy.png", BaseUrl),
                 LinkedInUrl = "",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Microsoft",
-                JobTitle = "Microsoft Azure Software Developer"
+                PositionName = "Microsoft Azure Software Developer",
+                AvatarUrl = string.Format("{0}/content/images/avatars/SPoplavskiy.png", BaseUrl),
+                CompanyWebsiteUrl = "https://www.microsoft.com/uk-ua/",
             };
         }
 
-        public SpeakerEntity NDranchuk()
+        public Speaker NDranchuk()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "NDranchuk",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.NDranchuk.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.NDranchuk.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.NDranchuk.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/NDranchuk.jpg",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.NDranchuk.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/NDranchuk.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/nataliia-dranchuk-0618b0107/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Smart Business",
-                JobTitle = ".NET developer"
+                PositionName = ".NET developer",
+                AvatarUrl = string.Format("{0}/content/images/avatars/NDranchuk.jpg", BaseUrl),
+                CompanyWebsiteUrl = "http://smart-it.com/",
             };
         }
 
-        public SpeakerEntity KBaczyk()
+        public Speaker KBaczyk()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "KBaczyk",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.KBaczyk.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.KBaczyk.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.KBaczyk.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Poland,
-                PhotoUrl = "/images/avatars/KBaczyk.jpg",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.KBaczyk.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/KBaczyk.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/kamil-b%C4%85czyk-32093714/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "https://twitter.com/kamilbaczyk",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Microsoft",
-                JobTitle = "Microsoft MVP Profile and Public Speaking info"
+                PositionName = "Microsoft MVP Profile and Public Speaking info",
+                AvatarUrl = string.Format("{0}/content/images/avatars/KBaczyk.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.microsoft.com/uk-ua/",
             };
         }
 
-        public SpeakerEntity ILubenets()
+        public Speaker ILubenets()
         {
-            return new SpeakerEntity
+            return new Speaker
             {
-                Id = "ILubenets",
                 FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.ILubenets.FirstName,
                 LastName = AzureDay.WebApp.Localization.App.Service.Speaker.ILubenets.LastName,
-                Bio = AzureDay.WebApp.Localization.App.Service.Speaker.ILubenets.Bio.Replace(Environment.NewLine, "<br/>"),
-                Country = _countryService.Ukraine,
-                PhotoUrl = "/images/avatars/ILubenets.jpg",
-                FacebookUrl = "",
-                GitHubUrl = "",
-                GoogleUrl = "",
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.ILubenets.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/ILubenets.jpg", BaseUrl),
                 LinkedInUrl = "https://www.linkedin.com/in/illia-lubenets-b16b15b6/",
-                MsdnUrl = "",
-                MvpUrl = "",
                 TwitterUrl = "",
-                YouTubeUrl = "",
-                WebUrl = "",
                 CompanyName = "Aistant",
-                JobTitle = "Senior Software Engineer Team Lead"
+                PositionName = "Senior Software Engineer Team Lead",
+                AvatarUrl = string.Format("{0}/content/images/avatars/ILubenets.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://aistant.com/",
             };
         }
     }

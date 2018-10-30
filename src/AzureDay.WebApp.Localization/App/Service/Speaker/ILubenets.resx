@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Description" xml:space="preserve">
-    <value />
+  <data name="Bio" xml:space="preserve">
+    <value>Team Lead в Aistant, Microsoft Student Partner Lead, Организатор MSP Roadshow, Соорганизатор в .NET Core Ukrainian User Group. Занимаюсь разработкой распределенных систем и систем с использованием Microsoft Azure. Люблю использовать новые продукты и собирать все существующие грабли.</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value />
+  <data name="FirstName" xml:space="preserve">
+    <value>Illia</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Lubenets</value>
   </data>
 </root>

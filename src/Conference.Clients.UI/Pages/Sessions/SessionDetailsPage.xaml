@@ -54,7 +54,7 @@
                      <local:CardView IsVisible="{Binding Session.Speakers, Converter={StaticResource GenericIsVisibleConverter}}">
                          <!--Speakers-->
                          <StackLayout Spacing="0">
-                            <local:LabelSection Text="Speakers"/>
+                            <local:LabelSection Text="Speaker"/>
                             <local:HeaderDivider/>
                             <StackLayout IsVisible="{Binding IsBusy}" 
                                          HorizontalOptions="FillAndExpand" 
@@ -90,9 +90,9 @@
                         </StackLayout>
                     </local:CardView>
 
-				<local:CardView IsVisible="{Binding Session, Converter={StaticResource RatingVisibleConverter}}">
+				<!--<local:CardView IsVisible="{Binding Session, Converter={StaticResource RatingVisibleConverter}}">
                         <StackLayout Spacing="0">
-                            <!--Rate-->
+                            --><!--Rate--><!--
                             <local:LabelSection Text="Leave Feedback" StyleId="FeedbackTitle"/>
                                 <local:HeaderDivider/>
                                 <StackLayout Padding="{StaticResource StandardPadding}" BackgroundColor="White" StyleId="RateCardBox">
@@ -123,7 +123,7 @@
                                     </StackLayout>
                                 <local:FooterDivider/>
                         </StackLayout>
-                    </local:CardView>
+                    </local:CardView>-->
 				
                     <!--Follow-->
                     <local:CardView>
@@ -239,7 +239,7 @@
                     <!--Abstract-->
                     <local:CardView IsVisible="{Binding Session.Abstract, Converter={StaticResource GenericIsVisibleConverter}}">
                       <StackLayout Spacing="0">
-                            <local:LabelSection Text="Abstract"/> 
+                            <local:LabelSection Text="Description"/> 
                             <local:HeaderDivider/>
                              <StackLayout Padding="{StaticResource StandardPadding}" BackgroundColor="White">
                                 <Label Text="{Binding Session.Abstract}" Style="{DynamicResource ConferenceListItemTextStyle}" StyleId="SessionAbstract"/>

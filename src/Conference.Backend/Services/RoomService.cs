@@ -16,8 +16,8 @@ namespace Conference.Backend.Services
             };
         }
 
-        private Room Room1 { get { return Storage.Single(x => x.Name == AzureDay.WebApp.Localization.App.Service.Room.WebDev); } }
-        private Room Room2 { get { return Storage.Single(x => x.Name == AzureDay.WebApp.Localization.App.Service.Room.IoT); } }
-        private Room Room3 { get { return Storage.Single(x => x.Name == AzureDay.WebApp.Localization.App.Service.Room.AInML); } }
+        public Room Room1 { get { return Storage.Single(x => x.Name == AzureDay.WebApp.Localization.App.Service.Room.WebDev); } }
+        public Room Room2 { get { return Storage.Single(x => x.Name == AzureDay.WebApp.Localization.App.Service.Room.IoT); } }
+        public Room Room3 { get { return Storage.Single(x => x.Name == AzureDay.WebApp.Localization.App.Service.Room.AInML); } }
     }
 }

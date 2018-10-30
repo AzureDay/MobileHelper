@@ -16,8 +16,8 @@ namespace Conference.Backend.Services
             };
         }
 
-        private Category CategoryOrange { get { return Storage.Single(x => x.Name == "Orange Room"); } }
-        private Category CategoryBlue { get { return Storage.Single(x => x.Name == "Blue Room"); } }
-        private Category CategoryRed { get { return Storage.Single(x => x.Name == "Red Room"); } }
+        public Category CategoryOrange { get { return Storage.Single(x => x.Name == "Orange Room"); } } //room1
+        public Category CategoryBlue { get { return Storage.Single(x => x.Name == "Blue Room"); } } //room2
+        public Category CategoryRed { get { return Storage.Single(x => x.Name == "Red Room"); } } //room3
     }
 }

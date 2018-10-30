@@ -49,4 +49,3 @@ namespace Conference.Clients.Portable
         }
     }
 }
-

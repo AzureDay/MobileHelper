@@ -39,16 +39,16 @@ namespace Conference.Clients.UI
                 };
 
 
-            ButtonRate.Clicked += async (sender, e) => 
-            {
-                    if(!Settings.Current.IsLoggedIn)
-                    {
-                        DependencyService.Get<ILogger>().TrackPage(AppPage.Login.ToString(), "Feedback");
-                        MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
-                        return;
-                    }
-                    await NavigationService.PushModalAsync(Navigation, new ConferenceNavigationPage(new FeedbackPage(ViewModel.Session)));
-            };
+            //ButtonRate.Clicked += async (sender, e) => 
+            //{
+            //        if(!Settings.Current.IsLoggedIn)
+            //        {
+            //            DependencyService.Get<ILogger>().TrackPage(AppPage.Login.ToString(), "Feedback");
+            //            MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
+            //            return;
+            //        }
+            //        await NavigationService.PushModalAsync(Navigation, new ConferenceNavigationPage(new FeedbackPage(ViewModel.Session)));
+            //};
             BindingContext = new SessionDetailsViewModel(Navigation, session); 
             ViewModel.LoadSessionCommand.Execute(null);
 

@@ -24,13 +24,13 @@ namespace Conference.Clients.Portable
         }
         public async Task<bool> ToggleFavorite(Session session)
         {
-            if(!Settings.Current.IsLoggedIn)
+            /*if(!Settings.Current.IsLoggedIn)
             {
                 sessionQueued = session;
                 DependencyService.Get<ILogger>().TrackPage(AppPage.Login.ToString(), "Favorite");
                 MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
                 return false;
-            }
+            }*/
 
             sessionQueued = null;
 

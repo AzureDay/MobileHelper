@@ -254,12 +254,33 @@
     <Compile Include="Services\BaseService.cs" />
     <Compile Include="Services\CategoryService.cs" />
     <Compile Include="Services\RoomService.cs" />
+    <Compile Include="Services\SessionService.cs" />
     <Compile Include="Services\SpeakerService.cs" />
     <Compile Include="Services\SponsorService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\avatars\ABoyko.jpg" />
+    <Content Include="Content\images\avatars\AOSurkov.png" />
+    <Content Include="Content\images\avatars\ASurkov.jpg" />
+    <Content Include="Content\images\avatars\AVidishchev.jpg" />
+    <Content Include="Content\images\avatars\DIvanov.jpg" />
+    <Content Include="Content\images\avatars\EAuberix.jpg" />
+    <Content Include="Content\images\avatars\EmilWasilewski.jpg" />
+    <Content Include="Content\images\avatars\EmilWasilewski2.png" />
+    <Content Include="Content\images\avatars\EPolonychko.jpg" />
+    <Content Include="Content\images\avatars\ILeontyev.jpg" />
+    <Content Include="Content\images\avatars\ILubenets.jpg" />
+    <Content Include="Content\images\avatars\KBaczyk.jpg" />
+    <Content Include="Content\images\avatars\LebedenkoStas.jpg" />
+    <Content Include="Content\images\avatars\NDranchuk.jpg" />
+    <Content Include="Content\images\avatars\OKrakovetskyi.jpg" />
+    <Content Include="Content\images\avatars\SergiiBielskyi.jpg" />
+    <Content Include="Content\images\avatars\SPoplavskiy.png" />
+    <Content Include="Content\images\avatars\StasSultanov.jpg" />
+    <Content Include="Content\images\avatars\VBezmaly.jpg" />
+    <Content Include="Content\images\avatars\VTsykunov.jpg" />
     <Content Include="Content\images\logos\Beetroot_v1.png" />
     <Content Include="Content\images\logos\Beetroot_v2.png" />
     <Content Include="Content\images\logos\Beetroot_v3.png" />

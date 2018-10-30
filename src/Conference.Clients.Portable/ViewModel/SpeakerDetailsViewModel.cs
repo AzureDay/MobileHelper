@@ -56,7 +56,7 @@ namespace Conference.Clients.Portable
                     {
                         Name = Device.RuntimePlatform == Device.iOS ? "Twitter" : speaker.TwitterUrl,
                         Subtitle = $"@{speaker.TwitterUrl}",
-                        Parameter = "http://twitter.com/" + speaker.TwitterUrl,
+                        Parameter = speaker.TwitterUrl,
                         Icon = "icon_twitter.png"
                     });
             }
@@ -67,7 +67,7 @@ namespace Conference.Clients.Portable
                     {
                         Name = "LinkedIn",
                         Subtitle = speaker.LinkedInUrl,
-                        Parameter = "http://linkedin.com/in/" + speaker.LinkedInUrl,
+                        Parameter = speaker.LinkedInUrl,
                         Icon = "icon_linkedin.png"
                     });
             }
