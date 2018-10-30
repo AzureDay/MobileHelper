@@ -1,121 +1,520 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFramework>netcoreapp2.0</TargetFramework>
-    </PropertyGroup>
-
-    <ItemGroup>
-      <Compile Update="App\Service\Speaker\EWasilewski.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>EWasilewski.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Speaker\SBielskyi.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>SBielskyi.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Speaker\SLebedenko.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>SLebedenko.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Speaker\SSultanov.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>SSultanov.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Topics\SBielskyi_01.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>SBielskyi_01.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Topics\SLebedenko_01.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>SLebedenko_01.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Topics\SSultanov_01.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>SSultanov_01.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Topics\VBezmaly_01.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>VBezmaly_01.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Topics\VTsykunov_01.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>VTsykunov_01.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Workshops\ABoyko_01.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ABoyko_01.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Workshops\ILeontiev_01.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>ILeontiev_01.resx</DependentUpon>
-      </Compile>
-      <Compile Update="App\Service\Workshops\VTsykunov_01.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>VTsykunov_01.resx</DependentUpon>
-      </Compile>
-    </ItemGroup>
-
-    <ItemGroup>
-      <EmbeddedResource Update="App\Service\Speaker\EWasilewski.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>EWasilewski.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Speaker\SBielskyi.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>SBielskyi.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Speaker\SLebedenko.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>SLebedenko.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Speaker\SSultanov.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>SSultanov.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Topics\SBielskyi_01.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>SBielskyi_01.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Topics\SLebedenko_01.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>SLebedenko_01.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Topics\SSultanov_01.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>SSultanov_01.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Topics\VBezmaly_01.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>VBezmaly_01.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Topics\VTsykunov_01.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>VTsykunov_01.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Workshops\ABoyko_01.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>ABoyko_01.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Workshops\ILeontiev_01.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>ILeontiev_01.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="App\Service\Workshops\VTsykunov_01.resx">
-        <Generator>PublicResXFileCodeGenerator</Generator>
-        <LastGenOutput>VTsykunov_01.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-    </ItemGroup>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B500E279-3B11-462E-B06B-96CD1B3F6A02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AzureDay.WebApp.Localization</RootNamespace>
+    <AssemblyName>AzureDay.WebApp.Localization</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\Service\Country.Designer.cs" />
+    <Compile Include="App\Service\Country.ru.Designer.cs" />
+    <Compile Include="App\Service\Country.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Language.Designer.cs" />
+    <Compile Include="App\Service\Language.ru.Designer.cs" />
+    <Compile Include="App\Service\Language.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Partners\AzureUA.Designer.cs" />
+    <Compile Include="App\Service\Partners\Beetroot.Designer.cs" />
+    <Compile Include="App\Service\Partners\Bodo.Designer.cs" />
+    <Compile Include="App\Service\Partners\BrainBasket.Designer.cs" />
+    <Compile Include="App\Service\Partners\BrainTV.Designer.cs" />
+    <Compile Include="App\Service\Partners\Ciklum.Designer.cs" />
+    <Compile Include="App\Service\Partners\CloudMonix.Designer.cs" />
+    <Compile Include="App\Service\Partners\DataArt.Designer.cs" />
+    <Compile Include="App\Service\Partners\DataArt.ru.Designer.cs" />
+    <Compile Include="App\Service\Partners\DataArt.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Partners\Daxx.Designer.cs" />
+    <Compile Include="App\Service\Partners\Dbbest.Designer.cs" />
+    <Compile Include="App\Service\Partners\DevArt.Designer.cs" />
+    <Compile Include="App\Service\Partners\Developex.Designer.cs" />
+    <Compile Include="App\Service\Partners\dotNetCore.Designer.cs" />
+    <Compile Include="App\Service\Partners\Dou.Designer.cs" />
+    <Compile Include="App\Service\Partners\EasyPay.Designer.cs" />
+    <Compile Include="App\Service\Partners\EasyPay.ru.Designer.cs" />
+    <Compile Include="App\Service\Partners\EasyPay.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Partners\EnglishDom.Designer.cs" />
+    <Compile Include="App\Service\Partners\EPAM.Designer.cs" />
+    <Compile Include="App\Service\Partners\EPAM.ru.Designer.cs" />
+    <Compile Include="App\Service\Partners\EPAM.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Partners\GL.Designer.cs" />
+    <Compile Include="App\Service\Partners\ITClusterKonotop.Designer.cs" />
+    <Compile Include="App\Service\Partners\ITEA.Designer.cs" />
+    <Compile Include="App\Service\Partners\ITRatingUkraine.Designer.cs" />
+    <Compile Include="App\Service\Partners\ITStep.Designer.cs" />
+    <Compile Include="App\Service\Partners\Jetbrains.Designer.cs" />
+    <Compile Include="App\Service\Partners\KyivITCluster.Designer.cs" />
+    <Compile Include="App\Service\Partners\Luxoft.Designer.cs" />
+    <Compile Include="App\Service\Partners\Microsoft.Designer.cs" />
+    <Compile Include="App\Service\Partners\OReilly.Designer.cs" />
+    <Compile Include="App\Service\Partners\ScrumUkraine.Designer.cs" />
+    <Compile Include="App\Service\Partners\Trudua.Designer.cs" />
+    <Compile Include="App\Service\Partners\WeeklyIT.Designer.cs" />
+    <Compile Include="App\Service\Partners\XamarinUA.Designer.cs" />
+    <Compile Include="App\Service\Partners\Yakaboo.Designer.cs" />
+    <Compile Include="App\Service\Room.Designer.cs" />
+    <Compile Include="App\Service\Room.ru.Designer.cs" />
+    <Compile Include="App\Service\Room.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ABoyko.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ABoyko.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ADeren.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ADeren.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ALaysha.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ALaysha.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\AMang.Designer.cs" />
+    <Compile Include="App\Service\Speaker\AShamray.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ASurkov.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ASurkov.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ATkachenko.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ATkachenko.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ATkachenko.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ATumanoff.Designer.cs" />
+    <Compile Include="App\Service\Speaker\AVidishchev.Designer.cs" />
+    <Compile Include="App\Service\Speaker\AYurchenko.Designer.cs" />
+    <Compile Include="App\Service\Speaker\AYurchenko.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\DDurasau.Designer.cs" />
+    <Compile Include="App\Service\Speaker\DDurasau.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\DIvanov.Designer.cs" />
+    <Compile Include="App\Service\Speaker\DIvanov.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\DReznik.Designer.cs" />
+    <Compile Include="App\Service\Speaker\DReznik.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\EAuberix.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ENiedaszkowski.Designer.cs" />
+    <Compile Include="App\Service\Speaker\EPolonychko.Designer.cs" />
+    <Compile Include="App\Service\Speaker\EPolonychko.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\EWasilewski.Designer.cs" />
+    <Compile Include="App\Service\Speaker\GShopnik.Designer.cs" />
+    <Compile Include="App\Service\Speaker\IFesenko.Designer.cs" />
+    <Compile Include="App\Service\Speaker\IFesenko.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ILeontiev.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ILeontiev.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ILiashov.Designer.cs" />
+    <Compile Include="App\Service\Speaker\IReznykov.Designer.cs" />
+    <Compile Include="App\Service\Speaker\IReznykov.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\JessicaEngstrom.Designer.cs" />
+    <Compile Include="App\Service\Speaker\JimmyEngstrom.Designer.cs" />
+    <Compile Include="App\Service\Speaker\MFerdyn.Designer.cs" />
+    <Compile Include="App\Service\Speaker\MMartensson.Designer.cs" />
+    <Compile Include="App\Service\Speaker\MMateev.Designer.cs" />
+    <Compile Include="App\Service\Speaker\MSmereczynski.Designer.cs" />
+    <Compile Include="App\Service\Speaker\OChorny.Designer.cs" />
+    <Compile Include="App\Service\Speaker\OChorny.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\OKrakovetskyi.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SBielskyi.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SKorzh.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SKorzh.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SKryshtop.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SKryshtop.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SLebedenko.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SPoplavskiy.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SPoplavskiy.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SSultanov.Designer.cs" />
+    <Compile Include="App\Service\Speaker\VBezmaly.Designer.cs" />
+    <Compile Include="App\Service\Speaker\VRadchuk.Designer.cs" />
+    <Compile Include="App\Service\Speaker\VRadchuk.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\VThavonekham.Designer.cs" />
+    <Compile Include="App\Service\Speaker\VTolmachov.Designer.cs" />
+    <Compile Include="App\Service\Speaker\VTsykunov.Designer.cs" />
+    <Compile Include="App\Service\Speaker\VTsykunov.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\VTsykunov.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Topics\ABoyko_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\ABoyko_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\ALaysha_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\AMang_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\AShamray_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\ASurkov_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\ATkachenko_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\ATkachenko_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\AVidishchev_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\AYurchenko_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\DDurasau_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\DReznik_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\EAuberix_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\EAuberix_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\ENiedaszkowski_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\EPolonychko_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\EWasilewski_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\Food\Afterparty.Designer.cs" />
+    <Compile Include="App\Service\Topics\Food\CoffeeBreak.Designer.cs" />
+    <Compile Include="App\Service\Topics\Food\Lunch.Designer.cs" />
+    <Compile Include="App\Service\Topics\Food\Registration.Designer.cs" />
+    <Compile Include="App\Service\Topics\IFesenko_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\ILeontiev_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\ILiashov_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\ILiashov_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\JessicaEngstrom_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\JimmyEngstrom_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\MFerdyn_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\MMartensson_05.Designer.cs" />
+    <Compile Include="App\Service\Topics\MMateev_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\MSmereczynski_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\OChorny_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\OChorny_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\OKrakovetskyi_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\SBielskyi_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\SKorzh_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\SKryshtop_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\SLebedenko_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\Special\Endnote.Designer.cs" />
+    <Compile Include="App\Service\Topics\Special\Keynote.Designer.cs" />
+    <Compile Include="App\Service\Topics\Special\Keynote.ru.Designer.cs" />
+    <Compile Include="App\Service\Topics\SPoplavskiy_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\SSultanov_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\VBezmaly_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\VThavonekham_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\VThavonekham_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\VTsykunov_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\_Dummy.Designer.cs" />
+    <Compile Include="App\Service\Topics\_Dummy.ru.Designer.cs" />
+    <Compile Include="App\Service\Topics\_Dummy.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Workshops\ABoyko_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\ADeren_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\AShamray_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\ASurkov_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\DIvanov_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\EPolonychko_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\ILeontiev_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\IReznykov_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\MMartensson_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\SPoplavskiy_02.Designer.cs" />
+    <Compile Include="App\Service\Workshops\VRadchuk_01.Designer.cs" />
+    <Compile Include="App\Service\Workshops\VTsykunov_01.Designer.cs" />
+    <Compile Include="Host\Views\Home\Index.Designer.cs" />
+    <Compile Include="Host\Views\Home\Index.ru.Designer.cs" />
+    <Compile Include="Host\Views\Home\Index.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Home\PartnerCategoryType.Designer.cs" />
+    <Compile Include="Host\Views\Home\Partners.Designer.cs" />
+    <Compile Include="Host\Views\Home\Partners.ru.Designer.cs" />
+    <Compile Include="Host\Views\Home\Partners.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Home\PartnerType.Designer.cs" />
+    <Compile Include="Host\Views\Home\Schedule.Designer.cs" />
+    <Compile Include="Host\Views\Home\Schedule.ru.Designer.cs" />
+    <Compile Include="Host\Views\Home\Schedule.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Home\SpeakerEntity.Designer.cs" />
+    <Compile Include="Host\Views\Home\SpeakerEntity.ru.Designer.cs" />
+    <Compile Include="Host\Views\Home\SpeakerEntity.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Home\Speakers.Designer.cs" />
+    <Compile Include="Host\Views\Home\WorkshopEntity.Designer.cs" />
+    <Compile Include="Host\Views\Home\WorkshopEntity.ru.Designer.cs" />
+    <Compile Include="Host\Views\Home\WorkshopEntity.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Home\Workshops.Designer.cs" />
+    <Compile Include="Host\Views\Home\Workshops.ru.Designer.cs" />
+    <Compile Include="Host\Views\Home\Workshops.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Home\_Partners.Designer.cs" />
+    <Compile Include="Host\Views\Home\_Partners.ru.Designer.cs" />
+    <Compile Include="Host\Views\Home\_Partners.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Home\_Speakers.Designer.cs" />
+    <Compile Include="Host\Views\Home\_Speakers.ru.Designer.cs" />
+    <Compile Include="Host\Views\Home\_Speakers.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Profile\ConfirmEmail.Designer.cs" />
+    <Compile Include="Host\Views\Profile\ConfirmEmail.ru.Designer.cs" />
+    <Compile Include="Host\Views\Profile\ConfirmEmail.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Profile\ConfirmRegistration.Designer.cs" />
+    <Compile Include="Host\Views\Profile\ConfirmRegistration.ru.Designer.cs" />
+    <Compile Include="Host\Views\Profile\ConfirmRegistration.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Feedback.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Feedback.ru.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Feedback.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Login.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Login.ru.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Login.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Profile\My.Designer.cs" />
+    <Compile Include="Host\Views\Profile\My.ru.Designer.cs" />
+    <Compile Include="Host\Views\Profile\My.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Quiz.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Quiz.ru.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Quiz.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Registration.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Registration.ru.Designer.cs" />
+    <Compile Include="Host\Views\Profile\Registration.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Profile\RestorePassword.Designer.cs" />
+    <Compile Include="Host\Views\Profile\RestorePassword.ru.Designer.cs" />
+    <Compile Include="Host\Views\Profile\RestorePassword.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_Banner.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_Banner.ru.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_Footer.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_Footer.ru.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_Footer.uk-UA.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_Header.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_Header.ru.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_MenuItems.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_MenuItems.ru.Designer.cs" />
+    <Compile Include="Host\Views\Shared\_MenuItems.uk-UA.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App\Service\Country.resx" />
+    <EmbeddedResource Include="App\Service\Country.ru.resx" />
+    <EmbeddedResource Include="App\Service\Country.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Language.resx" />
+    <EmbeddedResource Include="App\Service\Language.ru.resx" />
+    <EmbeddedResource Include="App\Service\Language.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\AzureUA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Beetroot.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Beetroot.ru.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Beetroot.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Bodo.resx" />
+    <EmbeddedResource Include="App\Service\Partners\BrainBasket.resx" />
+    <EmbeddedResource Include="App\Service\Partners\BrainBasket.ru.resx" />
+    <EmbeddedResource Include="App\Service\Partners\BrainBasket.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\BrainTV.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Ciklum.resx" />
+    <EmbeddedResource Include="App\Service\Partners\CloudMonix.resx" />
+    <EmbeddedResource Include="App\Service\Partners\DataArt.resx" />
+    <EmbeddedResource Include="App\Service\Partners\DataArt.ru.resx" />
+    <EmbeddedResource Include="App\Service\Partners\DataArt.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Daxx.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Dbbest.resx" />
+    <EmbeddedResource Include="App\Service\Partners\DevArt.resx" />
+    <EmbeddedResource Include="App\Service\Partners\DevArt.ru.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Developex.resx" />
+    <EmbeddedResource Include="App\Service\Partners\dotNetCore.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Dou.resx" />
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.resx" />
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.ru.resx" />
+    <EmbeddedResource Include="App\Service\Partners\EasyPay.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\EnglishDom.resx" />
+    <EmbeddedResource Include="App\Service\Partners\EPAM.resx" />
+    <EmbeddedResource Include="App\Service\Partners\EPAM.ru.resx" />
+    <EmbeddedResource Include="App\Service\Partners\EPAM.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\GL.resx" />
+    <EmbeddedResource Include="App\Service\Partners\ITClusterKonotop.resx" />
+    <EmbeddedResource Include="App\Service\Partners\ITEA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\ITRatingUkraine.resx" />
+    <EmbeddedResource Include="App\Service\Partners\ITStep.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Jetbrains.resx" />
+    <EmbeddedResource Include="App\Service\Partners\KyivITCluster.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Luxoft.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Luxoft.ru.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Luxoft.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Microsoft.resx" />
+    <EmbeddedResource Include="App\Service\Partners\OReilly.resx" />
+    <EmbeddedResource Include="App\Service\Partners\ScrumUkraine.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Trudua.resx" />
+    <EmbeddedResource Include="App\Service\Partners\WeeklyIT.resx" />
+    <EmbeddedResource Include="App\Service\Partners\XamarinUA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Yakaboo.resx" />
+    <EmbeddedResource Include="App\Service\Room.resx" />
+    <EmbeddedResource Include="App\Service\Room.ru.resx" />
+    <EmbeddedResource Include="App\Service\Room.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ABoyko.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ABoyko.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ADeren.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ADeren.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ALaysha.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ALaysha.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\AMang.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\AShamray.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ASurkov.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ASurkov.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ATkachenko.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ATumanoff.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\AVidishchev.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\AYurchenko.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\AYurchenko.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\DDurasau.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\DDurasau.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\DIvanov.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\DIvanov.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\DReznik.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\DReznik.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\EAuberix.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ENiedaszkowski.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\EPolonychko.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\EPolonychko.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\EWasilewski.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\GShopnik.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\IFesenko.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\IFesenko.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ILeontiev.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ILeontiev.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ILiashov.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\IReznykov.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\IReznykov.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\JessicaEngstrom.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\JimmyEngstrom.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\MFerdyn.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\MMartensson.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\MMateev.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\MSmereczynski.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\OChorny.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\OChorny.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\OKrakovetskyi.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SBielskyi.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SKorzh.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SKorzh.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SKryshtop.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SKryshtop.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SLebedenko.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SPoplavskiy.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SPoplavskiy.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SSultanov.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VBezmaly.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VRadchuk.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VRadchuk.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VThavonekham.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VThavonekham.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VTolmachov.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\VTsykunov.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ABoyko_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ABoyko_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ALaysha_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\AMang_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\AShamray_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ASurkov_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ATkachenko_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ATkachenko_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\AVidishchev_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\AYurchenko_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\DDurasau_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\DReznik_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\EAuberix_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\EAuberix_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ENiedaszkowski_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\EPolonychko_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\EWasilewski_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\Food\Afterparty.resx" />
+    <EmbeddedResource Include="App\Service\Topics\Food\CoffeeBreak.resx" />
+    <EmbeddedResource Include="App\Service\Topics\Food\Lunch.resx" />
+    <EmbeddedResource Include="App\Service\Topics\Food\Registration.resx" />
+    <EmbeddedResource Include="App\Service\Topics\IFesenko_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ILeontiev_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ILiashov_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ILiashov_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\JessicaEngstrom_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\JimmyEngstrom_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\MFerdyn_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\MMartensson_05.resx" />
+    <EmbeddedResource Include="App\Service\Topics\MMateev_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\MSmereczynski_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\OChorny_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\OChorny_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\OKrakovetskyi_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\SBielskyi_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\SKorzh_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\SKryshtop_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\SLebedenko_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\Special\Endnote.resx" />
+    <EmbeddedResource Include="App\Service\Topics\Special\Keynote.resx" />
+    <EmbeddedResource Include="App\Service\Topics\Special\Keynote.ru.resx" />
+    <EmbeddedResource Include="App\Service\Topics\SPoplavskiy_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\SSultanov_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\VBezmaly_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\VThavonekham_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\VThavonekham_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\VTsykunov_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\_Dummy.resx" />
+    <EmbeddedResource Include="App\Service\Topics\_Dummy.ru.resx" />
+    <EmbeddedResource Include="App\Service\Topics\_Dummy.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\ABoyko_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\ADeren_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\AShamray_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\ASurkov_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\DIvanov_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\EPolonychko_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\ILeontiev_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\IReznykov_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\MMartensson_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\SPoplavskiy_02.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\VRadchuk_01.resx" />
+    <EmbeddedResource Include="App\Service\Workshops\VTsykunov_01.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Index.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Index.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Index.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Home\PartnerCategoryType.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Partners.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Partners.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Partners.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Home\PartnerType.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Schedule.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Schedule.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Schedule.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Home\SpeakerEntity.resx" />
+    <EmbeddedResource Include="Host\Views\Home\SpeakerEntity.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Home\SpeakerEntity.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Speakers.resx" />
+    <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.resx" />
+    <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Home\WorkshopEntity.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Workshops.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Workshops.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Home\Workshops.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Home\_Partners.resx" />
+    <EmbeddedResource Include="Host\Views\Home\_Partners.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Home\_Partners.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Home\_Speakers.resx" />
+    <EmbeddedResource Include="Host\Views\Home\_Speakers.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Home\_Speakers.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmEmail.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmEmail.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmEmail.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmRegistration.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmRegistration.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\ConfirmRegistration.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Feedback.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Feedback.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Feedback.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Login.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Login.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Login.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\My.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\My.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\My.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Quiz.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Quiz.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Quiz.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Registration.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Registration.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\Registration.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\RestorePassword.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\RestorePassword.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Profile\RestorePassword.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_Banner.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_Banner.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_Footer.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_Footer.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_Footer.uk-UA.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_Header.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_Header.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_MenuItems.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_MenuItems.ru.resx" />
+    <EmbeddedResource Include="Host\Views\Shared\_MenuItems.uk-UA.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

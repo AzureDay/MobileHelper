@@ -218,7 +218,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
@@ -252,10 +251,35 @@
     <Compile Include="Models\Tweet.cs" />
     <Compile Include="Models\ConferenceContextInitializer.cs" />
     <Compile Include="Models\ConferenceContext.cs" />
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Services\RoomService.cs" />
+    <Compile Include="Services\SpeakerService.cs" />
+    <Compile Include="Services\SponsorService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\logos\Beetroot_v1.png" />
+    <Content Include="Content\images\logos\Beetroot_v2.png" />
+    <Content Include="Content\images\logos\Beetroot_v3.png" />
+    <Content Include="Content\images\logos\bodo.png" />
+    <Content Include="Content\images\logos\BrainBasketFoundation_v1.png" />
+    <Content Include="Content\images\logos\BrainBasketFoundation_v2.png" />
+    <Content Include="Content\images\logos\brain_tv.jpg" />
+    <Content Include="Content\images\logos\devart_v1.png" />
+    <Content Include="Content\images\logos\devart_v2.png" />
+    <Content Include="Content\images\logos\dou.png" />
+    <Content Include="Content\images\logos\itclusterkonotop_v1.png" />
+    <Content Include="Content\images\logos\itclusterkonotop_v2.png" />
+    <Content Include="Content\images\logos\itratingsukraine_v1.png" />
+    <Content Include="Content\images\logos\itratingsukraine_v2.png" />
+    <Content Include="Content\images\logos\KyivITCluster.png" />
+    <Content Include="Content\images\logos\Luxoft_v1.jpg" />
+    <Content Include="Content\images\logos\Luxoft_v2.jpg" />
+    <Content Include="Content\images\logos\microsoft.jpg" />
+    <Content Include="Content\images\logos\scrum_ua.png" />
+    <Content Include="Content\images\logos\weeklyit.png" />
     <Content Include="Views\Push.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -270,6 +294,15 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AzureDay.WebApp.Localization\AzureDay.WebApp.Localization.csproj">
+      <Project>{fc607551-13f3-43cd-82d5-a7f3293a24b1}</Project>
+      <Name>AzureDay.WebApp.Localization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\azuredaymobile - Web Deploy.pubxml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

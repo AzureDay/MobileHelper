@@ -169,7 +169,7 @@ namespace Conference.Clients.Portable
             if(IsBusy)
                 return;
 
-            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            if (Connectivity.NetworkAccess == NetworkAccess.None)
             {
                 MessagingUtils.SendOfflineMessage();
                 return;
@@ -182,7 +182,7 @@ namespace Conference.Clients.Portable
 
             try 
             {
-               
+                await StoreManager.DropEverythingAsync();
 
                 #if DEBUG
                 await Task.Delay(1000);
@@ -198,7 +198,7 @@ namespace Conference.Clients.Portable
                     MessagingService.Current.SendMessage<MessagingServiceAlert>(MessageKeys.Message, new MessagingServiceAlert
                         {
                             Title = "Conference Data Synced",
-                            Message = "You now have the latest conference data, however to sync your favorites and feedback you must sign in with your Xamarin account.",
+                            Message = "You now have the latest conference data, however check again your favorites sessions",
                             Cancel = "OK"
                         });
                 }

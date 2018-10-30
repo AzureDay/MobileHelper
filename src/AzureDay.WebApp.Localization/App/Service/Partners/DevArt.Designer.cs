@@ -19,7 +19,7 @@ namespace AzureDay.WebApp.Localization.App.Service.Partners {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class DevArt {
@@ -61,7 +61,7 @@ namespace AzureDay.WebApp.Localization.App.Service.Partners {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Компания Devart была основана в 1997 году и на сегодняшний день является одним из ведущих разработчиков ПО для работы с базами данных, ALM решений, провайдеров для различных серверов баз данных, облачных решений для интеграции и резервного копирования данных. Компания также реализует проекты в области WEB и MOBILE направлений..
+        ///   Looks up a localized string similar to Founded in 1997, Devart is currently one of the leading developers of database management software, ALM solutions and data providers for most popular database servers..
         /// </summary>
         public static string Description {
             get {

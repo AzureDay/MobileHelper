@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Conference.Clients.UI.SponsorsPage"
     xmlns:local="clr-namespace:Conference.Clients.UI;assembly=Conference.Clients.UI"
-    Title="Sponsors"
+    Title="Partners"
     Icon="tab_sponsors.png"
     BackgroundColor="{DynamicResource WindowBackground}">
    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -44,7 +44,7 @@
                     <OnPlatform x:TypeArguments="Color" Android="{StaticResource Accent}"/>
                 </ActivityIndicator.Color>
             </ActivityIndicator>
-            <Label Text="Loading Sponsors..." HorizontalOptions="Center" Style="{DynamicResource ConferenceListItemTextStyle}"/>
+            <Label Text="Loading Partners..." HorizontalOptions="Center" Style="{DynamicResource ConferenceListItemTextStyle}"/>
        </StackLayout>
     </AbsoluteLayout>
 </ContentPage>

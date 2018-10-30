@@ -22,13 +22,13 @@ namespace Conference.Clients.Portable
                     Parameter = sponsor.WebsiteUrl,
                     Icon = "icon_website.png"
                 });
-            FollowItems.Add(new MenuItem
-                {
-                    Name = Device.RuntimePlatform == Device.iOS ? "Twitter" : sponsor.TwitterUrl,
-                    Subtitle = $"@{sponsor.TwitterUrl}",
-                    Parameter = "http://twitter.com/" + sponsor.TwitterUrl,
-                    Icon = "icon_twitter.png"
-                });
+            //FollowItems.Add(new MenuItem
+            //    {
+            //        Name = Device.RuntimePlatform == Device.iOS ? "Twitter" : sponsor.TwitterUrl,
+            //        Subtitle = $"@{sponsor.TwitterUrl}",
+            //        Parameter = "http://twitter.com/" + sponsor.TwitterUrl,
+            //        Icon = "icon_twitter.png"
+            //    });
         }
 
         MenuItem selectedFollowItem;

@@ -13,11 +13,11 @@ namespace Conference.UITests
         readonly string SponsorName = "SponsorName";
         readonly string SponsorLevel = "SponsorLevel";
         readonly string SponsorImage = "SponsorImage";
-        readonly string LoadingText = "Loading Sponsors...";
+        readonly string LoadingText = "Loading Partners...";
         readonly Func<string, Query> SponsorNamed = name => x => x.Marked("SponsorName").Text(name);
 
         public SponsorsPage()
-            : base(x => x.Class("Toolbar").Descendant().Text("Sponsors"), x => x.Class("UINavigationBar").Id("Sponsors"))
+            : base(x => x.Class("Toolbar").Descendant().Text("Partners"), x => x.Class("UINavigationBar").Id("Sponsors"))
         {
             app.WaitForNoElement(LoadingText);
         }

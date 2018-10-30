@@ -94,7 +94,7 @@ namespace Conference.DataStore.Azure
 
         public async Task<bool> PullLatestAsync()
         {
-            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            if (Connectivity.NetworkAccess == NetworkAccess.None)
             {
                 Debug.WriteLine("Unable to pull items, we are offline");
                 return false;
@@ -114,7 +114,7 @@ namespace Conference.DataStore.Azure
 
         public async Task<bool> SyncAsync()
         {
-            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
+            if (Connectivity.NetworkAccess == NetworkAccess.None)
             {
                 Debug.WriteLine("Unable to sync items, we are offline");
                 return false;

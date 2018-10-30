@@ -5,7 +5,7 @@
     x:Class="Conference.Clients.UI.SponsorDetailsPage"
     xmlns:local="clr-namespace:Conference.Clients.UI;assembly=Conference.Clients.UI"
     xmlns:toolkit="clr-namespace:FormsToolkit;assembly=FormsToolkit"
-    Title="Sponsor Details"
+    Title="Partner Details"
     
     BackgroundColor="{DynamicResource WindowBackgroundTable}">
     <ContentPage.Resources>
@@ -40,7 +40,7 @@
                             </StackLayout>
                             <StackLayout Spacing="0">
                               <Label Text="{Binding Sponsor.Name}" Style="{DynamicResource ConferenceListItemTextStyle}" StyleId="SponsorDetailName"/>
-                              <Label Text="{Binding Sponsor.SponsorLevel.Name, StringFormat='{0} Sponsor'}" Style="{DynamicResource ConferenceListItemDetailTextStyle}" StyleId="SponsorDetailLevel"/>
+                              <Label Text="{Binding Sponsor.SponsorLevel.Name, StringFormat='{0} Partner'}" Style="{DynamicResource ConferenceListItemDetailTextStyle}" StyleId="SponsorDetailLevel"/>
                             </StackLayout>
                             <StackLayout Padding="0,16">
                                 <Label Text="{Binding Sponsor.Description}"  Style="{DynamicResource ConferenceListItemTextStyle}" StyleId="SponsorDetailDescription"/>

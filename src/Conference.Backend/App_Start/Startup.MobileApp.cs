@@ -8,6 +8,7 @@ using Conference.Backend.Models;
 using Owin;
 using Microsoft.Azure.Mobile.Server;
 using WebApiThrottle;
+using Microsoft.Azure.Mobile.Server.Tables.Config;
 
 namespace Conference.Backend
 {
@@ -18,20 +19,31 @@ namespace Conference.Backend
             HttpConfiguration config = new HttpConfiguration();
 
             //config.Routes.MapHttpRoute("XamarinAuthProvider", ".auth/login/xamarin", new { controller = "XamarinAuth" });
+            config.Routes.MapHttpRoute(
+                name: "API Default",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
 
             //For more information on Web API tracing, see http://go.microsoft.com/fwlink/?LinkId=620686 
             config.EnableSystemDiagnosticsTracing();
 
-                new MobileAppConfiguration()
-                .UseDefaultConfiguration()
-                .ApplyTo(config);
+            new MobileAppConfiguration()
+            .AddMobileAppHomeController()             // from the Home package
+            .MapApiControllers()
+            .AddTables(                               // from the Tables package
+            new MobileAppTableConfiguration()
+                .MapTableControllers()
+                .AddEntityFramework()             // from the Entity package
+            )
+            .ApplyTo(config);
 
             
             // Use Entity Framework Code First to create database tables based on your DbContext
             Database.SetInitializer(new ConferenceContextInitializer());
 
             // To prevent Entity Framework from modifying your database schema, use a null database initializer
-            // Database.SetInitializer(null);
+            //Database.SetInitializer(null);
 
             MobileAppSettingsDictionary settings = config.GetMobileAppSettingsProvider().GetMobileAppSettings();
 

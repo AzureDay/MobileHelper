@@ -15,7 +15,7 @@
            <!-- <local:CategoryCell x:Name="ShowPastSwitch"/>
             <local:CategoryCell x:Name="ShowFavoritesOnlySwitch"/>-->
         </TableSection>
-        <TableSection Title="Categories" x:Name="TableSectionCategories">
+        <TableSection Title="Rooms" x:Name="TableSectionCategories">
             <!--These are dynamically added-->
         </TableSection>
     </TableView>
