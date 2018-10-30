@@ -115,9 +115,9 @@ namespace Conference.Droid
                 case Resource.Id.nav_sponsors:
                     id = (int)AppPage.Sponsors;
                     break;
-                //case Resource.Id.nav_venue:
-                //    id = (int)AppPage.Venue;
-                //    break;
+                case Resource.Id.nav_venue:
+                    id = (int)AppPage.Venue;
+                    break;
                 //case Resource.Id.nav_floor_map:
                 //    id = (int)AppPage.FloorMap;
                 //    break;

@@ -12,11 +12,11 @@ namespace Conference.Clients.Portable
         //TODO: Does Xamarin.Essentials support this?
         public bool CanMakePhoneCall => true;
         public string EventTitle => "Conference";
-        public string LocationTitle => "Hyatt Regency Orlando";
-        public string Address1 => "9801 International Drive";
-        public string Address2 => "Orlando, FL 32819";
-        public double Latitude => 28.427015;
-        public double Longitude => -81.467563;
+        public string LocationTitle => "Mercure Congress Centre";
+        public string Address1 => "6 Vadyma Hetmana Str.";
+        public string Address2 => "Kyiv, 03057";
+        public double Latitude => 50.450134;
+        public double Longitude => 30.442926;
 
         ICommand  navigateCommand;
         public ICommand NavigateCommand =>
@@ -45,7 +45,7 @@ namespace Conference.Clients.Portable
             Logger.Track(ConferenceLoggerKeys.CallHotel);
             try
             {
-                PhoneDialer.Open("14072841234");
+                PhoneDialer.Open("0442009026");
             }
             catch (FeatureNotSupportedException)
             {

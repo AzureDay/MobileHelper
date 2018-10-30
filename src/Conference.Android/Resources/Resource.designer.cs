@@ -3779,11 +3779,14 @@ namespace Conference.Droid
 			// aapt resource value: 0x7f0c00d9
 			public const int nav_sessions = 2131493081;
 			
-			// aapt resource value: 0x7f0c00db
-			public const int nav_settings = 2131493083;
+			// aapt resource value: 0x7f0c00dc
+			public const int nav_settings = 2131493084;
 			
 			// aapt resource value: 0x7f0c00da
 			public const int nav_sponsors = 2131493082;
+			
+			// aapt resource value: 0x7f0c00db
+			public const int nav_venue = 2131493083;
 			
 			// aapt resource value: 0x7f0c00be
 			public const int nav_view = 2131493054;

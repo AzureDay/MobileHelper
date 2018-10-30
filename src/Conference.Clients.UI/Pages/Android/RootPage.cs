@@ -54,9 +54,9 @@ namespace Conference.Clients.UI
                     case (int)AppPage.Sponsors://sponsors
                         newPage = new ConferenceNavigationPage(new SponsorsPage());
                         break;
-                    //case (int)AppPage.Venue: //venue
-                    //    newPage = new ConferenceNavigationPage(new VenuePage());
-                    //    break;
+                    case (int)AppPage.Venue: //venue
+                        newPage = new ConferenceNavigationPage(new VenuePage());
+                        break;
                     case (int)AppPage.ConferenceInfo://Conference info
                         newPage = new ConferenceNavigationPage(new ConferenceInformationPage());
                         break;

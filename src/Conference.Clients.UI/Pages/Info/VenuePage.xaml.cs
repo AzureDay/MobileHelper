@@ -34,7 +34,7 @@ namespace Conference.Clients.UI
                     ToolbarItems.Add(new ToolbarItem
                     {
                         Order = ToolbarItemOrder.Secondary,
-                        Text = "Call Hotel",
+                        Text = "Call Congress Centre",
                         Command = vm.CallCommand
                     });
                 }
@@ -54,9 +54,9 @@ namespace Conference.Clients.UI
                                 }
                                 else
                                 {
-                                    items = new[] { "Get Directions", "Call +1 (407) 284-1234" };
+                                    items = new[] { "Get Directions", "Call +38 (044) 200 9026" };
                                 }
-                                var action = await DisplayActionSheet("Hyatt Regency", "Cancel", null, items);
+                                var action = await DisplayActionSheet("Mercure Congress Centre", "Cancel", null, items);
                                 if (action == items[0])
                                     vm.NavigateCommand.Execute(null);
                                 else if (items.Length > 1 && action == items[1] && vm.CanMakePhoneCall)

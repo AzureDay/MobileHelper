@@ -35,12 +35,12 @@
                 android:icon="@drawable/menu_evals"
                 android:title="Evaluations"
                 android:checkable="true" />-->
-            <!--<item
+            <item
                 android:id="@+id/nav_venue"
                 android:icon="@drawable/menu_venue"
                 android:title="Venue"
                 android:checkable="true" />
-            <item
+            <!--<item
                 android:id="@+id/nav_floor_map"
                 android:icon="@drawable/menu_plan"
                 android:title="Floor Maps"
