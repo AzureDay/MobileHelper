@@ -80,15 +80,15 @@ namespace Conference.Clients.UI
 
                             };
 
-                            TableSectionFilters.Add(new CategoryCell
-                            {
-                                BindingContext = showPast
-                            });
+                            //TableSectionFilters.Add(new CategoryCell
+                            //{
+                            //    BindingContext = showPast
+                            //});
 
-                            TableSectionFilters.Add(new CategoryCell
-                            {
-                                BindingContext = showFavorites
-                            });
+                            //TableSectionFilters.Add(new CategoryCell
+                            //{
+                            //    BindingContext = showFavorites
+                            //});
                             
                             //if end of conference
                             if (DateTime.UtcNow > Settings.EndOfConference)

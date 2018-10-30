@@ -8,7 +8,7 @@ namespace Conference.Backend.Services
     {
         private readonly SpeakerService _speakerService = new SpeakerService();
         private readonly CategoryService _categoryService = new CategoryService();
-        private readonly RoomService _roomService = new RoomService();
+        //private readonly RoomService _roomService = new RoomService();
 
         protected override List<Session> PopulateStorage()
         {
@@ -19,85 +19,85 @@ namespace Conference.Backend.Services
                     Title = AzureDay.WebApp.Localization.App.Service.Topics._Dummy.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics._Dummy.Title,
                     MainCategory = _categoryService.CategoryOrange,
-                    Room = _roomService.Room1,
-                    StartTime = new DateTime(2018, 11, 10, 17, 30, 0),
-                    EndTime = new DateTime(2018, 11, 10, 18, 30, 0),
+                    //Room = _roomService.Room1,
+                    StartTime = new DateTime(2018, 11, 10, 17, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 18, 30, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics._Dummy.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics._Dummy.Title,
                     MainCategory = _categoryService.CategoryBlue,
-                    Room = _roomService.Room2,
-                    StartTime = new DateTime(2018, 11, 10, 17, 30, 0),
-                    EndTime = new DateTime(2018, 11, 10, 18, 30, 0),
+                    //Room = _roomService.Room2,
+                    StartTime = new DateTime(2018, 11, 10, 17, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 18, 30, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.Registration.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.Registration.Title,
-                    StartTime = new DateTime(2018, 11, 10, 8, 15, 0),
-                    EndTime = new DateTime(2018, 11, 10, 9, 0, 0),
+                    StartTime = new DateTime(2018, 11, 10, 8, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 9, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
-                    StartTime = new DateTime(2018, 11, 10, 10, 15, 0),
-                    EndTime = new DateTime(2018, 11, 10, 10, 30, 0),
+                    StartTime = new DateTime(2018, 11, 10, 10, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 10, 30, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
-                    StartTime = new DateTime(2018, 11, 10, 11, 30, 0),
-                    EndTime = new DateTime(2018, 11, 10, 12, 0, 0),
+                    StartTime = new DateTime(2018, 11, 10, 11, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 12, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
-                    StartTime = new DateTime(2018, 11, 10, 13, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 13, 15, 0),
+                    StartTime = new DateTime(2018, 11, 10, 13, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 13, 15, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
-                    StartTime = new DateTime(2018, 11, 10, 15, 45, 0),
-                    EndTime = new DateTime(2018, 11, 10, 16, 0, 0),
+                    StartTime = new DateTime(2018, 11, 10, 15, 45, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 16, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
-                    StartTime = new DateTime(2018, 11, 10, 17, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 17, 30, 0),
+                    StartTime = new DateTime(2018, 11, 10, 17, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 17, 30, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.Lunch.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.Lunch.Title,
-                    StartTime = new DateTime(2018, 11, 10, 14, 15, 0),
-                    EndTime = new DateTime(2018, 11, 10, 14, 45, 0),
+                    StartTime = new DateTime(2018, 11, 10, 14, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 14, 45, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Special.Keynote.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Special.Keynote.Title,
                     MainCategory = _categoryService.CategoryOrange,
-                    Room = _roomService.Room1,
-                    StartTime = new DateTime(2018, 11, 10, 9, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 10, 15, 0),
+                    //Room = _roomService.Room1,
+                    StartTime = new DateTime(2018, 11, 10, 9, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 10, 15, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Special.Endnote.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Special.Endnote.Title,
                     MainCategory = _categoryService.CategoryOrange,
-                    Room = _roomService.Room1,
-                    StartTime = new DateTime(2018, 11, 10, 18, 30, 0),
-                    EndTime = new DateTime(2018, 11, 10, 19, 15, 0),
+                    //Room = _roomService.Room1,
+                    StartTime = new DateTime(2018, 11, 10, 18, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 19, 15, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -106,9 +106,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.SBielskyi_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.SBielskyi_01.Title,
                     MainCategory = _categoryService.CategoryBlue,
-                    Room = _roomService.Room2,
-                    StartTime = new DateTime(2018, 11, 10, 10, 30, 0),
-                    EndTime = new DateTime(2018, 11, 10, 11, 30, 0),
+                    //Room = _roomService.Room2,
+                    StartTime = new DateTime(2018, 11, 10, 10, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 11, 30, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -117,9 +117,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.ILeontiev_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.ILeontiev_01.Title,
                     MainCategory = _categoryService.CategoryBlue,
-                    Room = _roomService.Room2,
-                    StartTime = new DateTime(2018, 11, 10, 12, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 13, 0, 0),
+                    //Room = _roomService.Room2,
+                    StartTime = new DateTime(2018, 11, 10, 12, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 13, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -128,9 +128,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.EAuberix_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.EAuberix_01.Title,
                     MainCategory = _categoryService.CategoryBlue,
-                    Room = _roomService.Room2,
-                    StartTime = new DateTime(2018, 11, 10, 13, 15, 0),
-                    EndTime = new DateTime(2018, 11, 10, 14, 15, 0),
+                    //Room = _roomService.Room2,
+                    StartTime = new DateTime(2018, 11, 10, 13, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 14, 15, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -139,9 +139,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.ABoyko_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.ABoyko_01.Title,
                     MainCategory = _categoryService.CategoryOrange,
-                    Room = _roomService.Room1,
-                    StartTime = new DateTime(2018, 11, 10, 10, 30, 0),
-                    EndTime = new DateTime(2018, 11, 10, 11, 30, 0),
+                    //Room = _roomService.Room1,
+                    StartTime = new DateTime(2018, 11, 10, 10, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 11, 30, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -150,9 +150,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.SLebedenko_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.SLebedenko_01.Title,
                     MainCategory = _categoryService.CategoryRed,
-                    Room = _roomService.Room3,
-                    StartTime = new DateTime(2018, 11, 10, 10, 30, 0),
-                    EndTime = new DateTime(2018, 11, 10, 11, 30, 0),
+                    //Room = _roomService.Room3,
+                    StartTime = new DateTime(2018, 11, 10, 10, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 11, 30, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -161,9 +161,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.ASurkov_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.ASurkov_01.Title,
                     MainCategory = _categoryService.CategoryOrange,
-                    Room = _roomService.Room1,
-                    StartTime = new DateTime(2018, 11, 10, 12, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 13, 0, 0),
+                    //Room = _roomService.Room1,
+                    StartTime = new DateTime(2018, 11, 10, 12, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 13, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -172,9 +172,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.SSultanov_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.SSultanov_01.Title,
                     MainCategory = _categoryService.CategoryOrange,
-                    Room = _roomService.Room1,
-                    StartTime = new DateTime(2018, 11, 10, 13, 15, 0),
-                    EndTime = new DateTime(2018, 11, 10, 14, 15, 0),
+                    //Room = _roomService.Room1,
+                    StartTime = new DateTime(2018, 11, 10, 13, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 14, 15, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -183,9 +183,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.EPolonychko_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.EPolonychko_01.Title,
                     MainCategory = _categoryService.CategoryRed,
-                    Room = _roomService.Room3,
-                    StartTime = new DateTime(2018, 11, 10, 13, 15, 0),
-                    EndTime = new DateTime(2018, 11, 10, 14, 15, 0),
+                    //Room = _roomService.Room3,
+                    StartTime = new DateTime(2018, 11, 10, 12, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 13, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -194,9 +194,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.VTsykunov_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.VTsykunov_01.Title,
                     MainCategory = _categoryService.CategoryRed,
-                    Room = _roomService.Room3,
-                    StartTime = new DateTime(2018, 11, 10, 13, 15, 0),
-                    EndTime = new DateTime(2018, 11, 10, 14, 15, 0),
+                    //Room = _roomService.Room3,
+                    StartTime = new DateTime(2018, 11, 10, 13, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 14, 15, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -205,9 +205,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.EWasilewski_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.EWasilewski_01.Title,
                     MainCategory = _categoryService.CategoryOrange,
-                    Room = _roomService.Room1,
-                    StartTime = new DateTime(2018, 11, 10, 14, 45, 0),
-                    EndTime = new DateTime(2018, 11, 10, 15, 45, 0),
+                    //Room = _roomService.Room1,
+                    StartTime = new DateTime(2018, 11, 10, 14, 45, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 15, 45, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -216,9 +216,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.AVidishchev_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.AVidishchev_01.Title,
                     MainCategory = _categoryService.CategoryBlue,
-                    Room = _roomService.Room2,
-                    StartTime = new DateTime(2018, 11, 10, 14, 45, 0),
-                    EndTime = new DateTime(2018, 11, 10, 15, 45, 0),
+                    //Room = _roomService.Room2,
+                    StartTime = new DateTime(2018, 11, 10, 14, 45, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 15, 45, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -227,9 +227,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.OKrakovetskyi_02.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.OKrakovetskyi_02.Title,
                     MainCategory = _categoryService.CategoryRed,
-                    Room = _roomService.Room3,
-                    StartTime = new DateTime(2018, 11, 10, 16, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 17, 0, 0),
+                    //Room = _roomService.Room3,
+                    StartTime = new DateTime(2018, 11, 10, 16, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 17, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -238,9 +238,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.SPoplavskiy_02.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.SPoplavskiy_02.Title,
                     MainCategory = _categoryService.CategoryRed,
-                    Room = _roomService.Room3,
-                    StartTime = new DateTime(2018, 11, 10, 14, 45, 0),
-                    EndTime = new DateTime(2018, 11, 10, 15, 45, 0),
+                    //Room = _roomService.Room3,
+                    StartTime = new DateTime(2018, 11, 10, 14, 45, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 15, 45, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -249,9 +249,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.NDranchuk_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.NDranchuk_01.Title,
                     MainCategory = _categoryService.CategoryBlue,
-                    Room = _roomService.Room2,
-                    StartTime = new DateTime(2018, 11, 10, 16, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 17, 0, 0),
+                    //Room = _roomService.Room2,
+                    StartTime = new DateTime(2018, 11, 10, 16, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 17, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -260,9 +260,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.KBaczyk_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.KBaczyk_01.Title,
                     MainCategory = _categoryService.CategoryBlue,
-                    Room = _roomService.Room2,
-                    StartTime = new DateTime(2018, 11, 10, 16, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 17, 0, 0),
+                    //Room = _roomService.Room2,
+                    StartTime = new DateTime(2018, 11, 10, 17, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 18, 30, 0, DateTimeKind.Utc).AddHours(5),
                 },
                 new Session
                 {
@@ -271,9 +271,9 @@ namespace Conference.Backend.Services
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.ILubenets_01.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.ILubenets_01.Title,
                     MainCategory = _categoryService.CategoryOrange,
-                    Room = _roomService.Room1,
-                    StartTime = new DateTime(2018, 11, 10, 16, 0, 0),
-                    EndTime = new DateTime(2018, 11, 10, 17, 0, 0),
+                    //Room = _roomService.Room1,
+                    StartTime = new DateTime(2018, 11, 10, 16, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 11, 10, 17, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
             };
         }

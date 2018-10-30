@@ -126,7 +126,7 @@
                     </local:CardView>-->
 				
                     <!--Follow-->
-                    <local:CardView>
+                    <!--<local:CardView>
                       <StackLayout Spacing="0">
                             <local:LabelSection Text="Follow"/> 
                             <local:HeaderDivider/>
@@ -219,7 +219,7 @@
 
                             <local:FooterDivider/>
                          </StackLayout>
-                     </local:CardView>
+                     </local:CardView>-->
 
 				 <local:CardView IsVisible="{Binding Session.Room, Converter={StaticResource GenericIsVisibleConverter}}">
                       <StackLayout Spacing="0">

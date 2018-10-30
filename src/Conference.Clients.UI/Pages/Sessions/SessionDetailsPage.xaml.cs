@@ -17,12 +17,12 @@ namespace Conference.Clients.UI
             InitializeComponent();
 
 
-            FavoriteButtonAndroid.Clicked += (sender, e) => {
-                Device.BeginInvokeOnMainThread (() => FavoriteIconAndroid.Grow ());
-            };
-            FavoriteButtoniOS.Clicked += (sender, e) => {
-                Device.BeginInvokeOnMainThread (() => FavoriteIconiOS.Grow ());
-            };
+            //FavoriteButtonAndroid.Clicked += (sender, e) => {
+            //    Device.BeginInvokeOnMainThread (() => FavoriteIconAndroid.Grow ());
+            //};
+            //FavoriteButtoniOS.Clicked += (sender, e) => {
+            //    Device.BeginInvokeOnMainThread (() => FavoriteIconiOS.Grow ());
+            //};
 
             ListViewSpeakers.ItemSelected += async (sender, e) => 
                 {
