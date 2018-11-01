@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conference.Backend", "Confe
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Conference.DataObjects", "Conference.DataObjects\Conference.DataObjects.shproj", "{7EDD0E09-3B40-41AB-83DD-01317426CA1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureDay.WebApp.Localization", "AzureDay.WebApp.Localization\AzureDay.WebApp.Localization.csproj", "{B500E279-3B11-462E-B06B-96CD1B3F6A02}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Conference.DataObjects\Conference.Backend.Shared.projitems*{209fa716-a7ad-4095-bd70-c8710fc66fa7}*SharedItemsImports = 4
@@ -21,6 +23,10 @@ Global
 		{209FA716-A7AD-4095-BD70-C8710FC66FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{209FA716-A7AD-4095-BD70-C8710FC66FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{209FA716-A7AD-4095-BD70-C8710FC66FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B500E279-3B11-462E-B06B-96CD1B3F6A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B500E279-3B11-462E-B06B-96CD1B3F6A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B500E279-3B11-462E-B06B-96CD1B3F6A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B500E279-3B11-462E-B06B-96CD1B3F6A02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
