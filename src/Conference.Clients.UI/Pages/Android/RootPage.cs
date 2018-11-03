@@ -57,9 +57,9 @@ namespace Conference.Clients.UI
                     case (int)AppPage.Venue: //venue
                         newPage = new ConferenceNavigationPage(new VenuePage());
                         break;
-                    case (int)AppPage.ConferenceInfo://Conference info
-                        newPage = new ConferenceNavigationPage(new ConferenceInformationPage());
-                        break;
+                    //case (int)AppPage.ConferenceInfo://Conference info
+                    //    newPage = new ConferenceNavigationPage(new ConferenceInformationPage());
+                    //    break;
                     //case (int)AppPage.FloorMap://Floor Maps
                     //    newPage = new ConferenceNavigationPage(new FloorMapsPage());
                     //    break;

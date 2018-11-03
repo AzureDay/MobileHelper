@@ -1,28 +1,26 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:imagecircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              xmlns:toolkit="clr-namespace:FormsToolkit;assembly=FormsToolkit"
              xmlns:local="clr-namespace:Conference.Clients.UI;assembly=Conference.Clients.UI"
              x:Class="Conference.Clients.UI.AboutPage"
-             Title="Info"
+             Title="Settings"
              Icon="tab_about.png"
              NavigationPage.BackButtonTitle="Info"
              BackgroundColor="{DynamicResource WindowBackgroundTable}">
-    <ContentPage.ToolbarItems>
+    <!-- <ContentPage.ToolbarItems>
         <ToolbarItem Command="{Binding LoginCommand}" Text="{Binding LoginText}"/>
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems> -->
     <local:AlwaysScrollView  Grid.RowSpan="2">
-        <StackLayout Spacing="0"> 
-         
-
+        <StackLayout Spacing="0">
             <StackLayout 
                 BackgroundColor="{DynamicResource WindowBackgroundTable}"
                 Spacing="{DynamicResource CardSpacing}"
                 Padding="{DynamicResource CardPadding}">
 
              
-               <local:CardView>
+               <!-- <local:CardView>
                      <StackLayout Spacing="0">
                         <local:LabelSection Text="My Account"/>
                         <local:HeaderDivider/>
@@ -43,7 +41,7 @@
                         </local:NonScrollableListView>
                         <local:FooterDivider/>
                     </StackLayout>
-                </local:CardView>
+                </local:CardView> -->
 
                 <local:CardView Padding="0,32,0,0">
                      <StackLayout Spacing="0">
@@ -76,14 +74,14 @@
                         </Grid>
                         <local:FooterDivider/>
                         <StackLayout Padding="16,8,16,0">
-                            <Label Text="Sign in with your Xamarin account to save and sync favorites and session feedback." 
+                            <Label Text="Please press 'Sync now' to see the updated schedule" 
                                    Style="{DynamicResource ConferenceListItemDetailTextStyle}"/>
                         </StackLayout>
                     </StackLayout>
                 </local:CardView>
            
 
-                <local:CardView Padding="0,32,0,0">
+                <!-- <local:CardView Padding="0,32,0,0">
                      <StackLayout Spacing="0">
                         <local:HeaderDivider/>
                         <local:NonScrollableListView 
@@ -102,9 +100,9 @@
                         </local:NonScrollableListView>
                         <local:FooterDivider/>
                     </StackLayout>
-                </local:CardView>
+                </local:CardView> -->
 
-                <local:CardView>
+                <!-- <local:CardView>
                      <StackLayout Spacing="0">
                         <local:LabelSection Text="Conference Info"/>
                         <local:HeaderDivider/>
@@ -124,7 +122,7 @@
                         </local:NonScrollableListView>
                         <local:FooterDivider/>
                     </StackLayout>
-                </local:CardView>
+                </local:CardView> -->
             </StackLayout>
         </StackLayout>
     </local:AlwaysScrollView>

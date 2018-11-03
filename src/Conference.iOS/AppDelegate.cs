@@ -28,16 +28,16 @@ namespace Conference.iOS
 
         public static class ShortcutIdentifier
         {
-            public const string Tweet = "com.sample.conference.tweet";
-            public const string Announcements = "com.sample.conference.announcements";
-            public const string Events = "com.sample.conference.events";
-            public const string MiniHacks = "com.sample.conference.minihacks";
+            public const string Tweet = "com.azureday.conference.tweet";
+            public const string Announcements = "com.azureday.conference.announcements";
+            public const string Events = "com.azureday.conference.events";
+            public const string MiniHacks = "com.azureday.conference.minihacks";
         }
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             
-            var tint = UIColor.FromRGB(118, 53, 235);
+            var tint = UIColor.FromRGB(25, 118, 210);
             UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(250, 250, 250); //bar background
             UINavigationBar.Appearance.TintColor = tint; //Tint color of button items
 

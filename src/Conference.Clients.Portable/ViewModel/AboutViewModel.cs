@@ -22,18 +22,17 @@ namespace Conference.Clients.Portable
         public AboutViewModel()
         {
             AboutItems.Clear ();
-            AboutItems.Add(new MenuItem { Name = "About this app", Icon = "icon_venue.png" });
+            //AboutItems.Add(new MenuItem { Name = "About this app", Icon = "icon_venue.png" });
             push = DependencyService.Get<IPushNotifications>();
 
             InfoItems.AddRange(new []
                 {
-                    new MenuItem { Name = "Sponsors", Icon = "icon_venue.png", Parameter="sponsors"},
-                    new MenuItem { Name = "Evaluations", Icon = "icon_venue.png", Parameter="evaluations"},
+                    new MenuItem { Name = "Partners", Icon = "icon_venue.png", Parameter="sponsors"},
+                    //new MenuItem { Name = "Evaluations", Icon = "icon_venue.png", Parameter="evaluations"},
                     new MenuItem { Name = "Venue", Icon = "icon_venue.png", Parameter = "venue"},
-                    new MenuItem { Name = "Conference Floor Maps", Icon = "icon_venue.png", Parameter = "floor-maps"},
+                    /*new MenuItem { Name = "Conference Floor Maps", Icon = "icon_venue.png", Parameter = "floor-maps"},
                     new MenuItem { Name = "Code of Conduct", Icon = "icon_code_of_conduct.png", Parameter="code-of-conduct" },
-                    new MenuItem { Name = "Wi-Fi Information", Icon = "icon_wifi.png", Parameter="wi-fi" },
-
+                    new MenuItem { Name = "Wi-Fi Information", Icon = "icon_wifi.png", Parameter="wi-fi" },*/
                 });
 
             accountItem = new MenuItem

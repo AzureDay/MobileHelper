@@ -23,10 +23,10 @@ namespace Conference.Clients.UI
             #endif
 
             NavigationPage.SetHasNavigationBar(this, false);
-            Children.Add(new ConferenceNavigationPage(new FeedPage()));
             Children.Add(new ConferenceNavigationPage(new SessionsPage()));
-            Children.Add(new ConferenceNavigationPage(new EventsPage()));
-            Children.Add(new ConferenceNavigationPage(new MiniHacksPage()));
+            Children.Add(new ConferenceNavigationPage(new SponsorsPage()));
+            Children.Add(new ConferenceNavigationPage(new VenuePage()));
+            //Children.Add(new ConferenceNavigationPage(new SettingsPage()));
             Children.Add(new ConferenceNavigationPage(new AboutPage()));
 
             MessagingService.Current.Subscribe<DeepLinkPage>("DeepLinkPage", async (m, p) =>
@@ -38,14 +38,14 @@ namespace Conference.Clients.UI
                             await CurrentPage.Navigation.PopToRootAsync();
                             await CurrentPage.Navigation.PushAsync(new NotificationsPage());
                             break;
-                        case AppPage.Events:
-                            NavigateAsync(AppPage.Events);
+                        /*case AppPage.Events:
+                           NavigateAsync(AppPage.Events);
                             await CurrentPage.Navigation.PopToRootAsync();
                             break;
                         case AppPage.MiniHacks:
                             NavigateAsync(AppPage.MiniHacks);
                             await CurrentPage.Navigation.PopToRootAsync();
-                            break;
+                            break;*/
                         case AppPage.Session:
                             NavigateAsync(AppPage.Sessions);
                             var session = await DependencyService.Get<ISessionStore>().GetAppIndexSession (p.Id);
@@ -63,13 +63,13 @@ namespace Conference.Clients.UI
             base.OnCurrentPageChanged();
             switch (Children.IndexOf(CurrentPage))
             {
-                case 0:
-                    App.Logger.TrackPage(AppPage.Feed.ToString());
-                    break;
+                //case 0:
+                //    App.Logger.TrackPage(AppPage.Feed.ToString());
+                //    break;
                 case 1:
                     App.Logger.TrackPage(AppPage.Sessions.ToString());
                     break;
-                case 2:
+                /*case 2:
                     App.Logger.TrackPage(AppPage.Events.ToString());
                     break;
                 case 3:
@@ -77,7 +77,7 @@ namespace Conference.Clients.UI
                     break;
                 case 4:
                     App.Logger.TrackPage(AppPage.Information.ToString());
-                    break;
+                    break;*/
             }
         }
 
@@ -85,12 +85,15 @@ namespace Conference.Clients.UI
         {
             switch ((int)menuId)
             {
-                case (int)AppPage.Feed: CurrentPage = Children[0]; break;
-                case (int)AppPage.Sessions: CurrentPage = Children[1]; break;
-                case (int)AppPage.Events: CurrentPage = Children[2]; break;
-                case (int)AppPage.MiniHacks: CurrentPage = Children[3]; break;
-                case (int)AppPage.Information: CurrentPage = Children[4]; break;
-                case (int)AppPage.Notification: CurrentPage = Children[0]; break;
+                //case (int)AppPage.Feed: CurrentPage = Children[0]; break;
+                case (int)AppPage.Sessions: CurrentPage = Children[0]; break;
+                case (int)AppPage.Sponsors: CurrentPage = Children[1]; break;
+                case (int)AppPage.Venue: CurrentPage = Children[2]; break;
+                //case (int)AppPage.Settings: CurrentPage = Children[3]; break;
+                //case (int)AppPage.Events: CurrentPage = Children[2]; break;
+                //case (int)AppPage.MiniHacks: CurrentPage = Children[3]; break;
+                case (int)AppPage.Information: CurrentPage = Children[3]; break;
+                //case (int)AppPage.Notification: CurrentPage = Children[0]; break;
             }
         }
 

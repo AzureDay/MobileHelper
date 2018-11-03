@@ -198,7 +198,7 @@ namespace Conference.Clients.Portable
                     MessagingService.Current.SendMessage<MessagingServiceAlert>(MessageKeys.Message, new MessagingServiceAlert
                         {
                             Title = "Conference Data Synced",
-                            Message = "You now have the latest conference data, however check again your favorites sessions",
+                            Message = "You have the latest conference data now",
                             Cancel = "OK"
                         });
                 }
