@@ -115,7 +115,7 @@ namespace Conference.Clients.Portable
 
             await DataTransfer.RequestAsync(new ShareTextRequest
             {
-                Text = $"Can't wait for {Session.Title} at #Conference!",
+                Text = $"Can't wait for {Session.Title} at #AzureDay2018!",
                 Title = "Share"
             });
         }
