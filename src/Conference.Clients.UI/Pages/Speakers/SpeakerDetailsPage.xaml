@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
@@ -112,7 +112,8 @@
                                                            VerticalOptions="Center"
                                                            Style="{DynamicResource ConferenceListItemTextStyle}"
                                                            TextColor="{DynamicResource DetailTextColor}"
-                                                           Text="{Binding Subtitle}">
+                                                           Text="">
+                                                           <!-- Text="{Binding Subtitle}"> -->
                                                         <Label.IsVisible>
                                                             <OnPlatform x:TypeArguments="x:Boolean" iOS="true" Android="false"/>
                                                         </Label.IsVisible>

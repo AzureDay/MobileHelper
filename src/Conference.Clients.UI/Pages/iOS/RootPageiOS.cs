@@ -33,12 +33,12 @@ namespace Conference.Clients.UI
                 {
                     switch(p.Page)
                     {
-                        case AppPage.Notification:
+                        /*case AppPage.Notification:
                             NavigateAsync(AppPage.Notification);
                             await CurrentPage.Navigation.PopToRootAsync();
                             await CurrentPage.Navigation.PushAsync(new NotificationsPage());
                             break;
-                        /*case AppPage.Events:
+                        case AppPage.Events:
                            NavigateAsync(AppPage.Events);
                             await CurrentPage.Navigation.PopToRootAsync();
                             break;

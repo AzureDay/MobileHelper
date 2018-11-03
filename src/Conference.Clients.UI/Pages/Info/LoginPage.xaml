@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:local="clr-namespace:Conference.Clients.UI;assembly=Conference.Clients.UI"
@@ -6,7 +6,7 @@
     xmlns:toolkit="clr-namespace:FormsToolkit;assembly=FormsToolkit"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Conference.Clients.UI.LoginPage"
-    Title="Sign In"
+    Title="Welcome"
     BackgroundColor="{DynamicResource WindowBackground}">
     <ScrollView>
     <Grid RowSpacing="{StaticResource MediumSpacing}" 
@@ -33,13 +33,13 @@
                             <On Platform="UWP" Value="32,24"/>
                         </OnPlatform>
                     </StackLayout.Padding>
-                 <imagecircle:CircleImage
+                 <!-- <imagecircle:CircleImage
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                         WidthRequest="95" HeightRequest="95"
                         BorderColor="{StaticResource Primary}"
                         Aspect="AspectFill"
-                        x:Name="CircleImageAvatar"/>
+                        x:Name="CircleImageAvatar"/> -->
 
                 <Label HorizontalTextAlignment="Center"
                        HorizontalOptions="FillAndExpand"
@@ -47,11 +47,11 @@
                        Style="{DynamicResource ConferenceListItemTextStyle}"
                        LineBreakMode="WordWrap"
                        TextColor="{DynamicResource DetailTextColor}"
-                       Text="Sign in with your Xamarin account to save and sync favorites and session feedback.">
+                       Text="Press 'Open Agenda' button to see the updated list of sessions.">
                     <Label.FontSize>15</Label.FontSize>
                 </Label>
             </StackLayout>
-            <StackLayout>
+            <!-- <StackLayout>
                 <StackLayout.Padding>
                         <OnPlatform x:TypeArguments="Thickness">
                             <On Platform="Android" Value="32,0"/>
@@ -93,7 +93,7 @@
                         <OnPlatform x:TypeArguments="TextAlignment" iOS="Center"/>
                        </toolkit:EntryLine.HorizontalTextAlignment>
                </toolkit:EntryLine>
-           </StackLayout>
+           </StackLayout> -->
            <StackLayout>
            <StackLayout.Padding>
                         <OnPlatform x:TypeArguments="Thickness">
@@ -109,7 +109,7 @@
                             <On Platform="UWP" Value="10"/>
                         </OnPlatform>
                     </StackLayout.Spacing>
-                <Button 
+                <!-- <Button 
                     Text="Sign In"
                     Command="{Binding LoginCommand}"
                     HorizontalOptions="FillAndExpand"
@@ -121,9 +121,9 @@
                     <Button.FontAttributes>
                         <OnPlatform x:TypeArguments="FontAttributes" iOS="Bold"/>
                     </Button.FontAttributes>
-                </Button>
+                </Button> -->
                 <Button
-                    Text="Not Now"                                     
+                    Text="Open Agenda"                                     
                     Command="{Binding CancelCommand}"
                     IsEnabled="{Binding IsNotBusy}"
                     StyleId="NotNowButton">
@@ -155,7 +155,7 @@
              <Label Text="{Binding Message}" VerticalOptions="Center"  HorizontalOptions="Center" Style="{DynamicResource ConferenceListItemTextStyle}"/>
       </StackLayout>
 
-        <StackLayout Grid.Row="2" HorizontalOptions="Center" Orientation="Horizontal" Padding="16,0,16,12" Spacing="{StaticResource SmallSpacing}">
+        <!-- <StackLayout Grid.Row="2" HorizontalOptions="Center" Orientation="Horizontal" Padding="16,0,16,12" Spacing="{StaticResource SmallSpacing}">
             <Label
                 Text="Don't have an account yet?" 
                 Style="{DynamicResource ConferenceListTextStyle}"
@@ -173,7 +173,7 @@
                 <TapGestureRecognizer Command="{Binding SignupCommand}"/>
               </Label.GestureRecognizers>
             </Label>
-        </StackLayout>
+        </StackLayout> -->
     </Grid>
     </ScrollView>
 </ContentPage>

@@ -37,8 +37,8 @@ namespace Conference.Clients.UI
                     cancel.Icon = "toolbar_close.png";
             }
             
-            CircleImageAvatar.Source = placeholder = ImageSource.FromFile("profile_generic_big.png");
-            EntryEmail.TextChanged += (sender, e) => 
+            //CircleImageAvatar.Source = placeholder = ImageSource.FromFile("profile_generic_big.png");
+            /*EntryEmail.TextChanged += (sender, e) => 
                 {
                     var isValid = (Regex.IsMatch(e.NewTextValue, emailRegex, RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250)));
                     if(isValid)
@@ -58,7 +58,7 @@ namespace Conference.Clients.UI
                                 CircleImageAvatar.Source = placeholder;
                             });
                     }
-                };
+                }; */
         }
 
         protected override bool OnBackButtonPressed()
