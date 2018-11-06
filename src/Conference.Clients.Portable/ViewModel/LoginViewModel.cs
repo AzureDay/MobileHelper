@@ -95,7 +95,7 @@ namespace Conference.Clients.Portable
                 
                 if(result?.Success ?? false)
                 {
-                    Message = "Updating schedule...";
+                    Message = "Updating agenda...";
                     Settings.FirstName = result.User?.FirstName ?? string.Empty;
                     Settings.LastName = result.User?.LastName ?? string.Empty;
                     Settings.Email = email.ToLowerInvariant();
@@ -165,7 +165,7 @@ namespace Conference.Clients.Portable
             {
                 try 
                 {
-                    Message = "Updating schedule...";
+                    Message = "Updating agenda...";
                     IsBusy = true;
                     await StoreManager.SyncAllAsync(false);
                     Settings.Current.LastSync = DateTime.UtcNow;

@@ -42,7 +42,7 @@
                         <local:HeaderDivider/>   
                         <StackLayout BackgroundColor="White" 
                                      Padding="{StaticResource StandardPadding}">
-                            <Label Text="Please press 'Sync now' to see the updated schedule" 
+                            <Label Text="Please press 'Sync now' to see the updated agenda" 
                                    HorizontalOptions="Center" 
                                    Style="{DynamicResource ConferenceListItemDetailTextStyle}"/>
                             
