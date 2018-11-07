@@ -61,7 +61,7 @@ namespace AzureDay.WebApp.Localization.App.Service.Speaker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Solutions Architect is an adept and evangelist of Microsoft&apos;s technological stack. Certified Microsoft Professional Developer since 2007..
         /// </summary>
         public static string Bio {
             get {

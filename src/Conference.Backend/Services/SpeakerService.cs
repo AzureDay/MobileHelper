@@ -21,11 +21,12 @@ namespace Conference.Backend.Services
             _speakers.Add(EPolonychko());
             _speakers.Add(EWasilewski());
             _speakers.Add(AVidishchev());
-            _speakers.Add(OKrakovetskyi());
-            _speakers.Add(ILubenets());
-            _speakers.Add(KBaczyk());
-            _speakers.Add(NDranchuk());
             _speakers.Add(SPoplavskiy());
+            _speakers.Add(OKrakovetskyi());
+            _speakers.Add(NDranchuk());
+            _speakers.Add(KBaczyk());
+            _speakers.Add(ILubenets());
+            _speakers.Add(NMykhailenko());
 
             return _speakers;
         }
@@ -299,6 +300,23 @@ namespace Conference.Backend.Services
                 PositionName = "Senior Software Engineer Team Lead",
                 AvatarUrl = string.Format("{0}/content/images/avatars/ILubenets.jpg", BaseUrl),
                 CompanyWebsiteUrl = "https://aistant.com/",
+            };
+        }
+
+        public Speaker NMykhailenko()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.NMykhailenko.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.NMykhailenko.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.NMykhailenko.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/NMykhailenko.png", BaseUrl),
+                LinkedInUrl = "https://www.linkedin.com/in/nikita-mykhailenko/",
+                TwitterUrl = "",
+                CompanyName = "",
+                PositionName = "Software Engineer",
+                AvatarUrl = string.Format("{0}/content/images/avatars/NMykhailenko.png", BaseUrl),
+                CompanyWebsiteUrl = "",
             };
         }
     }

@@ -61,7 +61,7 @@ namespace AzureDay.WebApp.Localization.App.Service.Topics {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to After this session, you will know the basics of the Bot Framework, and which Azure (and not only) services can be combined with chat-bot applications to make them as useful and smart as needed. I will tell you about the problems that we faced while trying to create the most convenient and functional solutions, and share the best practices and some life-hacks..
         /// </summary>
         public static string Description {
             get {

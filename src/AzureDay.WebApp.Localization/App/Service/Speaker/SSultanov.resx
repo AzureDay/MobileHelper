@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bio" xml:space="preserve">
-    <value />
+    <value>Solutions Architect is an adept and evangelist of Microsoft's technological stack. Certified Microsoft Professional Developer since 2007.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
     <value>Stas</value>

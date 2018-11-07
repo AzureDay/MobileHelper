@@ -275,8 +275,10 @@
     <Content Include="Content\images\avatars\KBaczyk.jpg" />
     <Content Include="Content\images\avatars\LebedenkoStas.jpg" />
     <Content Include="Content\images\avatars\NDranchuk.jpg" />
+    <Content Include="Content\images\avatars\NMykhailenko.png" />
     <Content Include="Content\images\avatars\OKrakovetskyi.jpg" />
     <Content Include="Content\images\avatars\SergiiBielskyi.jpg" />
+    <Content Include="Content\images\avatars\SKalinets.png" />
     <Content Include="Content\images\avatars\SPoplavskiy.png" />
     <Content Include="Content\images\avatars\StasSultanov.jpg" />
     <Content Include="Content\images\avatars\VBezmaly.jpg" />
@@ -288,19 +290,33 @@
     <Content Include="Content\images\logos\BrainBasketFoundation_v1.png" />
     <Content Include="Content\images\logos\BrainBasketFoundation_v2.png" />
     <Content Include="Content\images\logos\brain_tv.jpg" />
+    <Content Include="Content\images\logos\ciklum_v1.png" />
+    <Content Include="Content\images\logos\ciklum_v2.png" />
+    <Content Include="Content\images\logos\ciklum_v3.png" />
+    <Content Include="Content\images\logos\DataScienceUA.png" />
+    <Content Include="Content\images\logos\DataScienceUA_v2.png" />
     <Content Include="Content\images\logos\devart_v1.png" />
     <Content Include="Content\images\logos\devart_v2.png" />
+    <Content Include="Content\images\logos\devdigest.png" />
+    <Content Include="Content\images\logos\DevPro.png" />
     <Content Include="Content\images\logos\dou.png" />
+    <Content Include="Content\images\logos\ELEKS.png" />
     <Content Include="Content\images\logos\itclusterkonotop_v1.png" />
     <Content Include="Content\images\logos\itclusterkonotop_v2.png" />
+    <Content Include="Content\images\logos\ITClusterVinnytsia.jpg" />
     <Content Include="Content\images\logos\itratingsukraine_v1.png" />
     <Content Include="Content\images\logos\itratingsukraine_v2.png" />
     <Content Include="Content\images\logos\KyivITCluster.png" />
     <Content Include="Content\images\logos\Luxoft_v1.jpg" />
     <Content Include="Content\images\logos\Luxoft_v2.jpg" />
     <Content Include="Content\images\logos\microsoft.jpg" />
+    <Content Include="Content\images\logos\salateira_v1.jpg" />
+    <Content Include="Content\images\logos\salateira_v2.jpg" />
     <Content Include="Content\images\logos\scrum_ua.png" />
+    <Content Include="Content\images\logos\Skyworker.jpg" />
+    <Content Include="Content\images\logos\smart_it.jpg" />
     <Content Include="Content\images\logos\weeklyit.png" />
+    <Content Include="Content\images\logos\Wirex.png" />
     <Content Include="Views\Push.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -324,6 +340,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\azuredaymobile - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\azuredaymobile - Web Deploy1.pubxml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

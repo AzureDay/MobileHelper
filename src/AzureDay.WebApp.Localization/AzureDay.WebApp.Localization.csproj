@@ -56,21 +56,26 @@
     <Compile Include="App\Service\Partners\DataArt.Designer.cs" />
     <Compile Include="App\Service\Partners\DataArt.ru.Designer.cs" />
     <Compile Include="App\Service\Partners\DataArt.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Partners\DataScienceUA.Designer.cs" />
     <Compile Include="App\Service\Partners\Daxx.Designer.cs" />
     <Compile Include="App\Service\Partners\Dbbest.Designer.cs" />
     <Compile Include="App\Service\Partners\DevArt.Designer.cs" />
+    <Compile Include="App\Service\Partners\DevDigest.Designer.cs" />
     <Compile Include="App\Service\Partners\Developex.Designer.cs" />
+    <Compile Include="App\Service\Partners\DevPro.Designer.cs" />
     <Compile Include="App\Service\Partners\dotNetCore.Designer.cs" />
     <Compile Include="App\Service\Partners\Dou.Designer.cs" />
     <Compile Include="App\Service\Partners\EasyPay.Designer.cs" />
     <Compile Include="App\Service\Partners\EasyPay.ru.Designer.cs" />
     <Compile Include="App\Service\Partners\EasyPay.uk-UA.Designer.cs" />
+    <Compile Include="App\Service\Partners\Eleks.Designer.cs" />
     <Compile Include="App\Service\Partners\EnglishDom.Designer.cs" />
     <Compile Include="App\Service\Partners\EPAM.Designer.cs" />
     <Compile Include="App\Service\Partners\EPAM.ru.Designer.cs" />
     <Compile Include="App\Service\Partners\EPAM.uk-UA.Designer.cs" />
     <Compile Include="App\Service\Partners\GL.Designer.cs" />
     <Compile Include="App\Service\Partners\ITClusterKonotop.Designer.cs" />
+    <Compile Include="App\Service\Partners\ITClusterVinnytsia.Designer.cs" />
     <Compile Include="App\Service\Partners\ITEA.Designer.cs" />
     <Compile Include="App\Service\Partners\ITRatingUkraine.Designer.cs" />
     <Compile Include="App\Service\Partners\ITStep.Designer.cs" />
@@ -79,9 +84,13 @@
     <Compile Include="App\Service\Partners\Luxoft.Designer.cs" />
     <Compile Include="App\Service\Partners\Microsoft.Designer.cs" />
     <Compile Include="App\Service\Partners\OReilly.Designer.cs" />
+    <Compile Include="App\Service\Partners\Salateira.Designer.cs" />
     <Compile Include="App\Service\Partners\ScrumUkraine.Designer.cs" />
+    <Compile Include="App\Service\Partners\Skyworker.Designer.cs" />
+    <Compile Include="App\Service\Partners\SmartIT.Designer.cs" />
     <Compile Include="App\Service\Partners\Trudua.Designer.cs" />
     <Compile Include="App\Service\Partners\WeeklyIT.Designer.cs" />
+    <Compile Include="App\Service\Partners\Wirex.Designer.cs" />
     <Compile Include="App\Service\Partners\XamarinUA.Designer.cs" />
     <Compile Include="App\Service\Partners\Yakaboo.Designer.cs" />
     <Compile Include="App\Service\Room.Designer.cs" />
@@ -132,10 +141,12 @@
     <Compile Include="App\Service\Speaker\MMateev.Designer.cs" />
     <Compile Include="App\Service\Speaker\MSmereczynski.Designer.cs" />
     <Compile Include="App\Service\Speaker\NDranchuk.Designer.cs" />
+    <Compile Include="App\Service\Speaker\NMykhailenko.Designer.cs" />
     <Compile Include="App\Service\Speaker\OChorny.Designer.cs" />
     <Compile Include="App\Service\Speaker\OChorny.ru.Designer.cs" />
     <Compile Include="App\Service\Speaker\OKrakovetskyi.Designer.cs" />
     <Compile Include="App\Service\Speaker\SBielskyi.Designer.cs" />
+    <Compile Include="App\Service\Speaker\SKalinets.Designer.cs" />
     <Compile Include="App\Service\Speaker\SKorzh.Designer.cs" />
     <Compile Include="App\Service\Speaker\SKorzh.ru.Designer.cs" />
     <Compile Include="App\Service\Speaker\SKryshtop.Designer.cs" />
@@ -170,6 +181,11 @@
     <Compile Include="App\Service\Topics\EPolonychko_01.Designer.cs" />
     <Compile Include="App\Service\Topics\EWasilewski_01.Designer.cs" />
     <Compile Include="App\Service\Topics\Food\Afterparty.Designer.cs" />
+    <Compile Include="App\Service\Topics\Food\Break.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Break.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Topics\Food\CoffeeBreak.Designer.cs" />
     <Compile Include="App\Service\Topics\Food\Lunch.Designer.cs" />
     <Compile Include="App\Service\Topics\Food\Registration.Designer.cs" />
@@ -186,16 +202,19 @@
     <Compile Include="App\Service\Topics\MMateev_01.Designer.cs" />
     <Compile Include="App\Service\Topics\MSmereczynski_01.Designer.cs" />
     <Compile Include="App\Service\Topics\NDranchuk_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\NMykhailenko_01.Designer.cs" />
     <Compile Include="App\Service\Topics\OChorny_01.Designer.cs" />
     <Compile Include="App\Service\Topics\OChorny_02.Designer.cs" />
     <Compile Include="App\Service\Topics\OKrakovetskyi_02.Designer.cs" />
     <Compile Include="App\Service\Topics\SBielskyi_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\SKalinets_01.Designer.cs" />
     <Compile Include="App\Service\Topics\SKorzh_01.Designer.cs" />
     <Compile Include="App\Service\Topics\SKryshtop_01.Designer.cs" />
     <Compile Include="App\Service\Topics\SLebedenko_01.Designer.cs" />
     <Compile Include="App\Service\Topics\Special\Endnote.Designer.cs" />
     <Compile Include="App\Service\Topics\Special\Keynote.Designer.cs" />
     <Compile Include="App\Service\Topics\Special\Keynote.ru.Designer.cs" />
+    <Compile Include="App\Service\Topics\SPoplavskiy_01.Designer.cs" />
     <Compile Include="App\Service\Topics\SPoplavskiy_02.Designer.cs" />
     <Compile Include="App\Service\Topics\SSultanov_01.Designer.cs" />
     <Compile Include="App\Service\Topics\VBezmaly_01.Designer.cs" />
@@ -301,22 +320,27 @@
     <EmbeddedResource Include="App\Service\Partners\DataArt.resx" />
     <EmbeddedResource Include="App\Service\Partners\DataArt.ru.resx" />
     <EmbeddedResource Include="App\Service\Partners\DataArt.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\DataScienceUA.resx" />
     <EmbeddedResource Include="App\Service\Partners\Daxx.resx" />
     <EmbeddedResource Include="App\Service\Partners\Dbbest.resx" />
     <EmbeddedResource Include="App\Service\Partners\DevArt.resx" />
     <EmbeddedResource Include="App\Service\Partners\DevArt.ru.resx" />
+    <EmbeddedResource Include="App\Service\Partners\DevDigest.resx" />
     <EmbeddedResource Include="App\Service\Partners\Developex.resx" />
+    <EmbeddedResource Include="App\Service\Partners\DevPro.resx" />
     <EmbeddedResource Include="App\Service\Partners\dotNetCore.resx" />
     <EmbeddedResource Include="App\Service\Partners\Dou.resx" />
     <EmbeddedResource Include="App\Service\Partners\EasyPay.resx" />
     <EmbeddedResource Include="App\Service\Partners\EasyPay.ru.resx" />
     <EmbeddedResource Include="App\Service\Partners\EasyPay.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Eleks.resx" />
     <EmbeddedResource Include="App\Service\Partners\EnglishDom.resx" />
     <EmbeddedResource Include="App\Service\Partners\EPAM.resx" />
     <EmbeddedResource Include="App\Service\Partners\EPAM.ru.resx" />
     <EmbeddedResource Include="App\Service\Partners\EPAM.uk-UA.resx" />
     <EmbeddedResource Include="App\Service\Partners\GL.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITClusterKonotop.resx" />
+    <EmbeddedResource Include="App\Service\Partners\ITClusterVinnytsia.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITEA.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITRatingUkraine.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITStep.resx" />
@@ -327,9 +351,13 @@
     <EmbeddedResource Include="App\Service\Partners\Luxoft.uk-UA.resx" />
     <EmbeddedResource Include="App\Service\Partners\Microsoft.resx" />
     <EmbeddedResource Include="App\Service\Partners\OReilly.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Salateira.resx" />
     <EmbeddedResource Include="App\Service\Partners\ScrumUkraine.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Skyworker.resx" />
+    <EmbeddedResource Include="App\Service\Partners\SmartIT.resx" />
     <EmbeddedResource Include="App\Service\Partners\Trudua.resx" />
     <EmbeddedResource Include="App\Service\Partners\WeeklyIT.resx" />
+    <EmbeddedResource Include="App\Service\Partners\Wirex.resx" />
     <EmbeddedResource Include="App\Service\Partners\XamarinUA.resx" />
     <EmbeddedResource Include="App\Service\Partners\Yakaboo.resx" />
     <EmbeddedResource Include="App\Service\Room.resx" />
@@ -380,10 +408,12 @@
     <EmbeddedResource Include="App\Service\Speaker\MMateev.resx" />
     <EmbeddedResource Include="App\Service\Speaker\MSmereczynski.resx" />
     <EmbeddedResource Include="App\Service\Speaker\NDranchuk.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\NMykhailenko.resx" />
     <EmbeddedResource Include="App\Service\Speaker\OChorny.resx" />
     <EmbeddedResource Include="App\Service\Speaker\OChorny.ru.resx" />
     <EmbeddedResource Include="App\Service\Speaker\OKrakovetskyi.resx" />
     <EmbeddedResource Include="App\Service\Speaker\SBielskyi.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\SKalinets.resx" />
     <EmbeddedResource Include="App\Service\Speaker\SKorzh.resx" />
     <EmbeddedResource Include="App\Service\Speaker\SKorzh.ru.resx" />
     <EmbeddedResource Include="App\Service\Speaker\SKryshtop.resx" />
@@ -419,6 +449,10 @@
     <EmbeddedResource Include="App\Service\Topics\EPolonychko_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\EWasilewski_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\Food\Afterparty.resx" />
+    <EmbeddedResource Include="App\Service\Topics\Food\Break.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Break.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\Food\CoffeeBreak.resx" />
     <EmbeddedResource Include="App\Service\Topics\Food\Lunch.resx" />
     <EmbeddedResource Include="App\Service\Topics\Food\Registration.resx" />
@@ -435,16 +469,19 @@
     <EmbeddedResource Include="App\Service\Topics\MMateev_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\MSmereczynski_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\NDranchuk_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\NMykhailenko_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\OChorny_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\OChorny_02.resx" />
     <EmbeddedResource Include="App\Service\Topics\OKrakovetskyi_02.resx" />
     <EmbeddedResource Include="App\Service\Topics\SBielskyi_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\SKalinets_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\SKorzh_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\SKryshtop_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\SLebedenko_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\Special\Endnote.resx" />
     <EmbeddedResource Include="App\Service\Topics\Special\Keynote.resx" />
     <EmbeddedResource Include="App\Service\Topics\Special\Keynote.ru.resx" />
+    <EmbeddedResource Include="App\Service\Topics\SPoplavskiy_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\SPoplavskiy_02.resx" />
     <EmbeddedResource Include="App\Service\Topics\SSultanov_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\VBezmaly_01.resx" />
