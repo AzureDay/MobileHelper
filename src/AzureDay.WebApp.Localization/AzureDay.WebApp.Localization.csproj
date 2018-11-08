@@ -77,6 +77,7 @@
     <Compile Include="App\Service\Partners\ITClusterKonotop.Designer.cs" />
     <Compile Include="App\Service\Partners\ITClusterVinnytsia.Designer.cs" />
     <Compile Include="App\Service\Partners\ITEA.Designer.cs" />
+    <Compile Include="App\Service\Partners\ITKPI.Designer.cs" />
     <Compile Include="App\Service\Partners\ITRatingUkraine.Designer.cs" />
     <Compile Include="App\Service\Partners\ITStep.Designer.cs" />
     <Compile Include="App\Service\Partners\Jetbrains.Designer.cs" />
@@ -342,6 +343,7 @@
     <EmbeddedResource Include="App\Service\Partners\ITClusterKonotop.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITClusterVinnytsia.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITEA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\ITKPI.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITRatingUkraine.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITStep.resx" />
     <EmbeddedResource Include="App\Service\Partners\Jetbrains.resx" />

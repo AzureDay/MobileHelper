@@ -195,6 +195,14 @@ namespace Conference.Backend.Services
                     ImageUrl = string.Format("{0}/content/images/logos/smart_it.jpg", BaseUrl),
                     WebsiteUrl = "http://www.smart-it.com/"           
                 },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.ITKPI.Title,
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.ITKPI.Description,
+                    SponsorLevel = new SponsorLevel {Name = "Info", Rank = 3},
+                    ImageUrl = string.Format("{0}/content/images/logos/ITKPI.png", BaseUrl),
+                    WebsiteUrl = "https://t.me/itkpi"
+                },
             };
         }
     }
