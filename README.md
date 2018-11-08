@@ -3,7 +3,7 @@
 ## App Store Version
 https://itunes.apple.com/us/app/azureday-ua/id1441338569?ls=1&mt=8
 
-## Google Play Version:
+## Google Play Version
 https://play.google.com/store/apps/details?id=com.azureday.conference
 
 # About
