@@ -87,7 +87,7 @@ namespace Conference.DataStore.Azure
                 IsInitialized = true;
                 var dbId = Settings.DatabaseId;
                 var path = $"syncstore{dbId}.db";
-                MobileService = new MobileServiceClient ("http://azuredaymobile.azurewebsites.net/");
+                MobileService = new MobileServiceClient ("https://azuredaymobile-by.azurewebsites.net");
                 store = new MobileServiceSQLiteStore (path);
                 store.DefineTable<Category> ();
                 store.DefineTable<Favorite> ();
