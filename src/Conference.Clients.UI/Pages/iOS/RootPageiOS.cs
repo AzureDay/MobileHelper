@@ -3,6 +3,8 @@ using Conference.Clients.UI;
 using FormsToolkit;
 using Conference.Clients.Portable;
 using Conference.DataStore.Abstractions;
+using System.Windows.Input;
+using System.Threading.Tasks;
 
 namespace Conference.Clients.UI
 {
@@ -101,15 +103,11 @@ namespace Conference.Clients.UI
         {
             base.OnAppearing();
 
-
-
-            if (Settings.Current.FirstRun)
-            {
-                MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
-            }
+            //if (Settings.Current.FirstRun)
+            //{
+            //    MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
+            //}
         }
-
-       
     }
 }
 

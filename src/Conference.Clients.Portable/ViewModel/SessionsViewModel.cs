@@ -147,6 +147,12 @@ namespace Conference.Clients.Portable
             if(IsBusy)
                 return false;
 
+            if (Settings.FirstRun)
+            {
+                force = true;
+            }
+            Settings.FirstRun = false;
+
             try 
             {
                 NextForceRefresh = DateTime.UtcNow.AddMinutes(45);
