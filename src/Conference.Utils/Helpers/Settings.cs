@@ -108,6 +108,15 @@ namespace Conference.Clients.Portable
             set { Preferences.Set(FirstRunKey, value); OnPropertyChanged(); }
         }
 
+        const string PartnersLoadedKey = "partners_loaded";
+        static readonly bool PartnersLoadedDefault = true;
+
+        public bool PartnersLoaded
+        {
+            get => Preferences.Get(PartnersLoadedKey, PartnersLoadedDefault);
+            set { Preferences.Set(PartnersLoadedKey, value); OnPropertyChanged(); }
+        }
+
         const string GooglePlayCheckedKey = "play_checked";
         static readonly bool GooglePlayCheckedDefault = false;
 

@@ -89,7 +89,13 @@ namespace Conference.Clients.Portable
             if(IsBusy)
                 return false;
 
-            try 
+            if (Settings.PartnersLoaded)
+            {
+                force = true;
+            }
+            Settings.PartnersLoaded = false;
+
+            try
             {
                 IsBusy = true;
 

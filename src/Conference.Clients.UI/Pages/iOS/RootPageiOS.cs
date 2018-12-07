@@ -103,10 +103,10 @@ namespace Conference.Clients.UI
 
 
 
-            if (Settings.Current.FirstRun)
-            {
-                MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
-            }
+            //if (Settings.Current.FirstRun)
+            //{
+            //    MessagingService.Current.SendMessage(MessageKeys.NavigateLogin);
+            //}
         }
 
        
