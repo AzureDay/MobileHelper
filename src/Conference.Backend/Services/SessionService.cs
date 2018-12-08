@@ -62,7 +62,7 @@ namespace Conference.Backend.Services
                 //common stream
                 new Session
                 {
-                    Speakers = new List<Speaker> { _speakerService.ALaysha(), _speakerService.AKozhemiakin(), _speakerService.RNovik() },
+                    Speakers = new List<Speaker> { _speakerService.ALaysha(), _speakerService.AKozhemiakin(), _speakerService.RNovik(), _speakerService.ABoyko() },
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Special.Keynote.Title,
                     Abstract = AzureDay.WebApp.Localization.App.Service.Topics.Special.Keynote.Description,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Special.Keynote.Title,
