@@ -48,6 +48,16 @@
     <Compile Include="App\Service\Language.uk-UA.Designer.cs" />
     <Compile Include="App\Service\Partners\AzureUA.Designer.cs" />
     <Compile Include="App\Service\Partners\Beetroot.Designer.cs" />
+    <Compile Include="App\Service\Partners\BelarusAzureUserGroup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BelarusAzureUserGroup.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Partners\BelarusBigDataUserGroup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BelarusBigDataUserGroup.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Partners\Bodo.Designer.cs" />
     <Compile Include="App\Service\Partners\BrainBasket.Designer.cs" />
     <Compile Include="App\Service\Partners\BrainTV.Designer.cs" />
@@ -74,6 +84,11 @@
     <Compile Include="App\Service\Partners\EPAM.ru.Designer.cs" />
     <Compile Include="App\Service\Partners\EPAM.uk-UA.Designer.cs" />
     <Compile Include="App\Service\Partners\GL.Designer.cs" />
+    <Compile Include="App\Service\Partners\HTPBelarus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HTPBelarus.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Partners\ITClusterKonotop.Designer.cs" />
     <Compile Include="App\Service\Partners\ITClusterVinnytsia.Designer.cs" />
     <Compile Include="App\Service\Partners\ITEA.Designer.cs" />
@@ -101,9 +116,24 @@
     <Compile Include="App\Service\Speaker\ABoyko.ru.Designer.cs" />
     <Compile Include="App\Service\Speaker\ADeren.Designer.cs" />
     <Compile Include="App\Service\Speaker\ADeren.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\AIvlev.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AIvlev.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Speaker\AKozhemiakin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AKozhemiakin.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Speaker\ALaysha.Designer.cs" />
     <Compile Include="App\Service\Speaker\ALaysha.ru.Designer.cs" />
     <Compile Include="App\Service\Speaker\AMang.Designer.cs" />
+    <Compile Include="App\Service\Speaker\ARamanchyk.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ARamanchyk.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Speaker\AShamray.Designer.cs" />
     <Compile Include="App\Service\Speaker\ASurkov.Designer.cs" />
     <Compile Include="App\Service\Speaker\ASurkov.ru.Designer.cs" />
@@ -118,9 +148,19 @@
     <Compile Include="App\Service\Speaker\DDurasau.ru.Designer.cs" />
     <Compile Include="App\Service\Speaker\DIvanov.Designer.cs" />
     <Compile Include="App\Service\Speaker\DIvanov.ru.Designer.cs" />
+    <Compile Include="App\Service\Speaker\DLappo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DLappo.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Speaker\DReznik.Designer.cs" />
     <Compile Include="App\Service\Speaker\DReznik.ru.Designer.cs" />
     <Compile Include="App\Service\Speaker\EAuberix.Designer.cs" />
+    <Compile Include="App\Service\Speaker\EBogdanov.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EBogdanov.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Speaker\ENiedaszkowski.Designer.cs" />
     <Compile Include="App\Service\Speaker\EPolonychko.Designer.cs" />
     <Compile Include="App\Service\Speaker\EPolonychko.ru.Designer.cs" />
@@ -137,6 +177,16 @@
     <Compile Include="App\Service\Speaker\JessicaEngstrom.Designer.cs" />
     <Compile Include="App\Service\Speaker\JimmyEngstrom.Designer.cs" />
     <Compile Include="App\Service\Speaker\KBaczyk.Designer.cs" />
+    <Compile Include="App\Service\Speaker\KSultanov.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KSultanov.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Speaker\LDauhiala.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LDauhiala.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Speaker\MFerdyn.Designer.cs" />
     <Compile Include="App\Service\Speaker\MMartensson.Designer.cs" />
     <Compile Include="App\Service\Speaker\MMateev.Designer.cs" />
@@ -146,6 +196,11 @@
     <Compile Include="App\Service\Speaker\OChorny.Designer.cs" />
     <Compile Include="App\Service\Speaker\OChorny.ru.Designer.cs" />
     <Compile Include="App\Service\Speaker\OKrakovetskyi.Designer.cs" />
+    <Compile Include="App\Service\Speaker\RNovik.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RNovik.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Speaker\SBielskyi.Designer.cs" />
     <Compile Include="App\Service\Speaker\SKalinets.Designer.cs" />
     <Compile Include="App\Service\Speaker\SKorzh.Designer.cs" />
@@ -156,6 +211,11 @@
     <Compile Include="App\Service\Speaker\SPoplavskiy.Designer.cs" />
     <Compile Include="App\Service\Speaker\SPoplavskiy.ru.Designer.cs" />
     <Compile Include="App\Service\Speaker\SSultanov.Designer.cs" />
+    <Compile Include="App\Service\Speaker\UKastelic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UKastelic.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Speaker\VBezmaly.Designer.cs" />
     <Compile Include="App\Service\Speaker\VRadchuk.Designer.cs" />
     <Compile Include="App\Service\Speaker\VRadchuk.ru.Designer.cs" />
@@ -168,6 +228,11 @@
     <Compile Include="App\Service\Topics\ABoyko_02.Designer.cs" />
     <Compile Include="App\Service\Topics\ALaysha_01.Designer.cs" />
     <Compile Include="App\Service\Topics\AMang_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\ARamanchyk_01.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ARamanchyk_01.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Topics\AShamray_01.Designer.cs" />
     <Compile Include="App\Service\Topics\ASurkov_01.Designer.cs" />
     <Compile Include="App\Service\Topics\ATkachenko_01.Designer.cs" />
@@ -175,9 +240,19 @@
     <Compile Include="App\Service\Topics\AVidishchev_01.Designer.cs" />
     <Compile Include="App\Service\Topics\AYurchenko_01.Designer.cs" />
     <Compile Include="App\Service\Topics\DDurasau_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\DLappo_01.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DLappo_01.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Topics\DReznik_01.Designer.cs" />
     <Compile Include="App\Service\Topics\EAuberix_01.Designer.cs" />
     <Compile Include="App\Service\Topics\EAuberix_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\EBogdanov_AIvlev_01.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EBogdanov_AIvlev_01.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Topics\ENiedaszkowski_02.Designer.cs" />
     <Compile Include="App\Service\Topics\EPolonychko_01.Designer.cs" />
     <Compile Include="App\Service\Topics\EWasilewski_01.Designer.cs" />
@@ -198,6 +273,11 @@
     <Compile Include="App\Service\Topics\JessicaEngstrom_01.Designer.cs" />
     <Compile Include="App\Service\Topics\JimmyEngstrom_01.Designer.cs" />
     <Compile Include="App\Service\Topics\KBaczyk_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\KSultanov_01.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KSultanov_01.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Topics\MFerdyn_02.Designer.cs" />
     <Compile Include="App\Service\Topics\MMartensson_05.Designer.cs" />
     <Compile Include="App\Service\Topics\MMateev_01.Designer.cs" />
@@ -207,6 +287,16 @@
     <Compile Include="App\Service\Topics\OChorny_01.Designer.cs" />
     <Compile Include="App\Service\Topics\OChorny_02.Designer.cs" />
     <Compile Include="App\Service\Topics\OKrakovetskyi_02.Designer.cs" />
+    <Compile Include="App\Service\Topics\RNovik_01.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RNovik_01.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App\Service\Topics\RNovik_LDauhiala_01.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RNovik_LDauhiala_01.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Topics\SBielskyi_01.Designer.cs" />
     <Compile Include="App\Service\Topics\SKalinets_01.Designer.cs" />
     <Compile Include="App\Service\Topics\SKorzh_01.Designer.cs" />
@@ -218,6 +308,11 @@
     <Compile Include="App\Service\Topics\SPoplavskiy_01.Designer.cs" />
     <Compile Include="App\Service\Topics\SPoplavskiy_02.Designer.cs" />
     <Compile Include="App\Service\Topics\SSultanov_01.Designer.cs" />
+    <Compile Include="App\Service\Topics\UKastelic_01.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UKastelic_01.resx</DependentUpon>
+    </Compile>
     <Compile Include="App\Service\Topics\VBezmaly_01.Designer.cs" />
     <Compile Include="App\Service\Topics\VThavonekham_01.Designer.cs" />
     <Compile Include="App\Service\Topics\VThavonekham_02.Designer.cs" />
@@ -311,6 +406,14 @@
     <EmbeddedResource Include="App\Service\Partners\Beetroot.resx" />
     <EmbeddedResource Include="App\Service\Partners\Beetroot.ru.resx" />
     <EmbeddedResource Include="App\Service\Partners\Beetroot.uk-UA.resx" />
+    <EmbeddedResource Include="App\Service\Partners\BelarusAzureUserGroup.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BelarusAzureUserGroup.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Partners\BelarusBigDataUserGroup.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BelarusBigDataUserGroup.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Partners\Bodo.resx" />
     <EmbeddedResource Include="App\Service\Partners\BrainBasket.resx" />
     <EmbeddedResource Include="App\Service\Partners\BrainBasket.ru.resx" />
@@ -340,6 +443,10 @@
     <EmbeddedResource Include="App\Service\Partners\EPAM.ru.resx" />
     <EmbeddedResource Include="App\Service\Partners\EPAM.uk-UA.resx" />
     <EmbeddedResource Include="App\Service\Partners\GL.resx" />
+    <EmbeddedResource Include="App\Service\Partners\HTPBelarus.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HTPBelarus.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Partners\ITClusterKonotop.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITClusterVinnytsia.resx" />
     <EmbeddedResource Include="App\Service\Partners\ITEA.resx" />
@@ -369,9 +476,21 @@
     <EmbeddedResource Include="App\Service\Speaker\ABoyko.ru.resx" />
     <EmbeddedResource Include="App\Service\Speaker\ADeren.resx" />
     <EmbeddedResource Include="App\Service\Speaker\ADeren.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\AIvlev.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AIvlev.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\AKozhemiakin.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AKozhemiakin.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\ALaysha.resx" />
     <EmbeddedResource Include="App\Service\Speaker\ALaysha.ru.resx" />
     <EmbeddedResource Include="App\Service\Speaker\AMang.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\ARamanchyk.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ARamanchyk.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\AShamray.resx" />
     <EmbeddedResource Include="App\Service\Speaker\ASurkov.resx" />
     <EmbeddedResource Include="App\Service\Speaker\ASurkov.ru.resx" />
@@ -386,9 +505,17 @@
     <EmbeddedResource Include="App\Service\Speaker\DDurasau.ru.resx" />
     <EmbeddedResource Include="App\Service\Speaker\DIvanov.resx" />
     <EmbeddedResource Include="App\Service\Speaker\DIvanov.ru.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\DLappo.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DLappo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\DReznik.resx" />
     <EmbeddedResource Include="App\Service\Speaker\DReznik.ru.resx" />
     <EmbeddedResource Include="App\Service\Speaker\EAuberix.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\EBogdanov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EBogdanov.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\ENiedaszkowski.resx" />
     <EmbeddedResource Include="App\Service\Speaker\EPolonychko.resx" />
     <EmbeddedResource Include="App\Service\Speaker\EPolonychko.ru.resx" />
@@ -405,6 +532,14 @@
     <EmbeddedResource Include="App\Service\Speaker\JessicaEngstrom.resx" />
     <EmbeddedResource Include="App\Service\Speaker\JimmyEngstrom.resx" />
     <EmbeddedResource Include="App\Service\Speaker\KBaczyk.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\KSultanov.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>KSultanov.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Speaker\LDauhiala.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LDauhiala.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\MFerdyn.resx" />
     <EmbeddedResource Include="App\Service\Speaker\MMartensson.resx" />
     <EmbeddedResource Include="App\Service\Speaker\MMateev.resx" />
@@ -414,6 +549,10 @@
     <EmbeddedResource Include="App\Service\Speaker\OChorny.resx" />
     <EmbeddedResource Include="App\Service\Speaker\OChorny.ru.resx" />
     <EmbeddedResource Include="App\Service\Speaker\OKrakovetskyi.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\RNovik.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RNovik.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\SBielskyi.resx" />
     <EmbeddedResource Include="App\Service\Speaker\SKalinets.resx" />
     <EmbeddedResource Include="App\Service\Speaker\SKorzh.resx" />
@@ -424,6 +563,10 @@
     <EmbeddedResource Include="App\Service\Speaker\SPoplavskiy.resx" />
     <EmbeddedResource Include="App\Service\Speaker\SPoplavskiy.ru.resx" />
     <EmbeddedResource Include="App\Service\Speaker\SSultanov.resx" />
+    <EmbeddedResource Include="App\Service\Speaker\UKastelic.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UKastelic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Speaker\VBezmaly.resx" />
     <EmbeddedResource Include="App\Service\Speaker\VRadchuk.resx" />
     <EmbeddedResource Include="App\Service\Speaker\VRadchuk.ru.resx" />
@@ -437,6 +580,10 @@
     <EmbeddedResource Include="App\Service\Topics\ABoyko_02.resx" />
     <EmbeddedResource Include="App\Service\Topics\ALaysha_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\AMang_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\ARamanchyk_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ARamanchyk_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\AShamray_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\ASurkov_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\ATkachenko_01.resx" />
@@ -444,9 +591,17 @@
     <EmbeddedResource Include="App\Service\Topics\AVidishchev_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\AYurchenko_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\DDurasau_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\DLappo_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DLappo_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\DReznik_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\EAuberix_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\EAuberix_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\EBogdanov_AIvlev_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EBogdanov_AIvlev_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\ENiedaszkowski_02.resx" />
     <EmbeddedResource Include="App\Service\Topics\EPolonychko_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\EWasilewski_01.resx" />
@@ -466,6 +621,10 @@
     <EmbeddedResource Include="App\Service\Topics\JessicaEngstrom_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\JimmyEngstrom_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\KBaczyk_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\KSultanov_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>KSultanov_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\MFerdyn_02.resx" />
     <EmbeddedResource Include="App\Service\Topics\MMartensson_05.resx" />
     <EmbeddedResource Include="App\Service\Topics\MMateev_01.resx" />
@@ -475,6 +634,14 @@
     <EmbeddedResource Include="App\Service\Topics\OChorny_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\OChorny_02.resx" />
     <EmbeddedResource Include="App\Service\Topics\OKrakovetskyi_02.resx" />
+    <EmbeddedResource Include="App\Service\Topics\RNovik_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RNovik_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Service\Topics\RNovik_LDauhiala_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RNovik_LDauhiala_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\SBielskyi_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\SKalinets_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\SKorzh_01.resx" />
@@ -486,6 +653,10 @@
     <EmbeddedResource Include="App\Service\Topics\SPoplavskiy_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\SPoplavskiy_02.resx" />
     <EmbeddedResource Include="App\Service\Topics\SSultanov_01.resx" />
+    <EmbeddedResource Include="App\Service\Topics\UKastelic_01.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UKastelic_01.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="App\Service\Topics\VBezmaly_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\VThavonekham_01.resx" />
     <EmbeddedResource Include="App\Service\Topics\VThavonekham_02.resx" />

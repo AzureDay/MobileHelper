@@ -5,13 +5,54 @@ namespace Conference.Backend.Services
 {
     public class SponsorService : BaseService<Sponsor>
     {
-        private static string BaseUrl = "http://azuredaymobile.azurewebsites.net";
+        private static string BaseUrl = "http://azuredaymobile-by.azurewebsites.net";
 
         protected override List<Sponsor> PopulateStorage()
         {
             return new List<Sponsor>
             {
                 new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.Microsoft.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.Microsoft.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/logo-microsoft-belarus.png", BaseUrl),
+                    WebsiteUrl = "https://www.microsoft.com/ru-by/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.BelarusAzureUserGroup.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.BelarusAzureUserGroup.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/logo-belarus-azure.png", BaseUrl),
+                    WebsiteUrl = "https://www.facebook.com/groups/AzureBelarus/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.BelarusBigDataUserGroup.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.BelarusBigDataUserGroup.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/logo-big-data-belarus.png", BaseUrl),
+                    WebsiteUrl = "https://www.facebook.com/groups/big.data.nerds.minsk/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.EPAM.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.EPAM.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/Logo_Epam_Gray.png", BaseUrl),
+                    WebsiteUrl = "https://epam.com/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.HTPBelarus.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.HTPBelarus.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/logo-htp.png", BaseUrl),
+                    WebsiteUrl = "http://www.park.by/"
+                },
+                #region Ukraine
+                /*new Sponsor
                 {
                     Name = AzureDay.WebApp.Localization.App.Service.Partners.Microsoft.Title,
                     SponsorLevel = new SponsorLevel {Name = "Gold", Rank = 0},
@@ -202,7 +243,8 @@ namespace Conference.Backend.Services
                     SponsorLevel = new SponsorLevel {Name = "Info", Rank = 3},
                     ImageUrl = string.Format("{0}/content/images/logos/ITKPI.png", BaseUrl),
                     WebsiteUrl = "https://t.me/itkpi"
-                },
+                }, */
+                #endregion Ukraine
             };
         }
     }

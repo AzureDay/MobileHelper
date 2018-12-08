@@ -262,25 +262,35 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\avatars\ABoyko.jpg" />
+    <Content Include="Content\images\avatars\AIvlev.jpg" />
+    <Content Include="Content\images\avatars\AKozhemiakin.jpg" />
+    <Content Include="Content\images\avatars\ALaysha.png" />
     <Content Include="Content\images\avatars\AOSurkov.png" />
+    <Content Include="Content\images\avatars\ARamanchyk.jpg" />
     <Content Include="Content\images\avatars\ASurkov.jpg" />
     <Content Include="Content\images\avatars\AVidishchev.jpg" />
     <Content Include="Content\images\avatars\DIvanov.jpg" />
+    <Content Include="Content\images\avatars\DLappo.png" />
     <Content Include="Content\images\avatars\EAuberix.jpg" />
+    <Content Include="Content\images\avatars\EBogdanov.jpg" />
     <Content Include="Content\images\avatars\EmilWasilewski.jpg" />
     <Content Include="Content\images\avatars\EmilWasilewski2.png" />
     <Content Include="Content\images\avatars\EPolonychko.jpg" />
     <Content Include="Content\images\avatars\ILeontyev.jpg" />
     <Content Include="Content\images\avatars\ILubenets.jpg" />
     <Content Include="Content\images\avatars\KBaczyk.jpg" />
+    <Content Include="Content\images\avatars\KSultanov.jpeg" />
+    <Content Include="Content\images\avatars\LDauhiala.jpg" />
     <Content Include="Content\images\avatars\LebedenkoStas.jpg" />
     <Content Include="Content\images\avatars\NDranchuk.jpg" />
     <Content Include="Content\images\avatars\NMykhailenko.png" />
     <Content Include="Content\images\avatars\OKrakovetskyi.jpg" />
+    <Content Include="Content\images\avatars\RNovik.jpeg" />
     <Content Include="Content\images\avatars\SergiiBielskyi.jpg" />
     <Content Include="Content\images\avatars\SKalinets.png" />
     <Content Include="Content\images\avatars\SPoplavskiy.png" />
     <Content Include="Content\images\avatars\StasSultanov.jpg" />
+    <Content Include="Content\images\avatars\UKastelic.jpeg" />
     <Content Include="Content\images\avatars\VBezmaly.jpg" />
     <Content Include="Content\images\avatars\VTsykunov.jpg" />
     <Content Include="Content\images\logos\Beetroot_v1.png" />
@@ -308,6 +318,11 @@
     <Content Include="Content\images\logos\itratingsukraine_v1.png" />
     <Content Include="Content\images\logos\itratingsukraine_v2.png" />
     <Content Include="Content\images\logos\KyivITCluster.png" />
+    <Content Include="Content\images\logos\logo-belarus-azure.png" />
+    <Content Include="Content\images\logos\logo-big-data-belarus.png" />
+    <Content Include="Content\images\logos\logo-htp.png" />
+    <Content Include="Content\images\logos\logo-microsoft-belarus.png" />
+    <Content Include="Content\images\logos\Logo_Epam_Gray.png" />
     <Content Include="Content\images\logos\Luxoft_v1.jpg" />
     <Content Include="Content\images\logos\Luxoft_v2.jpg" />
     <Content Include="Content\images\logos\microsoft.jpg" />

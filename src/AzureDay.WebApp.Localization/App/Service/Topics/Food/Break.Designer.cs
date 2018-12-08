@@ -61,7 +61,7 @@ namespace AzureDay.WebApp.Localization.App.Service.Topics.Food {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 15 minutes break between sessions.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string Description {
             get {
@@ -70,7 +70,7 @@ namespace AzureDay.WebApp.Localization.App.Service.Topics.Food {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Break.
+        ///   Looks up a localized string similar to Coffee-break.
         /// </summary>
         public static string Title {
             get {

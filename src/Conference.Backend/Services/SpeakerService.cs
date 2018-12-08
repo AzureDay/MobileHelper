@@ -6,11 +6,23 @@ namespace Conference.Backend.Services
     public class SpeakerService : BaseService<Speaker>
     {
         private readonly List<Speaker> _speakers = new List<Speaker>();
-        private static string BaseUrl = "http://azuredaymobile.azurewebsites.net";
+        private static string BaseUrl = "http://azuredaymobile-by.azurewebsites.net";
 
         protected override List<Speaker> PopulateStorage()
         {
+            _speakers.Add(AKozhemiakin());
+            _speakers.Add(ALaysha());
+            _speakers.Add(RNovik());
+            _speakers.Add(UKastelic());
             _speakers.Add(ABoyko());
+            _speakers.Add(ARamanchyk());
+            _speakers.Add(LDauhiala());
+            _speakers.Add(EBogdanov());
+            _speakers.Add(AIvlev());
+            _speakers.Add(KSultanov());
+            _speakers.Add(DLappo());
+            #region Ukraine
+            /*_speakers.Add(ABoyko());
             _speakers.Add(ILeontiev());
             _speakers.Add(VTsykunov());
             _speakers.Add(SBielskyi());
@@ -26,12 +38,201 @@ namespace Conference.Backend.Services
             _speakers.Add(NDranchuk());
             _speakers.Add(KBaczyk());
             _speakers.Add(ILubenets());
-            _speakers.Add(NMykhailenko());
+            _speakers.Add(NMykhailenko());*/
+            #endregion Ukraine
 
             return _speakers;
         }
 
+        public Speaker DLappo()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.DLappo.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.DLappo.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.DLappo.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/DLappo.png", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "ASBIS Belarus",
+                PositionName = "Cloud Solutions Architect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/DLappo.png", BaseUrl),
+                CompanyWebsiteUrl = "http://www.asbis.by/",
+            };
+        }
+
+        public Speaker KSultanov()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.KSultanov.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.KSultanov.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.KSultanov.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/KSultanov.jpeg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "EPAM Systems",
+                PositionName = "Big Data Engineer & Solution Architect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/KSultanov.jpeg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.epam.com/",
+            };
+        }
+
+        public Speaker AIvlev()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.AIvlev.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.AIvlev.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.AIvlev.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/AIvlev.jpg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "EPAM Systems",
+                PositionName = "Systems Engineer",
+                AvatarUrl = string.Format("{0}/content/images/avatars/AIvlev.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.epam.com/",
+            };
+        }
+
+        public Speaker EBogdanov()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.EBogdanov.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.EBogdanov.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.EBogdanov.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/EBogdanov.jpg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "EPAM Systems",
+                PositionName = "Senior Systems Engineer",
+                AvatarUrl = string.Format("{0}/content/images/avatars/EBogdanov.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.epam.com/",
+            };
+        }
+
+        public Speaker LDauhiala()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.LDauhiala.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.LDauhiala.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.LDauhiala.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/LDauhiala.jpg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "EPAM Systems",
+                PositionName = "Data Scientist",
+                AvatarUrl = string.Format("{0}/content/images/avatars/LDauhiala.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.epam.com/",
+            };
+        }
+
+        public Speaker ARamanchyk()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.ARamanchyk.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.ARamanchyk.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.ARamanchyk.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/ARamanchyk.jpg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "EPAM Systems",
+                PositionName = "Senior Systems Engineer",
+                AvatarUrl = string.Format("{0}/content/images/avatars/ARamanchyk.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.epam.com/",
+            };
+        }
+
         public Speaker ABoyko()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.ABoyko.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.ABoyko.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.ABoyko.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/ABoyko.jpg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "Ciklum",
+                PositionName = "Solution Architect",
+                AvatarUrl = string.Format("{0}/content/images/avatars/ABoyko.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.ciklum.com/",
+            };
+        }
+
+        public Speaker UKastelic()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.UKastelic.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.UKastelic.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.UKastelic.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/UKastelic.jpeg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "Microsoft",
+                PositionName = "Technology Solutions Professional for Azure Application Development",
+                AvatarUrl = string.Format("{0}/content/images/avatars/UKastelic.jpeg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.microsoft.com/",
+            };
+        }
+
+        public Speaker RNovik()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.RNovik.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.RNovik.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.RNovik.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/RNovik.jpeg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "EPAM Systems",
+                PositionName = "Solution Architect, Big Data Competency Center",
+                AvatarUrl = string.Format("{0}/content/images/avatars/RNovik.jpeg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.epam.com/",
+            };
+        }
+
+        public Speaker ALaysha()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.ALaysha.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.ALaysha.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.ALaysha.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/ALaysha.png", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "EPAM Systems",
+                PositionName = "Solution Architect, Big Data Competency Center",
+                AvatarUrl = string.Format("{0}/content/images/avatars/ALaysha.png", BaseUrl),
+                CompanyWebsiteUrl = "https://www.epam.com/",
+            };
+        }
+
+        public Speaker AKozhemiakin()
+        {
+            return new Speaker
+            {
+                FirstName = AzureDay.WebApp.Localization.App.Service.Speaker.AKozhemiakin.FirstName,
+                LastName = AzureDay.WebApp.Localization.App.Service.Speaker.AKozhemiakin.LastName,
+                Biography = AzureDay.WebApp.Localization.App.Service.Speaker.AKozhemiakin.Bio,
+                PhotoUrl = string.Format("{0}/content/images/avatars/AKozhemiakin.jpg", BaseUrl),
+                LinkedInUrl = "",
+                TwitterUrl = "",
+                CompanyName = "EPAM Systems",
+                PositionName = "Director, Big Data Competency Center",
+                AvatarUrl = string.Format("{0}/content/images/avatars/AKozhemiakin.jpg", BaseUrl),
+                CompanyWebsiteUrl = "https://www.epam.com/",
+            };
+        }
+
+        #region Ukraine
+        /*public Speaker ABoyko()
         {
             return new Speaker
             {
@@ -318,6 +519,7 @@ namespace Conference.Backend.Services
                 AvatarUrl = string.Format("{0}/content/images/avatars/NMykhailenko.png", BaseUrl),
                 CompanyWebsiteUrl = "",
             };
-        }
+        } */
+        #endregion Ukraine
     }
 }

@@ -18,6 +18,155 @@ namespace Conference.Backend.Services
                 {
                     Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.Registration.Title,
                     ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.Registration.Title,
+                    StartTime = new DateTime(2018, 12, 8, 9, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 10, 30, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
+                    StartTime = new DateTime(2018, 12, 8, 11, 50, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 12, 20, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.Lunch.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.Food.Lunch.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.Lunch.Title,
+                    StartTime = new DateTime(2018, 12, 8, 13, 10, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 14, 0, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.CoffeeBreak.Title,
+                    StartTime = new DateTime(2018, 12, 8, 14, 50, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 15, 15, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.Break.Title,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.Break.Title,
+                    StartTime = new DateTime(2018, 12, 8, 16, 05, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 16, 15, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.Special.Endnote.Title,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Special.Endnote.Title,
+                    StartTime = new DateTime(2018, 12, 8, 17, 05, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 18, 05, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                //common stream
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.ALaysha(), _speakerService.AKozhemiakin(), _speakerService.RNovik() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.Special.Keynote.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.Special.Keynote.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Special.Keynote.Title,
+                    MainCategory = _categoryService.CategoryCommon,
+                    StartTime = new DateTime(2018, 12, 8, 10, 30, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 11, 0, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.UKastelic() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.UKastelic_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.UKastelic_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.UKastelic_01.Title,
+                    MainCategory = _categoryService.CategoryCommon,
+                    StartTime = new DateTime(2018, 12, 8, 11, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 11, 50, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                //big data stream
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.RNovik() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.RNovik_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.RNovik_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.RNovik_01.Title,
+                    MainCategory = _categoryService.CategoryBigData,
+                    StartTime = new DateTime(2018, 12, 8, 12, 20, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 13, 10, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.ALaysha() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.ALaysha_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.ALaysha_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.ALaysha_01.Title,
+                    MainCategory = _categoryService.CategoryBigData,
+                    StartTime = new DateTime(2018, 12, 8, 14, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 14, 50, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.RNovik(), _speakerService.LDauhiala() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.RNovik_LDauhiala_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.RNovik_LDauhiala_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.RNovik_LDauhiala_01.Title,
+                    MainCategory = _categoryService.CategoryBigData,
+                    StartTime = new DateTime(2018, 12, 8, 15, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 16, 05, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.KSultanov() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.KSultanov_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.KSultanov_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.KSultanov_01.Title,
+                    MainCategory = _categoryService.CategoryBigData,
+                    StartTime = new DateTime(2018, 12, 8, 16, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 17, 05, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                //devops stream
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.ABoyko() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.ABoyko_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.ABoyko_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.ABoyko_01.Title,
+                    MainCategory = _categoryService.CategoryDevOps,
+                    StartTime = new DateTime(2018, 12, 8, 12, 20, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 13, 10, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.ARamanchyk() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.ARamanchyk_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.ARamanchyk_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.ARamanchyk_01.Title,
+                    MainCategory = _categoryService.CategoryDevOps,
+                    StartTime = new DateTime(2018, 12, 8, 14, 0, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 14, 50, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.EBogdanov(), _speakerService.AIvlev() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.EBogdanov_AIvlev_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.EBogdanov_AIvlev_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.EBogdanov_AIvlev_01.Title,
+                    MainCategory = _categoryService.CategoryDevOps,
+                    StartTime = new DateTime(2018, 12, 8, 15, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 16, 05, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                new Session
+                {
+                    Speakers = new List<Speaker> { _speakerService.DLappo() },
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.DLappo_01.Title,
+                    Abstract = AzureDay.WebApp.Localization.App.Service.Topics.DLappo_01.Description,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.DLappo_01.Title,
+                    MainCategory = _categoryService.CategoryDevOps,
+                    StartTime = new DateTime(2018, 12, 8, 16, 15, 0, DateTimeKind.Utc).AddHours(5),
+                    EndTime = new DateTime(2018, 12, 8, 17, 05, 0, DateTimeKind.Utc).AddHours(5),
+                },
+                #region Ukraine
+                /*new Session
+                {
+                    Title = AzureDay.WebApp.Localization.App.Service.Topics.Food.Registration.Title,
+                    ShortTitle = AzureDay.WebApp.Localization.App.Service.Topics.Food.Registration.Title,
                     StartTime = new DateTime(2018, 11, 10, 8, 15, 0, DateTimeKind.Utc).AddHours(5),
                     EndTime = new DateTime(2018, 11, 10, 9, 0, 0, DateTimeKind.Utc).AddHours(5),
                 },
@@ -281,7 +430,8 @@ namespace Conference.Backend.Services
                     //Room = _roomService.Room1,
                     StartTime = new DateTime(2018, 11, 10, 17, 30, 0, DateTimeKind.Utc).AddHours(5),
                     EndTime = new DateTime(2018, 11, 10, 18, 30, 0, DateTimeKind.Utc).AddHours(5),
-                },
+                }, */
+                #endregion Ukraine
             };
         }
     }
