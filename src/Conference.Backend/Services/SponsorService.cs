@@ -5,13 +5,62 @@ namespace Conference.Backend.Services
 {
     public class SponsorService : BaseService<Sponsor>
     {
-        private static string BaseUrl = "http://azuredaymobile.azurewebsites.net";
+        private static string BaseUrl = "http://azuredaymobile-ru.azurewebsites.net";
 
         protected override List<Sponsor> PopulateStorage()
         {
             return new List<Sponsor>
             {
                 new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.DigitalOctober.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.DigitalOctober.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/digital-october.jpg", BaseUrl),
+                    WebsiteUrl = "http://digitaloctober.ru/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.AwaraIT.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.AwaraIT.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/awara-it.png", BaseUrl),
+                    WebsiteUrl = "http://awara-it.com/ru_RU/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.IOTcommunityRU.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.IOTcommunityRU.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/IoT_community_RU.png", BaseUrl),
+                    WebsiteUrl = "http://iotcommunity.ru/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.MicrosoftRus.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.MicrosoftRus.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/MicrosoftRus.PNG", BaseUrl),
+                    WebsiteUrl = "https://t.me/MicrosoftRus/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.LookRu.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.LookRu.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/LookRu.png", BaseUrl),
+                    WebsiteUrl = "http://look-journal.ru/"
+                },
+                new Sponsor
+                {
+                    Name = AzureDay.WebApp.Localization.App.Service.Partners.District0.Title,
+                    SponsorLevel = new SponsorLevel {Name = "Our", Rank = 0},
+                    Description = AzureDay.WebApp.Localization.App.Service.Partners.District0.Description,
+                    ImageUrl = string.Format("{0}/content/images/logos/zero_district.png", BaseUrl),
+                    WebsiteUrl = "https://district0.com/ru"
+                },
+                #region Ukraine
+                /*new Sponsor
                 {
                     Name = AzureDay.WebApp.Localization.App.Service.Partners.Microsoft.Title,
                     SponsorLevel = new SponsorLevel {Name = "Gold", Rank = 0},
@@ -202,7 +251,8 @@ namespace Conference.Backend.Services
                     SponsorLevel = new SponsorLevel {Name = "Info", Rank = 3},
                     ImageUrl = string.Format("{0}/content/images/logos/ITKPI.png", BaseUrl),
                     WebsiteUrl = "https://t.me/itkpi"
-                },
+                },*/
+                #endregion Ukraine
             };
         }
     }

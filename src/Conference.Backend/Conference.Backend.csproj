@@ -262,10 +262,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\avatars\ABoyko.jpg" />
+    <Content Include="Content\images\avatars\AButkevich.jpg" />
+    <Content Include="Content\images\avatars\AChernevsky.jpg" />
+    <Content Include="Content\images\avatars\AErmakov.jpg" />
+    <Content Include="Content\images\avatars\ALyubko.png" />
+    <Content Include="Content\images\avatars\AMosyagin.jpg" />
     <Content Include="Content\images\avatars\AOSurkov.png" />
     <Content Include="Content\images\avatars\ASurkov.jpg" />
+    <Content Include="Content\images\avatars\ATarasov.jpg" />
     <Content Include="Content\images\avatars\AVidishchev.jpg" />
+    <Content Include="Content\images\avatars\AZhuravlev.jpg" />
     <Content Include="Content\images\avatars\DIvanov.jpg" />
+    <Content Include="Content\images\avatars\DKovrizhko.jpg" />
+    <Content Include="Content\images\avatars\DLappo.png" />
+    <Content Include="Content\images\avatars\DPetukhov.jpg" />
+    <Content Include="Content\images\avatars\DSoloviev.png" />
     <Content Include="Content\images\avatars\EAuberix.jpg" />
     <Content Include="Content\images\avatars\EmilWasilewski.jpg" />
     <Content Include="Content\images\avatars\EmilWasilewski2.png" />
@@ -274,15 +285,19 @@
     <Content Include="Content\images\avatars\ILubenets.jpg" />
     <Content Include="Content\images\avatars\KBaczyk.jpg" />
     <Content Include="Content\images\avatars\LebedenkoStas.jpg" />
+    <Content Include="Content\images\avatars\MMateev.jpg" />
     <Content Include="Content\images\avatars\NDranchuk.jpg" />
     <Content Include="Content\images\avatars\NMykhailenko.png" />
     <Content Include="Content\images\avatars\OKrakovetskyi.jpg" />
     <Content Include="Content\images\avatars\SergiiBielskyi.jpg" />
     <Content Include="Content\images\avatars\SKalinets.png" />
     <Content Include="Content\images\avatars\SPoplavskiy.png" />
+    <Content Include="Content\images\avatars\sslukin.jpg" />
     <Content Include="Content\images\avatars\StasSultanov.jpg" />
     <Content Include="Content\images\avatars\VBezmaly.jpg" />
+    <Content Include="Content\images\avatars\VGusarov.png" />
     <Content Include="Content\images\avatars\VTsykunov.jpg" />
+    <Content Include="Content\images\logos\awara-it.png" />
     <Content Include="Content\images\logos\Beetroot_v1.png" />
     <Content Include="Content\images\logos\Beetroot_v2.png" />
     <Content Include="Content\images\logos\Beetroot_v3.png" />
@@ -299,8 +314,10 @@
     <Content Include="Content\images\logos\devart_v2.png" />
     <Content Include="Content\images\logos\devdigest.png" />
     <Content Include="Content\images\logos\DevPro.png" />
+    <Content Include="Content\images\logos\digital-october.jpg" />
     <Content Include="Content\images\logos\dou.png" />
     <Content Include="Content\images\logos\ELEKS.png" />
+    <Content Include="Content\images\logos\IoT_community_RU.png" />
     <Content Include="Content\images\logos\itclusterkonotop_v1.png" />
     <Content Include="Content\images\logos\itclusterkonotop_v2.png" />
     <Content Include="Content\images\logos\ITClusterVinnytsia.jpg" />
@@ -308,9 +325,11 @@
     <Content Include="Content\images\logos\itratingsukraine_v1.png" />
     <Content Include="Content\images\logos\itratingsukraine_v2.png" />
     <Content Include="Content\images\logos\KyivITCluster.png" />
+    <Content Include="Content\images\logos\LookRu.png" />
     <Content Include="Content\images\logos\Luxoft_v1.jpg" />
     <Content Include="Content\images\logos\Luxoft_v2.jpg" />
     <Content Include="Content\images\logos\microsoft.jpg" />
+    <Content Include="Content\images\logos\MicrosoftRus.PNG" />
     <Content Include="Content\images\logos\salateira_v1.jpg" />
     <Content Include="Content\images\logos\salateira_v2.jpg" />
     <Content Include="Content\images\logos\scrum_ua.png" />
@@ -318,6 +337,7 @@
     <Content Include="Content\images\logos\smart_it.jpg" />
     <Content Include="Content\images\logos\weeklyit.png" />
     <Content Include="Content\images\logos\Wirex.png" />
+    <Content Include="Content\images\logos\zero_district.png" />
     <Content Include="Views\Push.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -342,6 +362,7 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\azuredaymobile - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\azuredaymobile - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\azuredaymobile-by - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\azuredaymobile-ru - Web Deploy.pubxml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -118,12 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Bio" xml:space="preserve">
-    <value>Alexandr Surkov is a developer with more than 10 years of experience. He is the head of software development department of security systems startup since 2011. In his free time he writes articles and speaks at different events. He got Microsoft MVP award in 2016  and now he leads Russian IoT Community.</value>
+    <value>Windows development MVP Azure MVP | Россия
+Разработчик с более чем 10 летним стажем. Основатель и co-лидер IoT Community. Опытный докладчик и организатор конференций, Microsoft MVP в 2х категориях, сертифицированный Cloud Solution Architect. Работает Архитектором в Яндекс.Облаке.</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>Alexandr</value>
+    <value>Александр</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Surkov</value>
+    <value>Сурков</value>
   </data>
 </root>

@@ -10,14 +10,12 @@ namespace Conference.Backend.Services
         {
             return new List<Category>
             {
-                new Category { Color = "ff9800", Name = "Orange Room", ShortName = "Orange" },
-                new Category { Color = "2196f3", Name = "Blue Room", ShortName = "Blue" },
-                new Category { Color = "f44336", Name = "Red Room", ShortName = "Red" },
+                new Category { Color = "ff9800", Name = "Технологический трек", ShortName = "Техно" },
+                new Category { Color = "2196f3", Name = "Бизнес трек", ShortName = "Бизнес" }
             };
         }
 
-        public Category CategoryOrange { get { return Storage.Single(x => x.Name == "Orange Room"); } } //room1
-        public Category CategoryBlue { get { return Storage.Single(x => x.Name == "Blue Room"); } } //room2
-        public Category CategoryRed { get { return Storage.Single(x => x.Name == "Red Room"); } } //room3
+        public Category CategoryTechno { get { return Storage.Single(x => x.Name == "Технологический трек"); } } //room1
+        public Category CategoryBusiness { get { return Storage.Single(x => x.Name == "Бизнес трек"); } } //room2
     }
 }
